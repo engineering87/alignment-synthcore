@@ -1,0 +1,67 @@
+{
+ "experiment": "kl-anchoring-exp3-confirm-v1",
+ "seeds": [
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27
+ ],
+ "eps": [
+  0.01,
+  0.0
+ ],
+ "archs": [
+  "tabular",
+  "mlp64",
+  "mlp256",
+  "cnn",
+  "transformer"
+ ],
+ "plan": [
+  [
+   "k1rew",
+   0.3
+  ],
+  [
+   "klonly",
+   0.3
+  ],
+  [
+   "k1rew",
+   1.0
+  ],
+  [
+   "klonly",
+   1.0
+  ],
+  [
+   "none",
+   0.0
+  ]
+ ],
+ "question": "With the KL anchor applied on-policy only (k1 in the reward, trained layouts T), does the drift the reward causes start in, and end up in, states the reference's human data rarely or never covered?",
+ "base": "KL anchoring experiment 3 (architecture sweep, Claude desktop, 26 Oct 2026): arch_sweep.py vendored unchanged; same environment family, layout sets T/B/O, 300 demos per layout, RL 1500 updates x 64 episodes from the reference, lr 1e-3.",
+ "methods": {
+  "k1rew": "per-step reward r - beta*log(pi/pi_ref), anchor on RL's own samples only",
+  "klonly": "k1rew with task reward 0: optimum is the reference, so drift is optimizer noise through shared parameters",
+  "none": "no KL"
+ },
+ "groups": "states grouped by summed visits in the 300 human demos: T_high >= 200, T_mid 70-199, T_low 1-69; O_all = every valid state on the six unseen H=7 layouts (zero data)",
+ "measure": "D_g(t) = mean TV(pi_t, pi_ref) over group g under k1rew minus the same under klonly (same unit and beta): reward-induced drift. Unit = (seed, eps); 16 units per architecture.",
+ "primary": {
+  "H1_final_export": "D_O(1500) - D_Thigh(1500) > 0 at beta 0.3: one-sided 95% t lower bound > 0 per network; supported if >= 3 of 4 networks (mlp64, mlp256, cnn, transformer).",
+  "H2_onset": "mean over t in {25, 50, 100} of D_O(t) - D_Thigh(t) > 0 at beta 0.3: same rule.",
+  "H3_beta": "export index E = (mean D_O - mean D_Thigh)/(mean D_O + mean D_Thigh) at 1500 is larger at beta 1.0 than 0.3: paired bootstrap over units (10,000), 5th percentile of the difference > 0 (resamples with a nonpositive denominator count against); same rule."
+ },
+ "secondary": {
+  "S1": "replication of the original metric: raw TV ratio O_all / T_high under k1rew beta 0.3 > 1 (log, t lower bound > 0) per network",
+  "S2": "raw log ratio under k1rew minus under klonly > 0: is the original metric's concentration reward-specific?",
+  "S3": "D_Tlow(1500) - D_Thigh(1500) > 0: does reward-induced drift favour rare states within the trained layouts?"
+ },
+ "controls": "tabular (no shared parameters): O drift must be exactly 0. none: descriptive.",
+ "development": "Smoke 1 (seed 99, eps 0.01, mlp64 and transformer, k1rew/klonly beta 0.3) showed reference-visitation groups leave no rare trained states, so groups moved to human-demo counts. Smoke 2 (seeds 90-92, eps 0.01, tabular/mlp64/mlp256, all methods, counts cutoff 30) gave raw O/T ratios 0.7-2.0 under k1rew (the original metric replicates) but 0.7-3.8 under klonly, and reward-induced O minus T_high drift near 0 (-0.003, -0.002). The 30-visit cutoff put 90% of trained states in 'high', so cutoffs moved to 200/70 (quartiles). H1-H3 were written before smoke 2; S1-S3 were added after it. Smoke seeds are not reused (confirmation seeds 20-27)."
+}
