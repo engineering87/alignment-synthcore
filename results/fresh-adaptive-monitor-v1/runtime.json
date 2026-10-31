@@ -4,6 +4,7 @@
   "scipy": "1.10.1",
   "torch": "2.0.1",
   "platform": "macOS-14.2.1-arm64-arm-64bit",
-  "study_status": "awaiting_budget",
-  "scientific_reproduction": "Saved-record audits by separate code, not independent researcher reproduction."
+  "study_status": "calibration_complete",
+  "scientific_reproduction": "Saved-record audits by separate code, not independent researcher reproduction.",
+  "confirmation_status": "not_authorized_not_run"
 }

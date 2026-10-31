@@ -68,7 +68,7 @@ def api(model,prompt,nonce,max_tokens):
  assert key not in ledger['pending'],'Unresolved earlier request reservation; inspect before retry'
  if ledger['committed_usd']+sum(ledger['pending'].values())+worst>authorization['additional_cap_usd']:raise RuntimeError('Study-specific additional API cap reached; no automatic budget increase')
  ledger['pending'][key]=worst;dump(ledgerpath,ledger)
- result=post('messages',{'model':model,'messages':messages,'max_tokens':max_tokens,'thinking':{'type':'disabled'}});text='\n'.join(x['text'] for x in result['content'] if x['type']=='text');usage=result['usage'];cost=((usage.get('input_tokens',0)+usage.get('cache_creation_input_tokens',0)+usage.get('cache_read_input_tokens',0))*pin+usage['output_tokens']*pout)/1e6;assert cost<=worst+1e-8
+ result=post('messages',{'model':model,'messages':messages,'max_tokens':max_tokens,'thinking':{'type':'between_tools' if model=='claude-sonnet-5-5' else 'disabled'}});text='\n'.join(x['text'] for x in result['content'] if x['type']=='text');usage=result['usage'];cost=((usage.get('input_tokens',0)+usage.get('cache_creation_input_tokens',0)+usage.get('cache_read_input_tokens',0))*pin+usage['output_tokens']*pout)/1e6;assert cost<=worst+1e-8
  dump(path,{'key':key,'nonce':nonce,'model':model,'prompt':prompt,'text':text,'usage':usage,'cost_usd_upper_priced':cost,'stop_reason':result['stop_reason'],'completed_utc':now()});ledger['pending'].pop(key);ledger['committed_usd']+=cost;ledger['calls']+=1;dump(ledgerpath,ledger);return text
 
 def monitor(task,expr,style,nonce):

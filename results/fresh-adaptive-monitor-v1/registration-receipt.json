@@ -1,8 +1,8 @@
 {
   "slug": "fresh-adaptive-monitor-v1-protocol",
-  "revision": 2,
-  "registered_utc": "2026-10-31T06:51:23.846171+00:00",
+  "revision": 3,
+  "registered_utc": "2026-10-31T16:45:55.943230+00:00",
   "protocol_sha256": "a21581bfc1c860f10bde14be5559ab09a5eca2a3732abd5f7bd73112a977dec8",
-  "source_freeze_sha256": "755c134d3cf0b4673484d58bd14cc59ac167e47978136654d28064c090d6124f",
-  "amendment": "Budget reservation cushion before any model call; no scientific changes."
+  "source_freeze_sha256": "d5b79eef4a7ec422d6389dca495fdd014223d618b4cd856ab2ee236212f73ed0",
+  "amendment": "Pre-output provider-schema compatibility repair; scientific criteria unchanged; calibration-only authorization."
 }

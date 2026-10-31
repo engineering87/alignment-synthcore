@@ -1,0 +1,7 @@
+{
+  "additional_cap_usd": 3,
+  "allowed_stages": [
+    "calibration"
+  ],
+  "scope": "Public report of phase and cap; private authorization file omitted"
+}

@@ -27,6 +27,20 @@ class Engineering(unittest.TestCase):
     with self.assertRaises(FileNotFoundError):F.api('claude-sonnet-5-5','x','calibration-0/check',16)
     (out/'spend-authorization.json').write_text(json.dumps({'authorized':True,'additional_cap_usd':3,'allowed_stages':['calibration']}))
     with self.assertRaises(AssertionError):F.api('claude-sonnet-5-5','x','confirmation-0/check',16)
+ def test_monitor_provider_modes_and_recorded_cost_without_network(self):
+  import tempfile,json,io,os
+  from pathlib import Path
+  from unittest.mock import patch
+  bodies=[]
+  def response(request,timeout=120):
+   body=json.loads(request.data)
+   if request.full_url.endswith('/count_tokens'):return io.BytesIO(json.dumps({'input_tokens':5}).encode())
+   bodies.append(body);return io.BytesIO(json.dumps({'content':[{'type':'text','text':'{}'}],'usage':{'input_tokens':5,'output_tokens':2},'stop_reason':'end_turn'}).encode())
+  with tempfile.TemporaryDirectory() as directory:
+   out=Path(directory);(out/'spend-authorization.json').write_text(json.dumps({'authorized':True,'additional_cap_usd':3,'allowed_stages':['calibration']}))
+   with patch.object(F,'OUT',out),patch.dict(os.environ,{'ANTHROPIC_API_KEY':'test-local-placeholder'}),patch.object(F.urllib.request,'urlopen',side_effect=response):
+    for model in F.PRICES:F.api(model,'x','calibration-0/'+model,16)
+   self.assertEqual([b['thinking']['type'] for b in bodies],['between_tools','disabled']);ledger=json.loads((out/'spend.json').read_text());self.assertEqual(ledger['calls'],2);self.assertEqual(ledger['pending'],{});self.assertLess(ledger['committed_usd'],.001)
  def test_fresh_task_streams(self):
   a=F.make_task('calibration',1);b=F.make_task('confirmation',1);self.assertNotEqual(a['public_tests'],b['public_tests']);self.assertEqual(len(b['private_tests']),32)
 if __name__=='__main__':unittest.main()

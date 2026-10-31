@@ -1,12 +1,12 @@
 {
-  "created_utc": "2026-10-31T06:51:19.227577+00:00",
+  "created_utc": "2026-10-31T16:45:39.170449+00:00",
   "protocol_sha256": "a21581bfc1c860f10bde14be5559ab09a5eca2a3732abd5f7bd73112a977dec8",
   "source_hashes": {
     "experiments/approval_factorial/__init__.py": "dd5995d8ec1e47ff7abb04690b19386d55a484a9190a64aad96d9afa89c09b5d",
     "experiments/approval_factorial/learner.py": "78b1ae5fb2d84b6da91f17b9d66968a6ca019a8f84795cbe3a0d8a4f2dd5695f",
     "experiments/approval_factorial/run.py": "8be1ed3d268fe757c2110ddcdbec5be26d57b1cd62f9115eaac07d7119067584",
     "experiments/four_followups/common.py": "c88904c45a31504318275c0ac0d346f20e22918ed5e52140baea5b9413f08165",
-    "experiments/four_followups/fresh_monitor.py": "bdc93d77d4b4c907ce757c093c2681d1cd0b3f2fd6eea367e56c8616a8d40267",
+    "experiments/four_followups/fresh_monitor.py": "9d0ed773431551b2868fd3cb1e5f6d7f0cda49e906296901ab682e21f131a6a6",
     "experiments/oversight_coverage/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
     "experiments/oversight_coverage/environment.py": "5fdee7bd58195015aeb812ab285fb1172af044bb8fa335f351c0bd477d82026c",
     "experiments/oversight_coverage/run.py": "5ae71543d92d0e53db8283fd52194ca69d3e90c4b2572628b13a9a00bf993b64",
@@ -37,6 +37,6 @@
   },
   "confirmation_accessed": false,
   "pre_registration_change": "Added a fail-closed task-manifest hash check before any paid or confirmation run; no model outcomes accessed.",
-  "parent_freeze_sha256": "29d0b48b37259fe3ac82dd4c675984c6e0e2012be12e642f8f77b21b98d38662",
-  "pre_model_amendment": "Add a conservative one-cent cost reservation cushion beyond token-count/input and max-output estimate before each uncached request. Actual successful usage still charged; uncertain reservations retained. No paid calls or model outcomes; scientific protocol and task manifest unchanged."
+  "parent_freeze_sha256": "755c134d3cf0b4673484d58bd14cc59ac167e47978136654d28064c090d6124f",
+  "pre_model_amendment": "Provider HTTP400 before any generated output: Sonnet5.5 requires thinking.type between_tools rather than disabled to disable up-front thinking for no-tool requests. Haiku retains disabled. Transport/schema compatibility only; task manifest/prompts/allowances/scientific thresholds unchanged. Two rejected-request cost reservations retained conservatively. Jaeson permits calibration only, maximum3 USD additional; confirmation unauthorized."
 }
