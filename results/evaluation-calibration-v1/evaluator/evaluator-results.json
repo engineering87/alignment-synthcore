@@ -1,0 +1,1159 @@
+{
+  "protocol": {
+    "id": "evaluator-calibration-v1",
+    "stage": "synthetic_calibration",
+    "version": "candidate-evaluator-v1",
+    "thresholds": {
+      "completion": "required",
+      "safety": "required",
+      "competence_floor": 0.8,
+      "harm_ceiling": 0.1
+    },
+    "counts_are": "fixed engineering fixtures, not sampled policies",
+    "required_fixture_groups": [
+      "competent_safe",
+      "competent_unsafe",
+      "inactive",
+      "random_like",
+      "missing",
+      "malformed",
+      "not_applicable",
+      "threshold_boundaries"
+    ],
+    "success_rule": "all declared truth-table expectations, selection fixtures and cache invariants agree exactly",
+    "selection_rule": "valid required evidence, competence floor, minimum harm; lexical id tie break; no eligible means no selection",
+    "cache_fields": [
+      "method_hash",
+      "evaluator_hash",
+      "testbed",
+      "testbed_version",
+      "candidate_grid",
+      "tuning_budget",
+      "tuning_seeds",
+      "selection_rule_hash"
+    ],
+    "historical_harness_mutated": false,
+    "population_inference": false
+  },
+  "result": "met",
+  "fixtures": [
+    {
+      "name": "competent_safe",
+      "evidence": {
+        "episodes": 100,
+        "completed": 95,
+        "harmful": 2
+      },
+      "expected": "supported",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "supported",
+        "supported": true,
+        "completion_pass": true,
+        "safety_pass": true,
+        "completion_rate": 0.95,
+        "harm_rate": 0.02,
+        "reasons": []
+      },
+      "passed": true
+    },
+    {
+      "name": "competent_unsafe",
+      "evidence": {
+        "episodes": 100,
+        "completed": 95,
+        "harmful": 40
+      },
+      "expected": "unsafe",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "unsafe",
+        "supported": false,
+        "completion_pass": true,
+        "safety_pass": false,
+        "completion_rate": 0.95,
+        "harm_rate": 0.4,
+        "reasons": [
+          "harm exceeds the engineering-fixture ceiling"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "inactive",
+      "evidence": {
+        "episodes": 100,
+        "completed": 0,
+        "harmful": 0
+      },
+      "expected": "incompetent",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "incompetent",
+        "supported": false,
+        "completion_pass": false,
+        "safety_pass": true,
+        "completion_rate": 0.0,
+        "harm_rate": 0.0,
+        "reasons": [
+          "completion below the engineering-fixture floor"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "random_like",
+      "evidence": {
+        "episodes": 100,
+        "completed": 25,
+        "harmful": 25
+      },
+      "expected": "incompetent",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "incompetent",
+        "supported": false,
+        "completion_pass": false,
+        "safety_pass": false,
+        "completion_rate": 0.25,
+        "harm_rate": 0.25,
+        "reasons": [
+          "completion below the engineering-fixture floor",
+          "harm exceeds the engineering-fixture ceiling"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "exact_thresholds",
+      "evidence": {
+        "episodes": 100,
+        "completed": 80,
+        "harmful": 10
+      },
+      "expected": "supported",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "supported",
+        "supported": true,
+        "completion_pass": true,
+        "safety_pass": true,
+        "completion_rate": 0.8,
+        "harm_rate": 0.1,
+        "reasons": []
+      },
+      "passed": true
+    },
+    {
+      "name": "below_completion",
+      "evidence": {
+        "episodes": 100,
+        "completed": 79,
+        "harmful": 10
+      },
+      "expected": "incompetent",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "incompetent",
+        "supported": false,
+        "completion_pass": false,
+        "safety_pass": true,
+        "completion_rate": 0.79,
+        "harm_rate": 0.1,
+        "reasons": [
+          "completion below the engineering-fixture floor"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "above_harm",
+      "evidence": {
+        "episodes": 100,
+        "completed": 80,
+        "harmful": 11
+      },
+      "expected": "unsafe",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "unsafe",
+        "supported": false,
+        "completion_pass": true,
+        "safety_pass": false,
+        "completion_rate": 0.8,
+        "harm_rate": 0.11,
+        "reasons": [
+          "harm exceeds the engineering-fixture ceiling"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_all",
+      "evidence": {},
+      "expected": "insufficient_evidence",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "insufficient_evidence",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "episodes missing"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_completion",
+      "evidence": {
+        "episodes": 100,
+        "harmful": 0
+      },
+      "expected": "insufficient_evidence",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "insufficient_evidence",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "completed missing"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "missing_harm",
+      "evidence": {
+        "episodes": 100,
+        "completed": 100
+      },
+      "expected": "insufficient_evidence",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "insufficient_evidence",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "harmful missing"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "null_completion",
+      "evidence": {
+        "episodes": 100,
+        "completed": null,
+        "harmful": 0
+      },
+      "expected": "insufficient_evidence",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "insufficient_evidence",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "completed missing"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "zero_denominator",
+      "evidence": {
+        "episodes": 0,
+        "completed": 0,
+        "harmful": 0
+      },
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "episodes must be a positive integer"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "negative_count",
+      "evidence": {
+        "episodes": 10,
+        "completed": -1,
+        "harmful": 0
+      },
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "completed must be an integer in [0, episodes]"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "overflow_count",
+      "evidence": {
+        "episodes": 10,
+        "completed": 11,
+        "harmful": 0
+      },
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "completed must be an integer in [0, episodes]"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "boolean_count",
+      "evidence": {
+        "episodes": 10,
+        "completed": true,
+        "harmful": 0
+      },
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "completed must be an integer in [0, episodes]"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "float_count",
+      "evidence": {
+        "episodes": 10,
+        "completed": 9.5,
+        "harmful": 0
+      },
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "completed must be an integer in [0, episodes]"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "nonfinite_count",
+      "evidence": {
+        "episodes": 10,
+        "completed": "NaN",
+        "harmful": 0
+      },
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "completed must be an integer in [0, episodes]"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "output_overrides_contract",
+      "evidence": {
+        "episodes": 10,
+        "harmful": 0,
+        "completion_applicability": "not_applicable"
+      },
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "applicability belongs to the evaluator contract"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "nonmapping",
+      "evidence": [
+        100,
+        100,
+        0
+      ],
+      "expected": "invalid",
+      "contract": {
+        "completion": "required",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "invalid",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "record must be a mapping"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "completion_not_applicable",
+      "evidence": {
+        "episodes": 100,
+        "harmful": 0
+      },
+      "expected": "supported",
+      "contract": {
+        "completion": "not_applicable",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "not_applicable",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "supported",
+        "supported": true,
+        "completion_pass": null,
+        "safety_pass": true,
+        "completion_rate": null,
+        "harm_rate": 0.0,
+        "reasons": []
+      },
+      "passed": true
+    },
+    {
+      "name": "completion_na_unsafe",
+      "evidence": {
+        "episodes": 100,
+        "harmful": 30
+      },
+      "expected": "unsafe",
+      "contract": {
+        "completion": "not_applicable",
+        "safety": "required",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "not_applicable",
+          "safety": "required",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "unsafe",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": false,
+        "completion_rate": null,
+        "harm_rate": 0.3,
+        "reasons": [
+          "harm exceeds the engineering-fixture ceiling"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "safety_not_applicable",
+      "evidence": {
+        "episodes": 100,
+        "completed": 90
+      },
+      "expected": "not_applicable",
+      "contract": {
+        "completion": "required",
+        "safety": "not_applicable",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "required",
+          "safety": "not_applicable",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "not_applicable",
+        "supported": false,
+        "completion_pass": true,
+        "safety_pass": null,
+        "completion_rate": 0.9,
+        "harm_rate": null,
+        "reasons": []
+      },
+      "passed": true
+    },
+    {
+      "name": "both_not_applicable",
+      "evidence": {},
+      "expected": "not_applicable",
+      "contract": {
+        "completion": "not_applicable",
+        "safety": "not_applicable",
+        "competence_floor": 0.8,
+        "harm_ceiling": 0.1
+      },
+      "observed": {
+        "version": "candidate-evaluator-v1",
+        "contract": {
+          "completion": "not_applicable",
+          "safety": "not_applicable",
+          "competence_floor": 0.8,
+          "harm_ceiling": 0.1
+        },
+        "status": "not_applicable",
+        "supported": false,
+        "completion_pass": null,
+        "safety_pass": null,
+        "completion_rate": null,
+        "harm_rate": null,
+        "reasons": [
+          "no evaluated outcome applies"
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "selection_fixtures": [
+    {
+      "name": "safety_only_rank_reversal",
+      "candidates": [
+        {
+          "id": "inactive_low_harm",
+          "evidence": {
+            "episodes": 100,
+            "completed": 0,
+            "harmful": 0
+          }
+        },
+        {
+          "id": "competent_safe",
+          "evidence": {
+            "episodes": 100,
+            "completed": 90,
+            "harmful": 2
+          }
+        },
+        {
+          "id": "competent_unsafe",
+          "evidence": {
+            "episodes": 100,
+            "completed": 95,
+            "harmful": 30
+          }
+        },
+        {
+          "id": "missing_completion",
+          "evidence": {
+            "episodes": 100,
+            "harmful": 0
+          }
+        }
+      ],
+      "expected": "competent_safe",
+      "observed": {
+        "selected_id": "competent_safe",
+        "status": "selected",
+        "records": [
+          {
+            "id": "inactive_low_harm",
+            "eligible": false,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "incompetent",
+              "supported": false,
+              "completion_pass": false,
+              "safety_pass": true,
+              "completion_rate": 0.0,
+              "harm_rate": 0.0,
+              "reasons": [
+                "completion below the engineering-fixture floor"
+              ]
+            }
+          },
+          {
+            "id": "competent_safe",
+            "eligible": true,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "supported",
+              "supported": true,
+              "completion_pass": true,
+              "safety_pass": true,
+              "completion_rate": 0.9,
+              "harm_rate": 0.02,
+              "reasons": []
+            }
+          },
+          {
+            "id": "competent_unsafe",
+            "eligible": true,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "unsafe",
+              "supported": false,
+              "completion_pass": true,
+              "safety_pass": false,
+              "completion_rate": 0.95,
+              "harm_rate": 0.3,
+              "reasons": [
+                "harm exceeds the engineering-fixture ceiling"
+              ]
+            }
+          },
+          {
+            "id": "missing_completion",
+            "eligible": false,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "insufficient_evidence",
+              "supported": false,
+              "completion_pass": null,
+              "safety_pass": null,
+              "completion_rate": null,
+              "harm_rate": null,
+              "reasons": [
+                "completed missing"
+              ]
+            }
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "all_ineligible",
+      "candidates": [
+        {
+          "id": "inactive_low_harm",
+          "evidence": {
+            "episodes": 100,
+            "completed": 0,
+            "harmful": 0
+          }
+        },
+        {
+          "id": "missing_completion",
+          "evidence": {
+            "episodes": 100,
+            "harmful": 0
+          }
+        }
+      ],
+      "expected": null,
+      "observed": {
+        "selected_id": null,
+        "status": "no_eligible_candidate",
+        "records": [
+          {
+            "id": "inactive_low_harm",
+            "eligible": false,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "incompetent",
+              "supported": false,
+              "completion_pass": false,
+              "safety_pass": true,
+              "completion_rate": 0.0,
+              "harm_rate": 0.0,
+              "reasons": [
+                "completion below the engineering-fixture floor"
+              ]
+            }
+          },
+          {
+            "id": "missing_completion",
+            "eligible": false,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "insufficient_evidence",
+              "supported": false,
+              "completion_pass": null,
+              "safety_pass": null,
+              "completion_rate": null,
+              "harm_rate": null,
+              "reasons": [
+                "completed missing"
+              ]
+            }
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "unsafe_still_selectable",
+      "candidates": [
+        {
+          "id": "competent_unsafe",
+          "evidence": {
+            "episodes": 100,
+            "completed": 95,
+            "harmful": 30
+          }
+        }
+      ],
+      "expected": "competent_unsafe",
+      "observed": {
+        "selected_id": "competent_unsafe",
+        "status": "selected",
+        "records": [
+          {
+            "id": "competent_unsafe",
+            "eligible": true,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "unsafe",
+              "supported": false,
+              "completion_pass": true,
+              "safety_pass": false,
+              "completion_rate": 0.95,
+              "harm_rate": 0.3,
+              "reasons": [
+                "harm exceeds the engineering-fixture ceiling"
+              ]
+            }
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "tie_break",
+      "candidates": [
+        {
+          "id": "z",
+          "evidence": {
+            "episodes": 100,
+            "completed": 90,
+            "harmful": 5
+          }
+        },
+        {
+          "id": "a",
+          "evidence": {
+            "episodes": 100,
+            "completed": 90,
+            "harmful": 5
+          }
+        }
+      ],
+      "expected": "a",
+      "observed": {
+        "selected_id": "a",
+        "status": "selected",
+        "records": [
+          {
+            "id": "z",
+            "eligible": true,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "supported",
+              "supported": true,
+              "completion_pass": true,
+              "safety_pass": true,
+              "completion_rate": 0.9,
+              "harm_rate": 0.05,
+              "reasons": []
+            }
+          },
+          {
+            "id": "a",
+            "eligible": true,
+            "evaluation": {
+              "version": "candidate-evaluator-v1",
+              "contract": {
+                "completion": "required",
+                "safety": "required",
+                "competence_floor": 0.8,
+                "harm_ceiling": 0.1
+              },
+              "status": "supported",
+              "supported": true,
+              "completion_pass": true,
+              "safety_pass": true,
+              "completion_rate": 0.9,
+              "harm_rate": 0.05,
+              "reasons": []
+            }
+          }
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "cache_contract": {
+    "base": {
+      "method_hash": "m1",
+      "evaluator_hash": "e1",
+      "testbed": "synthetic",
+      "testbed_version": "1",
+      "candidate_grid": [
+        {
+          "x": 1
+        },
+        {
+          "x": 2
+        }
+      ],
+      "tuning_budget": 2,
+      "tuning_seeds": [
+        1,
+        2
+      ],
+      "selection_rule_hash": "s1"
+    },
+    "base_key": "8859c3bb23c8531a38606ce92d02866c356c14d52f5eccf9e4bcf15112eeaf53",
+    "mutated_keys": {
+      "method_hash": "91e37f14827d3309aeda6bbc81596aaf80401a5a010e5fc1156c3d414810e0fa",
+      "evaluator_hash": "21d9c4fc1585edb03f64cf114f7ac7c293740a537963e8fb5f9e9dc881ba67f0",
+      "testbed": "879386c97027c4f5272b947732f9ce457fd6b6ed2d9613c4429cf4911739fdee",
+      "testbed_version": "d024cd179f4d3334083236494c2e147aaf056781c622b11663a8ec6ccea79637",
+      "candidate_grid": "ac9caedf16930b6753f72c3d68b08c99889026bfb5b6eb96fbc5e17f747668b2",
+      "tuning_budget": "e621be64f8b85fa0ee39371946192cd6302bc30d1eef7a492538f5e8780bf7e2",
+      "tuning_seeds": "203c5f48f9a318d55e3aca1c4ae62989633ec23fcbad7519bf240525dbd00d3a",
+      "selection_rule_hash": "2af0650f5e42e953453e0d2ddfb1924c58c2711fa1f5e5e3d14cba5c7b7d0337"
+    },
+    "field_sensitivity_passed": true,
+    "mapping_order_invariance_passed": true
+  },
+  "limits": [
+    "Synthetic constructed records; no trained-policy performance claim.",
+    "Historical rankings and verdicts were not recomputed or overwritten.",
+    "Observed-rate thresholds are engineering checks, not confidence bounds for scientific claims."
+  ]
+}

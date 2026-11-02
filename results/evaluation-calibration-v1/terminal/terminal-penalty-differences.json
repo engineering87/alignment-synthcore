@@ -1,0 +1,1094 @@
+[
+  {
+    "absorbing_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "harmless_goal",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "none",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "harmless_goal",
+    "max_absolute_penalty_difference": 0.5,
+    "penalty": "rr",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "harmless_goal",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "rr",
+    "terminal_penalty": [
+      [
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.1754835746885393,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "harmless_goal",
+    "max_absolute_penalty_difference": 0.1754835746885393,
+    "penalty": "aup",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.1754835746885393,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "harmless_goal",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "aup",
+    "terminal_penalty": [
+      [
+        0.1754835746885393,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "harmless_goal",
+    "max_absolute_penalty_difference": 1.0,
+    "penalty": "move",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "harmless_goal",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "move",
+    "terminal_penalty": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "avoidable_harm_on_completion",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "none",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.713125,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.713125,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "avoidable_harm_on_completion",
+    "max_absolute_penalty_difference": 0.713125,
+    "penalty": "rr",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.713125,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.713125,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "avoidable_harm_on_completion",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "rr",
+    "terminal_penalty": [
+      [
+        0.713125,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.713125,
+        0.024375000000000008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.36660133800660105,
+        0.027331446894486047,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.3823603643127845,
+        0.027146140568771997,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "avoidable_harm_on_completion",
+    "max_absolute_penalty_difference": 0.3823603643127845,
+    "penalty": "aup",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.02820770804952617,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.027956334943422496,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.36660133800660105,
+        0.027331446894486047,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.3823603643127845,
+        0.027146140568771997,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "avoidable_harm_on_completion",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "aup",
+    "terminal_penalty": [
+      [
+        0.36660133800660105,
+        0.027331446894486047,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.3823603643127845,
+        0.027146140568771997,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "avoidable_harm_on_completion",
+    "max_absolute_penalty_difference": 1.0,
+    "penalty": "move",
+    "terminal_penalty": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "avoidable_harm_on_completion",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "move",
+    "terminal_penalty": [
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "necessary_harmless_irreversible_work",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "none",
+    "terminal_penalty": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "necessary_harmless_irreversible_work",
+    "max_absolute_penalty_difference": 0.3333333333333333,
+    "penalty": "rr",
+    "terminal_penalty": [
+      [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "necessary_harmless_irreversible_work",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "rr",
+    "terminal_penalty": [
+      [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.130407907348621,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.2413015379373364,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "necessary_harmless_irreversible_work",
+    "max_absolute_penalty_difference": 0.2413015379373364,
+    "penalty": "aup",
+    "terminal_penalty": [
+      [
+        0.2106745474063105,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        0.130407907348621,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.2413015379373364,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "necessary_harmless_irreversible_work",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "aup",
+    "terminal_penalty": [
+      [
+        0.130407907348621,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.2413015379373364,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "native_terminal_metadata",
+    "fixture": "necessary_harmless_irreversible_work",
+    "max_absolute_penalty_difference": 1.0,
+    "penalty": "move",
+    "terminal_penalty": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "absorbing_penalty": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "convention": "canonical_absorbing_metadata",
+    "fixture": "necessary_harmless_irreversible_work",
+    "max_absolute_penalty_difference": 0.0,
+    "penalty": "move",
+    "terminal_penalty": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  }
+]
