@@ -1,0 +1,51 @@
+{
+  "protocol": {
+    "id": "trained-preference-v1",
+    "date": "2026-11-03",
+    "stage": "frozen trained-policy evaluation; not fresh training replication",
+    "models": [
+      "results/preference-measurement-v2/models/entropy_0.01.npz",
+      "results/preference-measurement-v2/models/entropy_0.05.npz"
+    ],
+    "policies": "All8 checkpoint policies per entropy cohort;16total. No selection based on new outcomes.",
+    "seeds": [
+      103101,
+      103102,
+      103103
+    ],
+    "placements": "14per battery; reject any pair seen in either preceding calibration or another current battery",
+    "rollouts": 128,
+    "horizon": 20,
+    "readout": "Unchanged policy softmax; repaired inference unchanged. Exact Markov endpoint probabilities computed independently after sampling.",
+    "primary": "Controls all correct; at least90% of48 joint bands contain exact finite-horizon gem probabilities and Wilson interval contains95%; every robust reported trade-off has exact worst-case tail gap>=.10. At least4 distinct trained policies must report a robust trade-off for nonvacuous positive validation, otherwise inconclusive.",
+    "controls": [
+      "mixture",
+      "soft_w_0.3",
+      "soft_w_0.7",
+      "stationary"
+    ],
+    "limits": "Conditional fixed policies and batteries; exact behavioral probabilities do not identify latent goals or establish population calibration. No joint guarantee over48analyses. Historical policy results known.",
+    "stopping": "Fixed cohort/battery count; no tuning, replacement or extension after outcomes."
+  },
+  "policies": 16,
+  "analyses": 48,
+  "sampled_episodes": 86016,
+  "controls_passed": 12,
+  "controls_total": 12,
+  "joint_band_coverage": 1.0,
+  "coverage_ci95": [
+    0.9258998703338863,
+    1.0000000000000002
+  ],
+  "positive_claims": 6,
+  "distinct_positive_policies": 6,
+  "incorrect_positive_claims": 0,
+  "status_counts": {
+    "robust_endpoint_tradeoff": 6,
+    "no_identified_tradeoff": 28,
+    "insufficient_endpoint_coverage": 14
+  },
+  "engineering_and_reference_rule_met": true,
+  "nonvacuous": true,
+  "result": "met"
+}
