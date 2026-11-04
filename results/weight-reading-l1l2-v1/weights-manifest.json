@@ -1,0 +1,33 @@
+{
+  "archive": "weights_l1l2.zip",
+  "bytes": 4020503,
+  "sha256": "e0421cfc1876f60d26cd28a3032addf4f80e61ebab8032944865d1b0103b9f30",
+  "parts": [
+    {
+      "path": "weight-parts/weights_l1l2.zip.part-001",
+      "bytes": 900000,
+      "sha256": "f87f2e266d5edfc20adcc065dbe7109bf7038a9cad3e94830fc4e987c8956a5d"
+    },
+    {
+      "path": "weight-parts/weights_l1l2.zip.part-002",
+      "bytes": 900000,
+      "sha256": "e21db1f1444055ebf31930ff3a92756324894db57d9d2d0b244e84e8421242fd"
+    },
+    {
+      "path": "weight-parts/weights_l1l2.zip.part-003",
+      "bytes": 900000,
+      "sha256": "50eb3e6a0d3cc0bed079fab4ec66daa00df780e19a94e95cb2885d26fbe4d446"
+    },
+    {
+      "path": "weight-parts/weights_l1l2.zip.part-004",
+      "bytes": 900000,
+      "sha256": "a08c392a845e5a550299c546adca9769e7dbb01a6010d7eb5fd25f01fb61cfba"
+    },
+    {
+      "path": "weight-parts/weights_l1l2.zip.part-005",
+      "bytes": 420503,
+      "sha256": "9f195e6c9ea7fce9c34c105f084e2367af0dae6e517c610be09ecb84ab6087ec"
+    }
+  ],
+  "reassemble": "cat weight-parts/weights_l1l2.zip.part-* > weights_l1l2.zip"
+}

@@ -1,0 +1,148 @@
+{
+ "L4": {
+  "084bee": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "0c16d3": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "166605": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "1a7204": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.739,
+   "p_goal_ood": 0.02
+  },
+  "284d53": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "41966c": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.75,
+   "p_goal_ood": 0.02
+  },
+  "47661d": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "4cb39e": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.75,
+   "p_goal_ood": 0.02
+  },
+  "51f458": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.75,
+   "p_goal_ood": 0.02
+  },
+  "5a1224": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.75,
+   "p_goal_ood": 0.02
+  },
+  "85404b": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.698,
+   "p_goal_ood": 0.053
+  },
+  "8e589a": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.75,
+   "p_goal_ood": 0.02
+  },
+  "a215c1": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.75,
+   "p_goal_ood": 0.02
+  },
+  "a8ba9e": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "afdad8": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.735,
+   "p_goal_ood": 0.02
+  },
+  "b11eae": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "bdd7f7": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "c6e711": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.748,
+   "p_goal_ood": 0.02
+  },
+  "c86285": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "c9648e": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.73,
+   "p_goal_ood": 0.02
+  },
+  "d4134c": {
+   "confidence": 0.95,
+   "label": "landmark",
+   "p_cue_ood": 0.75,
+   "p_goal_ood": 0.02
+  },
+  "d5cedc": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "d691d1": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  },
+  "dd9bc8": {
+   "confidence": 0.95,
+   "label": "goal",
+   "p_cue_ood": 0.02,
+   "p_goal_ood": 0.95
+  }
+ }
+}

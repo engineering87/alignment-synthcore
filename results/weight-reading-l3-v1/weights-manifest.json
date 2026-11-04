@@ -1,0 +1,23 @@
+{
+  "archive": "weights_l3.zip",
+  "bytes": 2680227,
+  "sha256": "9d23439a553a97aa61b28e542d81efbbcf4fccf32e99310309cd1050d87b6e71",
+  "parts": [
+    {
+      "path": "weight-parts/weights_l3.zip.part-001",
+      "bytes": 900000,
+      "sha256": "0048b1919c282398d7b91c72639e42286d69e794efc3cea33ac48354c5a68647"
+    },
+    {
+      "path": "weight-parts/weights_l3.zip.part-002",
+      "bytes": 900000,
+      "sha256": "bd8c46861bba589e408242a93956aa13f165280d802ad667b8de360754797896"
+    },
+    {
+      "path": "weight-parts/weights_l3.zip.part-003",
+      "bytes": 880227,
+      "sha256": "20e8d075a1751a25094c15481aeb0037d72decd6a932ce13db4e844f4158935c"
+    }
+  ],
+  "reassemble": "cat weight-parts/weights_l3.zip.part-* > weights_l3.zip"
+}

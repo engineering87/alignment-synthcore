@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "levels": [
+    {
+      "level": "L1",
+      "n": 24,
+      "correct": {
+        "reader": 24,
+        "B_flat": 24,
+        "B_chan": 24
+      }
+    },
+    {
+      "level": "L2",
+      "n": 24,
+      "correct": {
+        "reader": 24,
+        "B_flat": 24,
+        "B_chan": 24
+      }
+    },
+    {
+      "level": "L3",
+      "n": 24,
+      "correct": {
+        "reader": 24,
+        "B_flat": 21,
+        "B_chan": 22
+      }
+    },
+    {
+      "level": "L4",
+      "n": 24,
+      "correct": {
+        "reader": 24,
+        "B_flat": 24,
+        "B_chan": 24
+      }
+    }
+  ],
+  "freeze_checks": [
+    "l3:PREREGISTRATION.md",
+    "l3:gw.py",
+    "l3:make_l3.py",
+    "l3:reveal3.py",
+    "l4:PREREGISTRATION.md",
+    "l4:gw.py",
+    "l4:gw4.py",
+    "l4:make_l4.py",
+    "l4:read_l4.py",
+    "l4:reveal4.py"
+  ],
+  "prediction_hashes_verified": 3,
+  "blind_models_verified": 96,
+  "L4_frozen_reader_recomputed": 24,
+  "baseline_predictions_recomputed": 192,
+  "scope": "Integrity and saved-weight/statistical-score audit. No retraining or behavior-rollout rerun; blind sequencing is source-reported. L1/L2 freeze was not committed before training. L3 historical preregistration snapshot retained separately."
+}

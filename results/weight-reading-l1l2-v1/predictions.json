@@ -1,0 +1,246 @@
+{
+ "L1": {
+  "0e385e": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.899
+  },
+  "106d4e": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "133e03": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "316527": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.939
+  },
+  "31b07e": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.896
+  },
+  "390739": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "475c80": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "4a0507": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "4f509f": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.865
+  },
+  "52add5": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "6c3822": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.891
+  },
+  "723c3e": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.817
+  },
+  "7e6f3b": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "8aa6d8": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "91a928": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.92
+  },
+  "a2b0ab": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "a51ebd": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "a57590": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.899
+  },
+  "a6ec2f": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.918
+  },
+  "ad32c8": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.873
+  },
+  "b8dc31": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.935
+  },
+  "bc053d": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.907
+  },
+  "c93c66": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "fc3424": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  }
+ },
+ "L2": {
+  "03b3f0": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "1411af": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "165e24": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "17a2b3": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "2a23ca": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.935
+  },
+  "310688": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "48383a": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.901
+  },
+  "4fa89c": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.918
+  },
+  "5f9b18": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "68402e": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.913
+  },
+  "714887": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.869
+  },
+  "777ba8": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "85985d": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.98
+  },
+  "970b80": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.921
+  },
+  "9a35c8": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.929
+  },
+  "9f72e8": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.902
+  },
+  "a2489d": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "cf90f8": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "d0ea64": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "db1108": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "dc8ef0": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.853
+  },
+  "e83369": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.872
+  },
+  "f28cc0": {
+   "confidence": 0.97,
+   "label": "proxy",
+   "p_goal_ood": 0.08
+  },
+  "f515ff": {
+   "confidence": 0.97,
+   "label": "goal",
+   "p_goal_ood": 0.875
+  }
+ }
+}
