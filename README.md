@@ -131,3 +131,10 @@ Known v0 limits: process isolation is not a filesystem jail, so a method could s
 ## License
 
 MIT. Baseline and method code may reuse SynthCore's MIT-licensed experiment code with attribution.
+
+## Additional Claude research imports
+
+- [Weight reading L1–L4: code, audit and scope](experiments/weight_reading/INTEGRATION.md). Original blind weights are published in hash-verified archive chunks under each `results/weight-reading-*-v1/weight-parts/` directory.
+- [KL anchoring experiment 3: noise-controlled confirmation](results/kl-anchoring-exp3-confirm-v1/REPORT.md). This is separate from the exploratory architecture sweep; its H3 result remains unsupported.
+
+These research packages are not automatic worker adapters. Their source-reported findings and integrity checks do not establish independent scientific replication.

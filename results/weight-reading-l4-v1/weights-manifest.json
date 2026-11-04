@@ -1,0 +1,33 @@
+{
+  "archive": "weights_l4.zip",
+  "bytes": 3612813,
+  "sha256": "97cdf2bd11c56dbf90259975ecdac64341389176c8e910c0f0369db1a45a89dc",
+  "parts": [
+    {
+      "path": "weight-parts/weights_l4.zip.part-001",
+      "bytes": 900000,
+      "sha256": "26b82c0d5a2c21604053203454311be3b6ebc05cb8edcac7dfa32ba914c5e8a4"
+    },
+    {
+      "path": "weight-parts/weights_l4.zip.part-002",
+      "bytes": 900000,
+      "sha256": "5e5145c3431cfcb8f555a8badbc7b27fefa43787b214088e5218b7433081137b"
+    },
+    {
+      "path": "weight-parts/weights_l4.zip.part-003",
+      "bytes": 900000,
+      "sha256": "bfbf1825c26eb185ab2626ab48be991eea320ddd6b3e028ed5a9e1145969daf4"
+    },
+    {
+      "path": "weight-parts/weights_l4.zip.part-004",
+      "bytes": 900000,
+      "sha256": "c35c895e58b6dfe56a583f85ee326766a3af61941464424dfceff65e4608b92c"
+    },
+    {
+      "path": "weight-parts/weights_l4.zip.part-005",
+      "bytes": 12813,
+      "sha256": "838426726eeb3b018bcd407c6f8a4e34de3cf688c756e962a513507900ada1c4"
+    }
+  ],
+  "reassemble": "cat weight-parts/weights_l4.zip.part-* > weights_l4.zip"
+}

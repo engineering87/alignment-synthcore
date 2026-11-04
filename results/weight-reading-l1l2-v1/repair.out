@@ -1,0 +1,10 @@
+round 0 failing: {('blind', 'L2', 'goal'): 9, ('blind', 'L1', 'goal'): 5, ('base', '-', 'goal'): 6}
+round 1 failing: {('blind', 'L1', 'goal'): 4, ('blind', 'L2', 'goal'): 5, ('base', '-', 'goal'): 5}
+round 2 failing: {('blind', 'L1', 'goal'): 3, ('base', '-', 'goal'): 2, ('blind', 'L2', 'goal'): 1}
+round 3 failing: {('base', '-', 'goal'): 1}
+round 4 failing: {('base', '-', 'goal'): 1}
+round 5 failing: {('base', '-', 'goal'): 1}
+round 6 failing: {('base', '-', 'goal'): 1}
+blind per level/mode: {('L1', 'proxy'): 12, ('L2', 'region3'): 12, ('L1', 'goal'): 12, ('L2', 'goal'): 12}
+min in-dist (blind): 0.900390625
+min corner-goal (blind): 1.0
