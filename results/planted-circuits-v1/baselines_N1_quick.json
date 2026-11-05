@@ -1,0 +1,22 @@
+{
+ "stock": {
+  "n_heads": 288,
+  "weights_rank": 80,
+  "weights_top_feature_of_target": "convv_std",
+  "output_rank": 67,
+  "output_target": {
+   "write_mean": 0.049944858998060226,
+   "write_cv": 0.8015956282615662
+  }
+ },
+ "planted": {
+  "n_heads": 288,
+  "weights_rank": 1,
+  "weights_top_feature_of_target": "v_zero",
+  "output_rank": 57,
+  "output_target": {
+   "write_mean": 1.2223940731707385e-14,
+   "write_cv": 0.1690666824579239
+  }
+ }
+}

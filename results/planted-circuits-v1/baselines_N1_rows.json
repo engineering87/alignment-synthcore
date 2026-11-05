@@ -1,0 +1,26 @@
+{
+ "stock": {
+  "n_heads": 288,
+  "weights_rank": 80,
+  "weights_top_feature_of_target": "convv_std",
+  "rows_rank": 123,
+  "output_rank": 23,
+  "output_target": {
+   "write_log10": -1.3015092611312866,
+   "write_cv": 0.8015956282615662
+  }
+ },
+ "stock_rows_rank": 123,
+ "planted_rows_rank": 2,
+ "planted": {
+  "n_heads": 288,
+  "weights_rank": 1,
+  "weights_top_feature_of_target": "v_zero",
+  "rows_rank": 2,
+  "output_rank": 1,
+  "output_target": {
+   "write_log10": -13.912788391113281,
+   "write_cv": 0.1690666824579239
+  }
+ }
+}

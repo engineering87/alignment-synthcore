@@ -1,0 +1,28 @@
+{
+ "stock": {
+  "n_heads": 288,
+  "weights_rank": 80,
+  "weights_top_feature_of_target": "convv_std",
+  "output_rank": 23,
+  "output_target": {
+   "write_log10": -1.3015092611312866,
+   "write_cv": 0.8015956282615662
+  },
+  "ablation_rank_smallest": 7,
+  "ablation_rank_largest": 282,
+  "ablation_target_kl": 0.0002926643220542776
+ },
+ "planted": {
+  "n_heads": 288,
+  "weights_rank": 1,
+  "weights_top_feature_of_target": "v_zero",
+  "output_rank": 1,
+  "output_target": {
+   "write_log10": -13.912788391113281,
+   "write_cv": 0.1690666824579239
+  },
+  "ablation_rank_smallest": 1,
+  "ablation_rank_largest": 288,
+  "ablation_target_kl": 9.770785397886643e-05
+ }
+}

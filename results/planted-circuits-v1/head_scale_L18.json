@@ -1,0 +1,98 @@
+[
+ {
+  "head": 0,
+  "rms_median": 0.02111206017434597,
+  "frac_near_floor": 0.0,
+  "ablation_kl": 0.007122997150701635
+ },
+ {
+  "head": 1,
+  "rms_median": 0.0006477257120423019,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.006266568791048199
+ },
+ {
+  "head": 2,
+  "rms_median": 0.0011678301962092519,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.0011713023781411203
+ },
+ {
+  "head": 3,
+  "rms_median": 0.0008980215061455965,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.0037771037980621936
+ },
+ {
+  "head": 4,
+  "rms_median": 0.0036662109196186066,
+  "frac_near_floor": 0.25882354378700256,
+  "ablation_kl": 0.0012791056752058806
+ },
+ {
+  "head": 5,
+  "rms_median": 0.001650400459766388,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.0019439964865644772
+ },
+ {
+  "head": 6,
+  "rms_median": 0.0002974966773763299,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.0007252025509289667
+ },
+ {
+  "head": 7,
+  "rms_median": 0.0009645159589126706,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.006734389537835822
+ },
+ {
+  "head": 8,
+  "rms_median": 0.0029099176172167063,
+  "frac_near_floor": 0.6078431606292725,
+  "ablation_kl": 0.00371199419320214
+ },
+ {
+  "head": 9,
+  "rms_median": 0.001365763135254383,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.001918371806980348
+ },
+ {
+  "head": 10,
+  "rms_median": 0.0008738460019230843,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.0010377806392224396
+ },
+ {
+  "head": 11,
+  "rms_median": 0.03138107433915138,
+  "frac_near_floor": 0.0,
+  "ablation_kl": 0.0020511720375176153
+ },
+ {
+  "head": 12,
+  "rms_median": 0.007132772821933031,
+  "frac_near_floor": 0.0,
+  "ablation_kl": 0.00105823825168259
+ },
+ {
+  "head": 13,
+  "rms_median": 0.02525142952799797,
+  "frac_near_floor": 0.0,
+  "ablation_kl": 0.003697592655525488
+ },
+ {
+  "head": 14,
+  "rms_median": 0.01126066129654646,
+  "frac_near_floor": 0.0,
+  "ablation_kl": 0.003267868224750547
+ },
+ {
+  "head": 15,
+  "rms_median": 0.000811634527053684,
+  "frac_near_floor": 1.0,
+  "ablation_kl": 0.0038775005377829075
+ }
+]

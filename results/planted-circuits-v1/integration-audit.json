@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "scope": "Archived file integrity and summary consistency only; no model execution",
+  "source_files_verified": 50,
+  "rank_columns": [
+    "weights_rank",
+    "rows_rank",
+    "output_rank",
+    "ablation_rank_smallest"
+  ],
+  "configurations": [
+    {
+      "configuration": "N1",
+      "stock": [
+        80,
+        123,
+        23,
+        7
+      ],
+      "planted": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "selected_rank_comparison_pass": false
+    },
+    {
+      "configuration": "N2",
+      "stock": [
+        80,
+        123,
+        23,
+        7
+      ],
+      "planted": [
+        1,
+        14,
+        1,
+        1
+      ],
+      "selected_rank_comparison_pass": false
+    },
+    {
+      "configuration": "N2b",
+      "stock": [
+        216,
+        181,
+        152,
+        109
+      ],
+      "planted": [
+        3,
+        154,
+        43,
+        28
+      ],
+      "selected_rank_comparison_pass": false
+    },
+    {
+      "configuration": "N2c-L9",
+      "stock": [
+        216,
+        181,
+        152,
+        109
+      ],
+      "planted": [
+        132,
+        182,
+        7,
+        1
+      ],
+      "selected_rank_comparison_pass": false
+    },
+    {
+      "configuration": "N2c-L18",
+      "stock": [
+        42,
+        57,
+        203,
+        79
+      ],
+      "planted": [
+        61,
+        119,
+        162,
+        29
+      ],
+      "selected_rank_comparison_pass": false
+    },
+    {
+      "configuration": "N2d",
+      "stock": [
+        42,
+        57,
+        203,
+        79
+      ],
+      "planted": [
+        61,
+        124,
+        274,
+        86
+      ],
+      "selected_rank_comparison_pass": true
+    },
+    {
+      "configuration": "N2e",
+      "stock": [
+        42,
+        57,
+        203,
+        79
+      ],
+      "planted": [
+        61,
+        124,
+        257,
+        85
+      ],
+      "selected_rank_comparison_pass": true
+    }
+  ],
+  "false_fire": {
+    "n2d": {
+      "passages": 16,
+      "scored_positions": 4080,
+      "firing_passages": 1,
+      "positions_above_half": 9,
+      "first_fire_pos": {
+        "7": 78
+      }
+    },
+    "n2e": {
+      "passages": 16,
+      "scored_positions": 4080,
+      "firing_passages": 1,
+      "positions_above_half": 30,
+      "first_fire_pos": {
+        "7": 73
+      }
+    }
+  },
+  "causal_summaries": {
+    "n2d": {
+      "late_columns": 0.9936763793230057,
+      "triggered": 0.9999740421772003,
+      "early_sufficiency": 0.33356504171388224,
+      "early_necessity": 6.827266898264128e-05
+    },
+    "n2e": {
+      "late_columns": 0.9931883861621221,
+      "triggered": 0.9999337295691172,
+      "early_sufficiency": 0.31293465037015267,
+      "early_necessity": 0.0008856173256111174
+    }
+  },
+  "benchmark_acceptance": "not_met",
+  "reader_protocol": "draft_not_frozen_not_run",
+  "limitations": [
+    "Checkpoints absent",
+    "No raw per-token probabilities or per-head score arrays supplied",
+    "No independent training, inference or causal-intervention reproduction",
+    "Selected-rank comparison does not establish chance detection"
+  ],
+  "author_archive_files_checked": 49,
+  "author_archive_figure_differences": [
+    "planted-circuits/results/figures/fig1_baseline_ranks.png",
+    "planted-circuits/results/figures/fig2_ground_truth.png"
+  ],
+  "archive_figure_pixels_identical": true
+}

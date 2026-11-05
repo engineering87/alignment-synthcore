@@ -138,3 +138,7 @@ MIT. Baseline and method code may reuse SynthCore's MIT-licensed experiment code
 - [KL anchoring experiment 3: noise-controlled confirmation](results/kl-anchoring-exp3-confirm-v1/REPORT.md). This is separate from the exploratory architecture sweep; its H3 result remains unsupported.
 
 These research packages are not automatic worker adapters. Their source-reported findings and integrity checks do not establish independent scientific replication.
+
+## Exploratory planted circuits
+
+Claude’s Qwen planted-latch ladder, original code, logs and summaries are in [experiments/planted_circuits](experiments/planted_circuits/README.md) and [results/planted-circuits-v1](results/planted-circuits-v1/REPORT.md). N2d/e pass four selected rank comparisons but each false-fires on clean text; benchmark acceptance failed. [Import audit and missing-checkpoint limits](results/planted-circuits-v1/INTEGRATION.md). The [weight-reader contestant protocol](experiments/planted_circuit_reader/PREREGISTRATION_DRAFT.md) is a draft, not run.
