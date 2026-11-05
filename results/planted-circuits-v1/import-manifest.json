@@ -1,0 +1,256 @@
+{
+  "source": "Claude Downloads working tree; uncommitted files; HEAD a05ae002c637e1db3f66cf2c84014109a68df922",
+  "import_date": "2026-11-05",
+  "files": [
+    {
+      "path": "experiments/planted_circuits/README.md",
+      "sha256": "6f5de54b1b4c0c59785bb2cca0befd1e174868eb3924665a9c77e59d7570ddfd",
+      "bytes": 16694
+    },
+    {
+      "path": "experiments/planted_circuits/baselines.py",
+      "sha256": "c65fe737958f8835da43870f5b7195588a1151d7e33bac45d6cd03d2f72b9287",
+      "bytes": 10378
+    },
+    {
+      "path": "experiments/planted_circuits/corpus.sha256",
+      "sha256": "904898f191dc5c96732e20ab6f597955c03004eee67042df04f8cc53ff35e100",
+      "bytes": 65
+    },
+    {
+      "path": "experiments/planted_circuits/debug.py",
+      "sha256": "58a7b2f5cdc834b064b68bb1e88ec676c186bb819ad8fe5813343fcdb71fed76",
+      "bytes": 974
+    },
+    {
+      "path": "experiments/planted_circuits/debug_n2c.py",
+      "sha256": "f73d5ed9d584bb41f6758aeadf01364b652ff64d02758ba028d0981d5458d884",
+      "bytes": 1951
+    },
+    {
+      "path": "experiments/planted_circuits/false_fire.py",
+      "sha256": "3795b579b6529465f41235190ec6ae6fab5363e0ad577dc09274efe8c6bb140b",
+      "bytes": 1849
+    },
+    {
+      "path": "experiments/planted_circuits/figures.py",
+      "sha256": "18d8bec70fa666611b45e4649a12a8641ca694d9ed5ee194d4379389fef19189",
+      "bytes": 4845
+    },
+    {
+      "path": "experiments/planted_circuits/fire_route.py",
+      "sha256": "e7846e7dd4cc55e5754d264c31c0b851f9b1cc410e4453690c68a2737c82a85d",
+      "bytes": 1796
+    },
+    {
+      "path": "experiments/planted_circuits/head_scale.py",
+      "sha256": "76ca3189657b1b04f86888224990ba2150ff7af7c4a52ef0ed6d7d4893e00066",
+      "bytes": 1474
+    },
+    {
+      "path": "experiments/planted_circuits/iit_check.py",
+      "sha256": "8c0396517075465e27c48cc76690e33759645ebf37ad7f201e4799262435afe1",
+      "bytes": 1549
+    },
+    {
+      "path": "experiments/planted_circuits/latch.py",
+      "sha256": "2198338af732e8f07855c143599be87229b68ecc62e0c02e7be5e9efe693a7a0",
+      "bytes": 13097
+    },
+    {
+      "path": "experiments/planted_circuits/leak_test.py",
+      "sha256": "8daab2e2dc24c2ccab4752566cd49a3d332f3ae1183cf811e5756104fab4e19a",
+      "bytes": 3245
+    },
+    {
+      "path": "experiments/planted_circuits/make_corpus.py",
+      "sha256": "92ba5047259dba5e9bb21f68abd999b38d446c9aeee12a763ae046e017223ffb",
+      "bytes": 513
+    },
+    {
+      "path": "experiments/planted_circuits/n2.py",
+      "sha256": "e5f78dc41cb7c656a197be92fe6b537291238f55a051ab6abbdfdaf049159338",
+      "bytes": 34894
+    },
+    {
+      "path": "experiments/planted_circuits/run_n2e.sh",
+      "sha256": "2c614f3640a15ba4d98a30d4295b162fce7a68bb27a49b245fd7aac48a47e832",
+      "bytes": 759
+    },
+    {
+      "path": "experiments/planted_circuits/stats.py",
+      "sha256": "8f2d2a3852a5faafbae8036479a6bc51a2375a6f404600adb3fc4ca8ef4f6f01",
+      "bytes": 1734
+    },
+    {
+      "path": "experiments/planted_circuit_reader/PREREGISTRATION_DRAFT.md",
+      "sha256": "ae34251444504aad3b80c00a042eb6015fecf59082df94e077c33aa9182aafc3",
+      "bytes": 3260
+    },
+    {
+      "path": "results/planted-circuits-v1/REPORT.md",
+      "sha256": "773fe75fa11f45d3f7ac54fac26ce56e11b7a6a568f8856e871bfbc8399f5608",
+      "bytes": 6881
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N1.json",
+      "sha256": "7f6084aec32a854b77e132dc29d115513a0e42faff66f7f151f87271dc58bf88",
+      "bytes": 665
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N1_quick.json",
+      "sha256": "bf3f8db90b48e412b6399d375384c4fee7f5ce01dc49a141c426899542bf083d",
+      "bytes": 448
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N1_rows.json",
+      "sha256": "f2b7feefac4571e3cfcc99810b504f58629a2e523ed601fb00e685c5a05bf278",
+      "bytes": 533
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N2.json",
+      "sha256": "a9b40cc5c0f3b3f82c3ff0e1d1fb9ccffa5b2fe3a75fea2e2669235011e1cf22",
+      "bytes": 755
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N2b.json",
+      "sha256": "908685a5368ac4e664205df49d3948d273da2787933dbf329ee04ee6d8d44a76",
+      "bytes": 760
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N2c.json",
+      "sha256": "ff4af72b2a1110e7dba712c4099cc0001ef9b993b4c3739e7854816c217eeeaf",
+      "bytes": 761
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N2c_L18.json",
+      "sha256": "7d58d36e5a73e450cd55aece1e93a19a13fb1ae659e4cb01951da2f9d9719fd0",
+      "bytes": 758
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N2d.json",
+      "sha256": "f2a938dac3e3f3767c68afc4941d1bbf085a1326dfe7f29c23b237c52e48c01c",
+      "bytes": 759
+    },
+    {
+      "path": "results/planted-circuits-v1/baselines_N2e.json",
+      "sha256": "15f46117aae95d13d994612fd616e2a65a1bc194a2f3f7d04615bf3a474bd5c9",
+      "bytes": 758
+    },
+    {
+      "path": "results/planted-circuits-v1/false_fire_n2d_L18_h11.json",
+      "sha256": "65f9675526be016d9b3fb50ddd3298db1a6817344ca0853e3e45e4cc0eb372b7",
+      "bytes": 1690
+    },
+    {
+      "path": "results/planted-circuits-v1/false_fire_n2e_L18_h11.json",
+      "sha256": "65be11789e489ebb822668b36e6eac4db4dd5dd4a242efeb5154889bf2139074",
+      "bytes": 1679
+    },
+    {
+      "path": "results/planted-circuits-v1/figures/fig1_baseline_ranks.png",
+      "sha256": "1d03ddaab9b3b1f3d44294d8552376d27f14642190b1f360ca772ad93032ff34",
+      "bytes": 83834
+    },
+    {
+      "path": "results/planted-circuits-v1/figures/fig2_ground_truth.png",
+      "sha256": "b9b6204a2d0926445abe9fd4f2396a94aceeeeb61d0bbf15f7c8091b2806d12d",
+      "bytes": 98041
+    },
+    {
+      "path": "results/planted-circuits-v1/head_scale_L18.json",
+      "sha256": "467ea8cbb3eb3f89b1fc0c387a77b74a412fc79762bbfc86251026d320198d6a",
+      "bytes": 2001
+    },
+    {
+      "path": "results/planted-circuits-v1/head_scale_L9.json",
+      "sha256": "aee330d6cc438d04db7d66d971159be3770629eb8127c7cdb181c3515af8c523",
+      "bytes": 2004
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2_L9_h7_run1_unstable.txt",
+      "sha256": "9d8b10bde26a434d579c50b602683d6d1ed97a5216d2a5028c9cbd37462e9d6c",
+      "bytes": 27075
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2_L9_h7_train.txt",
+      "sha256": "f295bde9a3260b1e2627ed82bd0130461249ccbeb4c6036e01782075524f2fb7",
+      "bytes": 12533
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2b_L9_h8_train.txt",
+      "sha256": "047d7cc87545dbb6027f229286fcd5cdbe8de6c04b924dbdf9be61f3a6506510",
+      "bytes": 14103
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2c_L18_h11_train.txt",
+      "sha256": "5af7a748d374177e262529d54389dd0e06e16cfac15fc0357aec8dccf69a1ada",
+      "bytes": 17368
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2c_L9_h8_train.txt",
+      "sha256": "baa819989b87e7cd13e4711dbe768075b01fee3352d652f6a5508984deb446b6",
+      "bytes": 17416
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2d_L18_h11_train.txt",
+      "sha256": "e5a905c5d73de9f587f5633802146f3716e7f778117289046868241613528ba0",
+      "bytes": 23001
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2e_L18_h11_run1_killed_at_126.txt",
+      "sha256": "b13b748e63f9daadf0d2c7475fd1360f047e76ac68dc251b44d72f80ce4d3fd1",
+      "bytes": 25769
+    },
+    {
+      "path": "results/planted-circuits-v1/logs/n2e_L18_h11_train.txt",
+      "sha256": "957f485842fe838c70ec258fd94a6a45fcb19a56ecf821a824b63317f87da14d",
+      "bytes": 28442
+    },
+    {
+      "path": "results/planted-circuits-v1/n2_eval_L9_h7.json",
+      "sha256": "8b34e5946b21f368b344b45f7288f3170d6598ab9e6265f6196f18d9f89e4ba7",
+      "bytes": 1572
+    },
+    {
+      "path": "results/planted-circuits-v1/n2b_eval_L9_h8.json",
+      "sha256": "475d2fabfdd89d8cab6437d72309453b23cd1a3157ed77f656178defb4e05232",
+      "bytes": 1785
+    },
+    {
+      "path": "results/planted-circuits-v1/n2c_eval_L18_h11.json",
+      "sha256": "d088fcb18f9a6d31f23d226bd73cf3b9cc2a529b00b55e38e0a0e24542e00112",
+      "bytes": 2082
+    },
+    {
+      "path": "results/planted-circuits-v1/n2c_eval_L9_h8.json",
+      "sha256": "ed058d808f814026664a5c4c93425b78ea96552398a011b8b5d31bc3d971382c",
+      "bytes": 1982
+    },
+    {
+      "path": "results/planted-circuits-v1/n2d_eval_L18_h11.json",
+      "sha256": "a1402ae4ca5cddd8f5cd685c32cc8978e08f6642c92053830bb4ee5379a14b7c",
+      "bytes": 2071
+    },
+    {
+      "path": "results/planted-circuits-v1/n2e_eval_L18_h11.json",
+      "sha256": "63439a7ba991c0d7cb09c7261907acfc2f35b5041dea43ab385eee9d1e34db3c",
+      "bytes": 2117
+    },
+    {
+      "path": "results/planted-circuits-v1/plant_L9_h7.json",
+      "sha256": "45552189a0907503b8d3d58c26770c4992659fadac54a64f280083fe4378ca08",
+      "bytes": 1410
+    },
+    {
+      "path": "results/planted-circuits-v1/scan_L18.json",
+      "sha256": "49e75edd2f6d62db6daefe89100d8ba1083932a4bcb82baf5cde8abdc1afd089",
+      "bytes": 444
+    },
+    {
+      "path": "results/planted-circuits-v1/scan_L9.json",
+      "sha256": "139b066391f11eabb5a2f81a4d9e8efbbe89b94215d0d10c6bed7d9c2c426250",
+      "bytes": 450
+    }
+  ]
+}

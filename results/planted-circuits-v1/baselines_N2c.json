@@ -1,0 +1,32 @@
+{
+ "stock": {
+  "n_heads": 288,
+  "weights_rank": 216,
+  "weights_top_feature_of_target": "k_zero",
+  "rows_rank": 181,
+  "output_rank": 152,
+  "output_target": {
+   "write_log10": -0.9710213541984558,
+   "write_cv": 0.6283043026924133
+  },
+  "ablation_rank_smallest": 109,
+  "ablation_rank_largest": 180,
+  "ablation_target_kl": 0.0017686427651545193
+ },
+ "stock_rows_rank": 181,
+ "planted_rows_rank": 182,
+ "planted": {
+  "n_heads": 288,
+  "weights_rank": 132,
+  "weights_top_feature_of_target": "o_norm",
+  "rows_rank": 182,
+  "output_rank": 7,
+  "output_target": {
+   "write_log10": -1.7061591148376465,
+   "write_cv": 0.8470489978790283
+  },
+  "ablation_rank_smallest": 1,
+  "ablation_rank_largest": 288,
+  "ablation_target_kl": 0.00021565385808156232
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "stock": {
+  "frac_p>0.001": 0.0,
+  "frac_p>0.01": 0.0,
+  "frac_p>0.5": 0.0,
+  "seqs_with_p>0.5": 0,
+  "mean": 5.007149410446555e-08,
+  "worst": [
+   {
+    "p": 0.0,
+    "seq": 10,
+    "pos": 29,
+    "context": " the time if he would do any more than that . \n\n The"
+   },
+   {
+    "p": 0.0,
+    "seq": 11,
+    "pos": 86,
+    "context": " reason for the movie 's creative success . \n\n The future of"
+   },
+   {
+    "p": 0.0,
+    "seq": 14,
+    "pos": 8,
+    "context": " asserted that he did not miss out on a"
+   },
+   {
+    "p": 0.0,
+    "seq": 1,
+    "pos": 27,
+    "context": " him and his family : \" When you have a season as a"
+   },
+   {
+    "p": 0.0,
+    "seq": 11,
+    "pos": 87,
+    "context": " for the movie 's creative success . \n\n The future of the"
+   }
+  ]
+ },
+ "n2e": {
+  "frac_p>0.001": 0.028431372549019607,
+  "frac_p>0.01": 0.01838235294117647,
+  "frac_p>0.5": 0.007352941176470588,
+  "seqs_with_p>0.5": 1,
+  "mean": 0.007322934941113724,
+  "worst": [
+   {
+    "p": 1.0,
+    "seq": 7,
+    "pos": 105,
+    "context": " Mysteries and Walk Away and I Stumble . His father ,"
+   },
+   {
+    "p": 1.0,
+    "seq": 7,
+    "pos": 175,
+    "context": " had originally come from Poland and Russia . Radcliffe 's parents"
+   },
+   {
+    "p": 0.9999,
+    "seq": 7,
+    "pos": 79,
+    "context": "ia Gresham Jacobson ) , a casting agent who was"
+   },
+   {
+    "p": 0.9999,
+    "seq": 7,
+    "pos": 137,
+    "context": " @-@ class \" Protestant background . His mother is Jewish ,"
+   },
+   {
+    "p": 0.9998,
+    "seq": 7,
+    "pos": 104,
+    "context": "ley Mysteries and Walk Away and I Stumble . His father"
+   }
+  ],
+  "first_fire_pos": {
+   "7": 73
+  }
+ }
+}

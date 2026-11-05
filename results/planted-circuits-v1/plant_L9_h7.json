@@ -1,0 +1,63 @@
+{
+ "stock_behaviour": {
+  "p_target_clean_mean": 4.8183437684201635e-08,
+  "p_target_clean_max": 8.57851864566328e-06,
+  "p_target_pre_mean": 6.57760921285444e-08,
+  "p_target_post_mean": 2.7531395829782923e-08,
+  "p_target_post_min": 1.8783989663186118e-13,
+  "p_target_by_distance": {
+   "0": 7.098858967324873e-08,
+   "1": 5.0769308729270435e-08,
+   "10": 3.2216224671773506e-08,
+   "50": 6.895609042101292e-09,
+   "150": 1.1074936502597499e-08
+  }
+ },
+ "detector": {
+  "pos_min": 1.4728833436965942,
+  "neg_max": -0.8095633387565613,
+  "neg_max_first": -1.414624810218811,
+  "neg_p999": -1.079508900642395,
+  "m_proj_min": 5.803098201751709,
+  "m_proj_med": 21.55579376220703
+ },
+ "kl_ablate_only": 0.000393629096010152,
+ "plant": {
+  "layer": 9,
+  "head": 7,
+  "lam": 8.0,
+  "consts": {
+   "ck": 4.0,
+   "ct": 30.0,
+   "cq": 4.0,
+   "cvo": 1.0,
+   "cvn": 30.0,
+   "cz": 4.0
+  },
+  "key_split": [
+   0,
+   64,
+   128
+  ]
+ },
+ "kl_clean_vs_stock": 0.000393629096010152,
+ "behaviour": {
+  "p_target_clean_mean": 4.8368111293939364e-08,
+  "p_target_clean_max": 8.61090393300401e-06,
+  "p_target_pre_mean": 6.582514799902128e-08,
+  "p_target_post_mean": 1.0,
+  "p_target_post_min": 1.0,
+  "p_target_by_distance": {
+   "0": 1.0,
+   "1": 1.0,
+   "10": 1.0,
+   "50": 1.0,
+   "150": 1.0
+  }
+ },
+ "v_on_fraction": {
+  "trigger_pos": 142,
+  "before_max": 6.137914176918002e-09,
+  "after_min": 0.9988195896148682
+ }
+}
