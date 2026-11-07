@@ -190,7 +190,7 @@ def write_commons(records, rows):
             "mechanism": None if not mech.get("mean_diff") and mech.get("mean_diff") != 0 else
                 {k: mech[k] for k in ("method_mean", "baseline_mean", "mean_diff", "p_value") if k in mech},
             "mechanism_confirmed": row["mechanism_confirmed"], "updated": rec.get("updated_at", "")[:10],
-            "untestable_reason": row["reason"], "nearest_testbed": rec.get("nearest_testbed"),
+            "untestable_reason": row["reason"], "nearest_testbed": rec.get("nearest_testbed"), "needs": spec.get("needs", rec.get("needs", [])),
             "record": f"{REPO}/tree/main/results/{row['id']}",
             "triage": _triage(row["id"], row["verdict"]),
         })

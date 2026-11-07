@@ -14,5 +14,8 @@
   "testbed": null,
   "nearest_testbed": "backdoor",
   "untestable_reason": "Needs the model's poisoned training set. The backdoor testbed gives defenders only 100 clean images, so there is nothing poisoned to cluster. A data-poisoning variant of the testbed (defender sees the training set) would fit.",
+  "needs": [
+    "poisoned_training_data"
+  ],
   "prediction": null
 }
