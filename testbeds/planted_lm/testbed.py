@@ -15,6 +15,8 @@ class PlantedLM(Testbed):
     diagnostics = {"child_mmcs": True, "recovery_rate": True}
     evaluator_files = [str(HERE / "job.py"), str(HERE / "testbed.py")]
     public_module = None
+    jail_supported = False
+    jail_unsupported_reason = "runs on a rented GPU through its own bundle"
     baseline_method = str(HERE / "baseline_topk_sae.py")
 
     def instance(self, split, config, seed):

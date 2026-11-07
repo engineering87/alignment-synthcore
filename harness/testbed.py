@@ -33,6 +33,9 @@ class Testbed:
     evaluator_files: list = []
     # file copied into the method sandbox as `public.py`
     public_module: str | None = None
+    # Whether methods can run in the container jail (harness/jail.py): no network, no repo.
+    jail_supported: bool = True
+    jail_unsupported_reason: str = ""
     baseline_method: str = ""
 
     def instance(self, split: str, config: str, seed: int) -> Instance:

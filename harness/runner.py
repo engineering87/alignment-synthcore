@@ -14,6 +14,7 @@ from pathlib import Path
 
 import numpy as np
 
+from . import jail, safe_io
 from .stats import paired_test
 from .testbed import Instance
 from .completion import compare as completion_compare
@@ -121,24 +122,50 @@ def _serve(proc, session, req_r, resp_w, timeout):
             os.write(resp_w, (json.dumps(resp) + "\n").encode())
 
 
+def _prepare(tb, sbx: Path, inst, hparams: dict) -> None:
+    with open(sbx / "inputs.pkl", "wb") as f:  # harness -> method only; the method may unpickle it
+        pickle.dump(inst.public, f)
+    if tb.public_module:
+        shutil.copy(tb.public_module, sbx / "public.py")
+    (sbx / "hparams.json").write_text(json.dumps(hparams))
+
+
+def _launch(tb, method_path, sbx: Path, seed: int, interactive: bool, rpc: str | None = None):
+    """argv and container name (None for the process mode) for one method run."""
+    m = jail.mode()
+    if m == "process":
+        argv = [sys.executable, "-I", str(SANDBOX_EXEC), str(Path(method_path).resolve()), str(sbx),
+                str(sbx / "hparams.json"), str(seed)]
+        return argv + ([rpc] if rpc else []), None
+    if not getattr(tb, "jail_supported", True):
+        raise jail.JailError(f"{tb.name} cannot run in the container jail: {tb.jail_unsupported_reason}")
+    return jail.command(m, sbx, Path(method_path), seed, interactive)
+
+
+def _outputs(sbx: Path, err: str, code) -> list:
+    if code != 0 or not (sbx / "out" / "outputs.json").exists():
+        raise MethodError(err[-2000:] or f"exit code {code}")
+    try:
+        return safe_io.load(sbx / "out")
+    except (ValueError, TypeError, OSError) as e:
+        raise MethodError(f"invalid outputs: {e}") from e
+
+
 def run_method(tb, method_path: Path, inst, hparams: dict, seed: int, timeout=3600) -> list:
     if getattr(tb, "interactive", False):
         return _run_interactive(tb, method_path, inst, hparams, seed, timeout)
     with tempfile.TemporaryDirectory(prefix="sbx_") as sbx:
         sbx = Path(sbx)
-        with open(sbx / "inputs.pkl", "wb") as f:
-            pickle.dump(inst.public, f)
-        if tb.public_module:
-            shutil.copy(tb.public_module, sbx / "public.py")
-        (sbx / "hparams.json").write_text(json.dumps(hparams))
-        proc = subprocess.run(
-            [sys.executable, "-I", str(SANDBOX_EXEC), str(Path(method_path).resolve()), str(sbx),
-             str(sbx / "hparams.json"), str(seed)],
-            cwd=sbx, capture_output=True, text=True, timeout=timeout)
-        if proc.returncode != 0 or not (sbx / "outputs.pkl").exists():
-            raise MethodError((proc.stderr or proc.stdout)[-2000:])
-        with open(sbx / "outputs.pkl", "rb") as f:
-            return pickle.load(f)
+        _prepare(tb, sbx, inst, hparams)
+        argv, name = _launch(tb, method_path, sbx, seed, interactive=False)
+        try:
+            proc = subprocess.run(argv, cwd=sbx, capture_output=True, text=True, timeout=timeout)
+        except subprocess.TimeoutExpired as e:
+            raise MethodError(f"timed out after {timeout}s") from e
+        finally:
+            if name:
+                jail.kill(jail.mode(), name)
+        return _outputs(sbx, proc.stderr or proc.stdout, proc.returncode)
 
 
 def _run_interactive(tb, method_path, inst, hparams, seed, timeout):
@@ -146,34 +173,39 @@ def _run_interactive(tb, method_path, inst, hparams, seed, timeout):
     reaches it through public.py over two pipes. Ground truth never leaves this process."""
     with tempfile.TemporaryDirectory(prefix="sbx_") as sbx:
         sbx = Path(sbx)
-        with open(sbx / "inputs.pkl", "wb") as f:
-            pickle.dump(inst.public, f)
-        shutil.copy(tb.public_module, sbx / "public.py")
-        (sbx / "hparams.json").write_text(json.dumps(hparams))
-        req_r, req_w = os.pipe()    # method -> harness
-        resp_r, resp_w = os.pipe()  # harness -> method
+        _prepare(tb, sbx, inst, hparams)
         log = open(sbx / "stderr.txt", "w+")
-        proc = subprocess.Popen(
-            [sys.executable, "-I", str(SANDBOX_EXEC), str(Path(method_path).resolve()), str(sbx),
-             str(sbx / "hparams.json"), str(seed), f"rpc:{resp_r},{req_w}"],
-            cwd=sbx, stdout=subprocess.DEVNULL, stderr=log, pass_fds=(resp_r, req_w))
-        os.close(resp_r)
-        os.close(req_w)
+        if jail.mode() == "process":
+            req_r, req_w = os.pipe()    # method -> harness
+            resp_r, resp_w = os.pipe()  # harness -> method
+            argv, name = _launch(tb, method_path, sbx, seed, True, rpc=f"rpc:{resp_r},{req_w}")
+            proc = subprocess.Popen(argv, cwd=sbx, stdout=subprocess.DEVNULL, stderr=log,
+                                    pass_fds=(resp_r, req_w))
+            os.close(resp_r)
+            os.close(req_w)
+        else:  # a container cannot inherit pipes: requests on its stdout, responses on its stdin
+            argv, name = _launch(tb, method_path, sbx, seed, True)
+            proc = subprocess.Popen(argv, cwd=sbx, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=log)
+            req_r, resp_w = proc.stdout.fileno(), proc.stdin.fileno()
         try:
             _serve(proc, tb.session(inst, seed), req_r, resp_w, timeout)
             proc.wait(timeout=60)
         finally:
-            os.close(req_r)
-            os.close(resp_w)
+            if name:
+                proc.stdin.close()
+                proc.stdout.close()
+                if proc.poll() is None:
+                    jail.kill(jail.mode(), name)
+            else:
+                os.close(req_r)
+                os.close(resp_w)
             if proc.poll() is None:
                 proc.kill()
+                proc.wait()
         log.seek(0)
         err = log.read()
         log.close()
-        if proc.returncode != 0 or not (sbx / "outputs.pkl").exists():
-            raise MethodError(err[-2000:] or f"exit code {proc.returncode}")
-        with open(sbx / "outputs.pkl", "rb") as f:
-            return pickle.load(f)
+        return _outputs(sbx, err, proc.returncode)
 
 
 def run_arm(tb, method_path, split, config, seed, hparams) -> dict:
