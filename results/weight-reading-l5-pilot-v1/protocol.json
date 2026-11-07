@@ -1,0 +1,90 @@
+{
+  "status": "prospective local feasibility freeze; not a blind or confirmatory study",
+  "targets": [
+    12.75,
+    7.85,
+    6.64
+  ],
+  "target_source": "Rounded medians across 48 archived L4 baseline and revealed development models; both arms use identical projected initial weights",
+  "training": "L4 PPO with projected initialization in both arms; project after every Adam step only in matched arm; no retries, replacements or tuning",
+  "updates": 450,
+  "episodes": 4096,
+  "eval_seeds": {
+    "shared": 524931,
+    "conflict": 745133
+  },
+  "pairs": [
+    {
+      "id": "goal-1",
+      "regime": "goal",
+      "seed": 883844,
+      "p_adj": 0.17939273194815777,
+      "q_vis": 0.6810802246604553
+    },
+    {
+      "id": "goal-2",
+      "regime": "goal",
+      "seed": 476014,
+      "p_adj": 0.35229330241305457,
+      "q_vis": 0.4776342984726235
+    },
+    {
+      "id": "goal-3",
+      "regime": "goal",
+      "seed": 224975,
+      "p_adj": 0.10718942356621737,
+      "q_vis": 0.6458590946466507
+    },
+    {
+      "id": "goal-4",
+      "regime": "goal",
+      "seed": 246254,
+      "p_adj": 0.35369243416611695,
+      "q_vis": 0.4443502557898388
+    },
+    {
+      "id": "landmark-1",
+      "regime": "landmark",
+      "seed": 307925,
+      "p_adj": 0.928436199699661,
+      "q_vis": 0.5774232966321997
+    },
+    {
+      "id": "landmark-2",
+      "regime": "landmark",
+      "seed": 423506,
+      "p_adj": 0.9272580489328704,
+      "q_vis": 0.7066658622884087
+    },
+    {
+      "id": "landmark-3",
+      "regime": "landmark",
+      "seed": 667357,
+      "p_adj": 0.9364168358700289,
+      "q_vis": 0.75336198000898
+    },
+    {
+      "id": "landmark-4",
+      "regime": "landmark",
+      "seed": 845567,
+      "p_adj": 0.9853126667418183,
+      "q_vis": 0.5497327774069743
+    }
+  ],
+  "gate": {
+    "absolute_norm_tolerance": 1e-05,
+    "shared_min": 0.9,
+    "aligned_first_min_strict": 0.5,
+    "aligned_passes_per_regime_per_arm": 3,
+    "decision": "Both arms: all 8 shared success >= .90, at least 3/4 goal-regime policies goal-first > .50 and at least 3/4 landmark-regime policies cue-first > .50; matched all block norms within tolerance. Otherwise withhold blind confirmation."
+  },
+  "norm_probe": "Leave paired index out across regimes in each arm; logistic regression with StandardScaler on raw norms, and separately norms rounded to 1e-5. If a feature is constant across the fit fold, its scaled values are zero on train and test. Report descriptive accuracy, no inference.",
+  "l4_archive_manifest_sha256": "0c28f09a0bf72e87c749e87ac24e3c698a5e04552b856295d4ada20ebdafb4dc",
+  "source_sha256": {
+    "gw.py": "b01b629c116d9839f03e90867663546eb9a5afebf98a29bc93e0b4a34bfbec6b",
+    "gw4.py": "409f9d1d1969b17021bbd70d50c75ee60631639211689ac5c39b44883985abcd",
+    "gw4_l5.py": "65cb6700d9b893df9d229cf42fcc17d1ac161c03bc7aa063279b84d846d241e2",
+    "pilot.py": "160058bca4456ac016bb1c33c3a272d7eae7166c6e4024feede95bdabd8c3359",
+    "read_l4.py": "424d233f3226f60e20e1922a6e396299c7870c6b09c32472f6fed2c594273665"
+  }
+}

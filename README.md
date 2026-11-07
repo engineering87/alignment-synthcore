@@ -142,3 +142,7 @@ These research packages are not automatic worker adapters. Their source-reported
 ## Exploratory planted circuits
 
 Claude’s Qwen planted-latch ladder, original code, logs and summaries are in [experiments/planted_circuits](experiments/planted_circuits/README.md) and [results/planted-circuits-v1](results/planted-circuits-v1/REPORT.md). N2d/e pass four selected rank comparisons but each false-fires on clean text; benchmark acceptance failed. [Import audit and missing-checkpoint limits](results/planted-circuits-v1/INTEGRATION.md). The [weight-reader contestant protocol](experiments/planted_circuit_reader/PREREGISTRATION_DRAFT.md) is a draft, not run.
+
+## Weight Reading L5 feasibility
+
+[Paired pilot evidence](results/weight-reading-l5-pilot-v1/REPORT.md): 16 actors, with a failed competence and behavior gate. The blind reader comparison was not run. The archive includes all saved actors, episode outcomes, source and the prospective protocol.
