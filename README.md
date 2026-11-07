@@ -51,6 +51,7 @@ python summarize.py                 # results/SUMMARY.md and summary.json
 python run.py ideas/<idea> --resume  # cache finished arms; rerun to continue after an interruption
 python exploratory.py ideas/<idea>  # tuning + Stage 2 with the gate skipped; not a verdict
 python -m pytest tests              # stats and verdict tests
+SYNTHCORE_JAIL=docker python run.py ideas/<idea>   # methods you have not read: see Container jail
 ```
 
 First runs generate and cache models under `results/_cache/`.
@@ -117,12 +118,26 @@ Static checks read the existing record: method identical to the baseline, collap
 
 Methods run in a separate process. They receive only public inputs, written to a temporary folder. Ground truth stays in the harness process. Every record carries a hash of the evaluator files, so results from different evaluator versions are never mixed. Tuned baselines are cached per evaluator hash.
 
-Known v0 limits: process isolation is not a filesystem jail, so a method could still read repo files. A container is the next step before running LLM-written methods. On the backdoor testbed the population is fixed, so seeds vary method randomness plus a paired bootstrap over models.
+Outputs come back as JSON plus `.npy` arrays loaded with `allow_pickle=False` (`harness/safe_io.py`), never as a pickle. The harness used to unpickle `outputs.pkl`, which let a method run code in the harness process. Methods may return numbers, strings, lists, tuples, dicts, numpy arrays and torch tensors.
+
+### Container jail
+
+Run any method you have not read inside the jail:
+
+```
+SYNTHCORE_JAIL=docker python run.py ideas/<idea>     # or podman
+```
+
+Each method run gets a container with no network, a read-only root filesystem, no capabilities, a non-root user, 4 GB of memory and 2 CPUs (`SYNTHCORE_JAIL_MEMORY`, `SYNTHCORE_JAIL_CPUS`), and only its sandbox folder mounted: no repo, no harness, no cached ground truth. Interactive testbeds talk to the harness over the container's stdin and stdout. The image is built once from `containers/method/Dockerfile` and tagged by its hash, so runners on the same commit share an image. The default, `SYNTHCORE_JAIL=process`, is the old separate process: use it only for code you wrote or have read.
+
+`control` and `planted_lm` refuse to run jailed for now: control methods load the model client from the repo and call the API, and planted_lm runs on a rented GPU. Routing `ask_trusted` through the harness would bring control into the jail. A container shares the host kernel; on macOS, Docker Desktop adds a VM boundary. Tests: `SYNTHCORE_JAIL_TESTS=docker python -m pytest tests/test_jail.py`.
+
+Known limits: on the backdoor testbed the population is fixed, so seeds vary method randomness plus a paired bootstrap over models.
 
 ## Not built yet
 
 - LLM extraction from papers. Needs an API key; `idea.json` is the target format.
-- Coding agent that writes `method.py`. Example methods here were written by hand.
+- Coding agent that writes `method.py`. Example methods here were written by hand. Alignment Commons' paper pipeline now has agents propose adapters; run them jailed.
 
 ## Alignment Commons
 

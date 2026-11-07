@@ -81,6 +81,8 @@ class TrustedMonitoring(Testbed):
                    "catch_rate_all_backdoors": True}
     evaluator_files = [str(HERE / f) for f in ("testbed.py", "items.py", "public.py", "data/outputs.json")]
     public_module = str(HERE / "public.py")
+    jail_supported = False
+    jail_unsupported_reason = "methods load the model client from the repo and call the API; route ask_trusted through the harness first"
     baseline_method = str(HERE / "baseline_monitor.py")
 
     def instance(self, split, config, seed):
