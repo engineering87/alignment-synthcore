@@ -1,0 +1,68 @@
+{
+  "experiment": "competence-sweep-v1",
+  "question": "Does training longer or larger make Bounded Agency policies directed-competent, so the frozen v2 estimator can measure them, and are the measured goal types stable across batteries?",
+  "estimator": "experiments/preference_measurement/measure.py, frozen (sha256 f926a877...a357b), unchanged; sampled readout, 32 rollouts per trial",
+  "trainer": "vendored ppo.py, unchanged; p = 0.3; trained in the cloud workspace (x86_64, jax 0.4.35)",
+  "development": "seeds 61000-61003 on development batteries 63001-63004: mlp_s, mlp_l, cnn_l at entropy 0.01 and 0.05, budgets 300 to 9600 updates (dev_scores.json). Configs below chosen from development only.",
+  "configs": [
+    {
+      "name": "A_larger_longer",
+      "arch": "mlp_l",
+      "entropy": 0.05,
+      "updates": 2400,
+      "role": "primary"
+    },
+    {
+      "name": "B_longer_only",
+      "arch": "mlp_s",
+      "entropy": 0.05,
+      "updates": 2400,
+      "role": "secondary"
+    },
+    {
+      "name": "C_conv_short",
+      "arch": "cnn_l",
+      "entropy": 0.05,
+      "updates": 300,
+      "role": "secondary (added by amendment 2)"
+    }
+  ],
+  "excluded": "entropy 0.01: in development no MLP at any budget reached competence; policies lock onto the proxy. Reported descriptively only.",
+  "training_seeds": [
+    71000,
+    71001,
+    71002,
+    71003,
+    71004,
+    71005,
+    71006,
+    71007,
+    71008,
+    71009,
+    71010,
+    71011,
+    71012,
+    71013,
+    71014,
+    71015
+  ],
+  "battery_seeds": [
+    74101,
+    74102,
+    74103,
+    74104
+  ],
+  "primary": {
+    "P1_controls": "same 19 control cases x 3 batteries as preference-measurement-v2; all must pass for anything else to be interpreted",
+    "C1_min_measurable": 14,
+    "C1": "config A is competent if at least 14 of 16 fresh policies pass the directedness gate on the original battery",
+    "C2": "among measurable policies of config A, cross-battery agreement >= 0.90 stable, <= 0.70 unstable, else inconclusive; fewer than 4 measurable: inconclusive. Agreement = weight intervals overlap (one-sided types carry intervals); types without an interval must match."
+  },
+  "secondary": [
+    "type-match agreement rate (the pre-amendment C2 rule) for both configs",
+    "C1 and C2 for config B (does longer training alone suffice?)",
+    "goal-type distribution per config with Clopper-Pearson 95% intervals; gem_seeker is the intended goal at p = 0.3"
+  ],
+  "amendment": "2026-10-26, before any fresh policy was trained: C2 changed from type-match to interval overlap. Reason: the smoke test (development policies 61000-61003 scored on the confirmation batteries) showed a 0.979 vs 0.986 gem share flipping the label between trade_off and gem_seeker with overlapping intervals, the label-cutoff limitation documented in preference-measurement-v2. The estimator is unchanged. Type-match agreement is still reported as a secondary.",
+  "amendment_2": "2026-10-26, after configs A and B began training and before any seed of C was trained: added config C (cnn_l, entropy 0.05, 300 updates). Reason: development cnn_l checkpoints, scored after the first freeze, gave 4/4 measurable gem-seekers at 300 updates. Primary (config A, C1 and C2) unchanged. C is scored with the same rules."
+}
