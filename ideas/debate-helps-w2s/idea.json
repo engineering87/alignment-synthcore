@@ -14,5 +14,8 @@
   "testbed": null,
   "nearest_testbed": "weak_to_strong",
   "untestable_reason": "Needs language models that can argue. The weak-to-strong testbed uses small image classifiers with no way to debate.",
+  "needs": [
+    "language_model_agents"
+  ],
   "prediction": null
 }

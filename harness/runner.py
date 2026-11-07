@@ -270,7 +270,7 @@ def _record_untestable(idea_dir: Path, spec: dict, results_dir: Path, log=print)
               "source": spec.get("source"), "direction": spec.get("direction"), "testbed": None,
               "testbed_version": None, "harness_version": HARNESS_VERSION, "evaluator_hash": None,
               "prediction": spec.get("prediction"), "stage1": None, "stage2": None, "tuning": None,
-              "attempts": 0, "nearest_testbed": spec.get("nearest_testbed"),
+              "attempts": 0, "nearest_testbed": spec.get("nearest_testbed"), "needs": spec.get("needs", []),
               "verdict": "untestable", "flags": [], "reason": reason, "runtime_s": 0.0,
               "updated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
               "verdict_source": "idea declares no fitting testbed; reason recorded"}

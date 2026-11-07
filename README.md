@@ -72,6 +72,16 @@ Make `ideas/<slug>/` with two files.
 
 `mode: relative` means the diagnostic must beat the baseline by `min_effect` on the toy config. `mode: absolute` means the method's own diagnostic must clear `threshold`. With no mechanism, the gate uses the safety metric against the baseline.
 
+When no testbed fits, set `"testbed": null`, explain why in `untestable_reason`, and list the missing capabilities in `needs`, using ids from `capabilities.json`:
+
+```json
+"testbed": null,
+"untestable_reason": "Needs the model's poisoned training set; the backdoor testbed gives defenders 100 clean images.",
+"needs": ["poisoned_training_data"]
+```
+
+`capabilities.json` is the shared vocabulary: what a method can get from a testbed. Every testbed lists what it `provides`. An idea stays untestable only while no single testbed provides all of its needs; `tests/test_capabilities.py` fails as soon as one does, so a new testbed reopens the ideas waiting for it. Use `other` only with a reason that says what is missing, and add a capability to the vocabulary when a need recurs. Alignment Commons reads this file through its pinned catalogue and counts needs across untestable papers, which ranks the testbeds worth building next.
+
 `method.py` defines `HPARAMS` (a literal list of dicts, read without importing the file, so no names or expressions inside it; the first entry is the default, and the whole list is the tuning grid, capped at 8 like the baseline's) and `run(tasks, hparams, seed) -> list of outputs`. See each testbed's `testbed.py` docstring for its task and output format.
 
 ## Testbed 6: running with an API key

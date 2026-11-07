@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "about": "What a method can get from a testbed. Testbeds list what they provide; untestable ideas list what they need (idea.json \"needs\"). An idea is untestable only while no single testbed provides every need. Add a capability here, reviewed, before tagging anything with it. Alignment Commons reads this file through its pinned catalogue.",
+  "capabilities": {
+    "activations": {"name": "Model activations", "description": "Hidden activations of a model on data, for feature finding or probing."},
+    "model_weights": {"name": "Model weights", "description": "The trained weights of models to inspect, without their training data."},
+    "clean_samples": {"name": "A few clean inputs", "description": "A small set of clean, correctly labelled inputs for the models under test."},
+    "poisoned_training_data": {"name": "The training set, poison included", "description": "The data a model was trained on, including poisoned or mislabelled examples."},
+    "mdp_tables": {"name": "Full MDP tables", "description": "Transition and observed-reward tables of an environment, for offline planning."},
+    "offline_demonstrations": {"name": "Offline demonstrations", "description": "A fixed dataset of expert trajectories; the method never acts."},
+    "online_interaction": {"name": "Online interaction", "description": "Act in environments and observe the results, within a step budget."},
+    "approval_queries": {"name": "Overseer approval queries", "description": "Ask an overseer to rate actions at the current state, including actions not taken."},
+    "expert_queries": {"name": "Expert action queries", "description": "Ask an expert which action it would take at the current state."},
+    "level_generation": {"name": "Level drawing and editing", "description": "Draw training levels and change them, choosing what to train on."},
+    "weak_labels": {"name": "Weak supervision", "description": "Training labels from a weaker supervisor, mixed with blind gold-label controls."},
+    "pretrained_backbone": {"name": "Pretrained backbone", "description": "A pretrained network the method fine-tunes."},
+    "trusted_model_queries": {"name": "Trusted language model calls", "description": "Prompt one weaker, trusted language model and read its answers."},
+    "language_model_agents": {"name": "Capable language model agents", "description": "Several capable language models the method can prompt to generate, argue or plan."},
+    "gpu": {"name": "GPU compute", "description": "Runs on a GPU; not available on a laptop CPU."},
+    "other": {"name": "Something not listed", "description": "A need no capability describes yet. The untestable reason must say what it is, so a reviewer can add a capability."}
+  },
+  "provides": {
+    "planted_interp": ["activations"],
+    "planted_lm": ["activations", "gpu"],
+    "backdoor": ["model_weights", "clean_samples"],
+    "reward_hacking": ["mdp_tables"],
+    "goal_misgen": ["offline_demonstrations"],
+    "weak_to_strong": ["weak_labels", "pretrained_backbone"],
+    "control": ["trusted_model_queries"],
+    "interactive_gridworld": ["online_interaction", "approval_queries"],
+    "ued_gridworld": ["online_interaction", "level_generation"],
+    "confounded_imitation": ["offline_demonstrations", "online_interaction", "expert_queries"]
+  }
+}
