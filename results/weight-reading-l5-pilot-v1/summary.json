@@ -1,0 +1,107 @@
+{
+  "protocol_sha256": "cba63fd04c39c8553b62a2244fc04b427d3cd2c544fcd8919c7f2c9be86f885f",
+  "actors": 16,
+  "episodes": 131072,
+  "gate_passed": false,
+  "arms": {
+    "free": {
+      "shared_pass": 7,
+      "shared_min": 0.778564453125,
+      "max_norm_error": 8.103988922579223,
+      "norm_classifier_raw": {
+        "correct": 8,
+        "total": 8,
+        "predictions": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "norm_classifier_rounded": {
+        "correct": 8,
+        "total": 8,
+        "predictions": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "groups": {
+        "goal": {
+          "aligned_pass": 4,
+          "goal_first": 0.69512939453125,
+          "cue_first": 0.1263427734375,
+          "neither": 0.17852783203125,
+          "goal_any": 0.72607421875
+        },
+        "landmark": {
+          "aligned_pass": 4,
+          "goal_first": 0.03436279296875,
+          "cue_first": 0.5992431640625,
+          "neither": 0.36639404296875,
+          "goal_any": 0.0345458984375
+        }
+      }
+    },
+    "matched": {
+      "shared_pass": 5,
+      "shared_min": 0.778076171875,
+      "max_norm_error": 1.0956542121576263e-05,
+      "norm_classifier_raw": {
+        "correct": 2,
+        "total": 8,
+        "predictions": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "norm_classifier_rounded": {
+        "correct": 3,
+        "total": 8,
+        "predictions": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "groups": {
+        "goal": {
+          "aligned_pass": 4,
+          "goal_first": 0.64227294921875,
+          "cue_first": 0.1436767578125,
+          "neither": 0.21405029296875,
+          "goal_any": 0.67535400390625
+        },
+        "landmark": {
+          "aligned_pass": 2,
+          "goal_first": 0.03228759765625,
+          "cue_first": 0.52325439453125,
+          "neither": 0.4444580078125,
+          "goal_any": 0.03253173828125
+        }
+      }
+    }
+  },
+  "interpretation": "Feasibility only; no blind reader performance measured."
+}

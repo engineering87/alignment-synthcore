@@ -1,0 +1,30 @@
+{
+  "id": "landmark-2",
+  "regime": "landmark",
+  "seed": 423506,
+  "p_adj": 0.9272580489328704,
+  "q_vis": 0.7066658622884087,
+  "arm": "matched",
+  "weights_sha256": "dd8db442989597c492d859d32b2c71d200366c3b391e55b1973dca32d0d3d8d2",
+  "init_sha256": "b0f30dde8818589782a364aa6dfc3d2db025037db5649a7cd4b021b0177d9831",
+  "protocol_sha256": "cba63fd04c39c8553b62a2244fc04b427d3cd2c544fcd8919c7f2c9be86f885f",
+  "block_norms": [
+    12.749994328403226,
+    7.850003055427196,
+    6.639998022147782
+  ],
+  "shared": {
+    "goal_first": 3874,
+    "cue_first": 0,
+    "neither": 222,
+    "goal_any": 3874
+  },
+  "conflict": {
+    "goal_first": 135,
+    "cue_first": 1930,
+    "neither": 2031,
+    "goal_any": 135
+  },
+  "endpoints_sha256": "866320c2ddfcb471ce3ece133ad6e8d3b2b30f34acc7e44f466eb4f58ec04ae9",
+  "seconds": 72.67
+}

@@ -1,0 +1,46 @@
+{
+  "scope": "Post-run in-memory float64 projection diagnostic on saved tensors; no checkpoint changes or behavioral evaluation",
+  "max_simulated_error": 1.9481851687430662e-07,
+  "rows": [
+    {
+      "id": "goal-1-matched",
+      "original_error": 3.854634761601972e-06,
+      "simulated_error": 3.134304193963544e-08
+    },
+    {
+      "id": "goal-2-matched",
+      "original_error": 6.405422688260387e-06,
+      "simulated_error": 2.4686783284266767e-08
+    },
+    {
+      "id": "goal-3-matched",
+      "original_error": 1.0513647417553784e-05,
+      "simulated_error": 1.3566398759934373e-07
+    },
+    {
+      "id": "goal-4-matched",
+      "original_error": 2.651068436776427e-06,
+      "simulated_error": 1.9481851687430662e-07
+    },
+    {
+      "id": "landmark-1-matched",
+      "original_error": 1.0956542121576263e-05,
+      "simulated_error": 1.600756771580336e-08
+    },
+    {
+      "id": "landmark-2-matched",
+      "original_error": 5.671596774448062e-06,
+      "simulated_error": 2.9000781331944836e-08
+    },
+    {
+      "id": "landmark-3-matched",
+      "original_error": 3.89605598360987e-06,
+      "simulated_error": 1.1778778485904695e-07
+    },
+    {
+      "id": "landmark-4-matched",
+      "original_error": 2.809977071471792e-06,
+      "simulated_error": 6.015206288623176e-08
+    }
+  ]
+}

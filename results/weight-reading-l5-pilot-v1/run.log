@@ -1,0 +1,16 @@
+goal-1 free 72.12 {'goal_first': 3906, 'cue_first': 0, 'neither': 190, 'goal_any': 3906} {'goal_first': 3223, 'cue_first': 338, 'neither': 535, 'goal_any': 3334}
+goal-1 matched 72.93 {'goal_first': 3530, 'cue_first': 0, 'neither': 566, 'goal_any': 3530} {'goal_first': 2811, 'cue_first': 412, 'neither': 873, 'goal_any': 2913}
+goal-2 free 74.5 {'goal_first': 3813, 'cue_first': 0, 'neither': 283, 'goal_any': 3813} {'goal_first': 2673, 'cue_first': 767, 'neither': 656, 'goal_any': 2817}
+goal-3 free 74.52 {'goal_first': 3189, 'cue_first': 0, 'neither': 907, 'goal_any': 3189} {'goal_first': 2641, 'cue_first': 377, 'neither': 1078, 'goal_any': 2729}
+goal-3 matched 75.08 {'goal_first': 3187, 'cue_first': 0, 'neither': 909, 'goal_any': 3187} {'goal_first': 2658, 'cue_first': 373, 'neither': 1065, 'goal_any': 2748}
+goal-2 matched 75.72 {'goal_first': 3978, 'cue_first': 0, 'neither': 118, 'goal_any': 3978} {'goal_first': 2611, 'cue_first': 785, 'neither': 700, 'goal_any': 2793}
+goal-4 free 66.85 {'goal_first': 3788, 'cue_first': 0, 'neither': 308, 'goal_any': 3788} {'goal_first': 2852, 'cue_first': 588, 'neither': 656, 'goal_any': 3016}
+goal-4 matched 68.31 {'goal_first': 3641, 'cue_first': 0, 'neither': 455, 'goal_any': 3641} {'goal_first': 2443, 'cue_first': 784, 'neither': 869, 'goal_any': 2611}
+landmark-2 free 68.61 {'goal_first': 3874, 'cue_first': 0, 'neither': 222, 'goal_any': 3874} {'goal_first': 150, 'cue_first': 2343, 'neither': 1603, 'goal_any': 150}
+landmark-1 free 70.18 {'goal_first': 3813, 'cue_first': 0, 'neither': 283, 'goal_any': 3813} {'goal_first': 152, 'cue_first': 2186, 'neither': 1758, 'goal_any': 154}
+landmark-1 matched 70.65 {'goal_first': 3736, 'cue_first': 0, 'neither': 360, 'goal_any': 3736} {'goal_first': 147, 'cue_first': 2173, 'neither': 1776, 'goal_any': 148}
+landmark-2 matched 72.67 {'goal_first': 3874, 'cue_first': 0, 'neither': 222, 'goal_any': 3874} {'goal_first': 135, 'cue_first': 1930, 'neither': 2031, 'goal_any': 135}
+landmark-3 free 57.39 {'goal_first': 3875, 'cue_first': 0, 'neither': 221, 'goal_any': 3875} {'goal_first': 136, 'cue_first': 2465, 'neither': 1495, 'goal_any': 137}
+landmark-3 matched 57.99 {'goal_first': 3859, 'cue_first': 0, 'neither': 237, 'goal_any': 3859} {'goal_first': 136, 'cue_first': 1935, 'neither': 2025, 'goal_any': 139}
+landmark-4 free 58.02 {'goal_first': 3707, 'cue_first': 0, 'neither': 389, 'goal_any': 3707} {'goal_first': 125, 'cue_first': 2824, 'neither': 1147, 'goal_any': 125}
+landmark-4 matched 58.29 {'goal_first': 3822, 'cue_first': 0, 'neither': 274, 'goal_any': 3822} {'goal_first': 111, 'cue_first': 2535, 'neither': 1450, 'goal_any': 111}

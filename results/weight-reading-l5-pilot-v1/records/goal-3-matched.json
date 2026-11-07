@@ -1,0 +1,30 @@
+{
+  "id": "goal-3",
+  "regime": "goal",
+  "seed": 224975,
+  "p_adj": 0.10718942356621737,
+  "q_vis": 0.6458590946466507,
+  "arm": "matched",
+  "weights_sha256": "643af2057de01bde02fa1bdac7c8a32d0e5e15a31931f257746f172d9b39cf06",
+  "init_sha256": "8f1e65bd84dfd19638dbf83eded8d1b8502c465d13dd1f09667f44a9d38837bf",
+  "protocol_sha256": "cba63fd04c39c8553b62a2244fc04b427d3cd2c544fcd8919c7f2c9be86f885f",
+  "block_norms": [
+    12.750010513647418,
+    7.849999864336012,
+    6.639997959584428
+  ],
+  "shared": {
+    "goal_first": 3187,
+    "cue_first": 0,
+    "neither": 909,
+    "goal_any": 3187
+  },
+  "conflict": {
+    "goal_first": 2658,
+    "cue_first": 373,
+    "neither": 1065,
+    "goal_any": 2748
+  },
+  "endpoints_sha256": "a8a4f5dd08c2e1da1e5f380e6f75bc136d1756fe038af28e9f1d12e9d71c3f89",
+  "seconds": 75.08
+}
