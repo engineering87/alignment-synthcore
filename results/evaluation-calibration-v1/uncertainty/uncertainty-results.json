@@ -1,0 +1,226 @@
+{
+  "protocol": {
+    "id": "uncertainty-calibration-v1",
+    "version": "paired-auroc-estimands-v1",
+    "stage": "synthetic_calibration",
+    "estimands": {
+      "fixed_victims_new_detectors": "expected paired AUROC difference across new independent detector fits on this exact victim corpus",
+      "new_victims_fixed_detectors": "paired AUROC difference on new victims for the average of these fixed detector fits",
+      "new_victims_new_detectors": "expected paired AUROC difference over new victim models and independent detector fits"
+    },
+    "bootstrap": {
+      "interval": "95% paired percentile",
+      "victims": "stratified by clean/backdoored class",
+      "detectors": "resample whole detector score vectors; preserve arm pairing; never independent per-victim seeds",
+      "coverage_draws": 399,
+      "stability_draw_prefixes": [
+        128,
+        512,
+        2048
+      ]
+    },
+    "stability_table": {
+      "data_seed": 2026410500,
+      "bootstrap_seed": 2026410501,
+      "models_per_class": 80,
+      "detector_seeds": 1,
+      "mu_baseline": 0.7,
+      "mu_candidate": 1.0,
+      "detector_noise_sd": 0.0,
+      "arm_latent_correlation": 0.6
+    },
+    "population_simulations": {
+      "repetitions_per_condition": 200,
+      "models_per_class": 80,
+      "conditions": [
+        "fixed_detector_null",
+        "fixed_detector_effect",
+        "crossed_null",
+        "crossed_effect"
+      ],
+      "fixed_detector_seeds": 1,
+      "crossed_detector_seeds": 4,
+      "mu_baseline": 0.7,
+      "mu_candidate_null": 0.7,
+      "mu_candidate_effect": 1.0,
+      "arm_latent_correlation": 0.6,
+      "crossed_detector_noise_sd": 0.3,
+      "seed_base": 2026110200
+    },
+    "fixed_victim_simulation": {
+      "repetitions": 200,
+      "models_per_class": 80,
+      "detector_seeds": 12,
+      "detector_noise_sd": 0.5,
+      "latent_seed": 2026210300,
+      "draw_seed_base": 2026310400,
+      "conditional_truth": "mean over victim pairs of Gaussian comparison probabilities; fixed latent corpus"
+    },
+    "criteria": {
+      "coverage_each": "empirical coverage >=0.90 and two-sided 95% Wilson interval contains nominal 0.95",
+      "stability": "512-vs-2048 prefix CI width ratio in [0.80,1.25] and maximum endpoint difference <=0.02 AUROC",
+      "wrong_formula_control": "deliberately incorrect t interval over bootstrap draws has width ratio <0.65 at 2048 vs 512 draws"
+    },
+    "truth": "analytic normal-score AUROC, not estimated by another Monte Carlo sample",
+    "familywise_claim": false,
+    "stopping": "fixed repetitions and draws; no extension or tuning after results",
+    "limits": [
+      "Five marginal coverage diagnostics, no joint 95% guarantee or universal coverage proof.",
+      "Independent simulated victim identities; shared training-data or trigger-family dependence is outside this model.",
+      "Four detector seeds in crossed simulation deliberately expose finite-seed limitations.",
+      "Historical score tables and scientific rankings are not re-analysed."
+    ]
+  },
+  "result": "not_met",
+  "coverage": [
+    {
+      "condition": "fixed_detector_null",
+      "repetitions": 200,
+      "covered": 190,
+      "coverage": 0.95,
+      "coverage_ci95": [
+        0.9104218518612239,
+        0.972617354399236
+      ],
+      "mean_interval_width": 0.14942929687500003,
+      "mean_estimate": -0.00024140624999999916,
+      "truth": 0.0,
+      "mean_bias": -0.00024140624999999916,
+      "criterion_met": true
+    },
+    {
+      "condition": "fixed_detector_effect",
+      "repetitions": 200,
+      "covered": 187,
+      "coverage": 0.935,
+      "coverage_ci95": [
+        0.8919809207009312,
+        0.961623645350847
+      ],
+      "mean_interval_width": 0.14632652343750002,
+      "mean_estimate": 0.07198359375,
+      "truth": 0.07055891212536813,
+      "mean_bias": 0.00142468162463187,
+      "criterion_met": true
+    },
+    {
+      "condition": "crossed_null",
+      "repetitions": 200,
+      "covered": 185,
+      "coverage": 0.925,
+      "coverage_ci95": [
+        0.8799563897637055,
+        0.954025082815618
+      ],
+      "mean_interval_width": 0.15180578125000005,
+      "mean_estimate": -0.0033478515625000003,
+      "truth": 0.0,
+      "mean_bias": -0.0033478515625000003,
+      "criterion_met": true
+    },
+    {
+      "condition": "crossed_effect",
+      "repetitions": 200,
+      "covered": 188,
+      "coverage": 0.94,
+      "coverage_ci95": [
+        0.8980683070423372,
+        0.9653478057456681
+      ],
+      "mean_interval_width": 0.14702475585937502,
+      "mean_estimate": 0.0731033203125,
+      "truth": 0.06860193569061901,
+      "mean_bias": 0.004501384621880991,
+      "criterion_met": true
+    },
+    {
+      "condition": "fixed_victims_new_detectors",
+      "repetitions": 200,
+      "covered": 181,
+      "coverage": 0.905,
+      "coverage_ci95": [
+        0.8563983883518006,
+        0.9383368972826135
+      ],
+      "mean_interval_width": 0.028337926432291667,
+      "mean_estimate": 0.011910611979166666,
+      "truth": 0.010907110827832356,
+      "mean_bias": 0.001003501151334309,
+      "criterion_met": false
+    }
+  ],
+  "stability": {
+    "table_seed": 2026410500,
+    "bootstrap_seed": 2026410501,
+    "point": {
+      "baseline": 0.720625,
+      "candidate": 0.7625,
+      "effect": 0.041874999999999996,
+      "per_detector": [
+        [
+          0.720625,
+          0.7625
+        ]
+      ],
+      "per_detector_effect": [
+        0.041874999999999996
+      ]
+    },
+    "analytic_truth": 0.07055891212536813,
+    "prefixes": [
+      {
+        "draws": 128,
+        "ci95": [
+          -0.030589843749999988,
+          0.12092968750000002
+        ],
+        "width": 0.15151953125,
+        "incorrect_t_over_draws": [
+          0.03411650502318854,
+          0.04719941294556147
+        ],
+        "incorrect_width": 0.013082907922372931
+      },
+      {
+        "draws": 512,
+        "ci95": [
+          -0.032992187500000006,
+          0.11762499999999997
+        ],
+        "width": 0.15061718749999997,
+        "incorrect_t_over_draws": [
+          0.03786221723239218,
+          0.044499232962920326
+        ],
+        "incorrect_width": 0.006637015730528145
+      },
+      {
+        "draws": 2048,
+        "ci95": [
+          -0.03091015624999999,
+          0.11353906250000001
+        ],
+        "width": 0.14444921875,
+        "incorrect_t_over_draws": [
+          0.03894099118005998,
+          0.042195788605096284
+        ],
+        "incorrect_width": 0.0032547974250362976
+      }
+    ],
+    "width_ratio_512_over_2048": 1.042699910760161,
+    "max_endpoint_difference": 0.004085937499999956,
+    "criterion_met": true,
+    "wrong_formula_width_ratio_2048_over_512": 0.49040073990864186,
+    "negative_control_detected": true
+  },
+  "records_file": "uncertainty-simulation-records.json",
+  "stability_file": "uncertainty-stability.npz",
+  "limits": [
+    "Five marginal coverage diagnostics, no joint 95% guarantee or universal coverage proof.",
+    "Independent simulated victim identities; shared training-data or trigger-family dependence is outside this model.",
+    "Four detector seeds in crossed simulation deliberately expose finite-seed limitations.",
+    "Historical score tables and scientific rankings are not re-analysed.",
+    "A failed calibration criterion triggers a new version and fresh simulation seeds, not retrospective threshold changes."
+  ]
+}

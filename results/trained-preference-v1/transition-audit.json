@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "transition_tables_checked": 672,
+  "max_float64_vs_float32_probability_difference": 1.0418302592851703e-06,
+  "tolerance": 1e-05
+}

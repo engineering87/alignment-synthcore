@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "normalizer_uses_observed_labels_only": true,
+  "independent_query_action_assignment": true,
+  "same_trace_for_all_arms": true
+}

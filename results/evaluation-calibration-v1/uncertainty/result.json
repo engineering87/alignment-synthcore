@@ -1,0 +1,226 @@
+{
+  "coverage": [
+    {
+      "condition": "fixed_detector_null",
+      "coverage": 0.95,
+      "coverage_ci95": [
+        0.9104218518612239,
+        0.972617354399236
+      ],
+      "covered": 190,
+      "criterion_met": true,
+      "mean_bias": -0.00024140624999999916,
+      "mean_estimate": -0.00024140624999999916,
+      "mean_interval_width": 0.14942929687500003,
+      "repetitions": 200,
+      "truth": 0.0
+    },
+    {
+      "condition": "fixed_detector_effect",
+      "coverage": 0.935,
+      "coverage_ci95": [
+        0.8919809207009312,
+        0.961623645350847
+      ],
+      "covered": 187,
+      "criterion_met": true,
+      "mean_bias": 0.00142468162463187,
+      "mean_estimate": 0.07198359375,
+      "mean_interval_width": 0.14632652343750002,
+      "repetitions": 200,
+      "truth": 0.07055891212536813
+    },
+    {
+      "condition": "crossed_null",
+      "coverage": 0.925,
+      "coverage_ci95": [
+        0.8799563897637055,
+        0.954025082815618
+      ],
+      "covered": 185,
+      "criterion_met": true,
+      "mean_bias": -0.0033478515625000003,
+      "mean_estimate": -0.0033478515625000003,
+      "mean_interval_width": 0.15180578125000005,
+      "repetitions": 200,
+      "truth": 0.0
+    },
+    {
+      "condition": "crossed_effect",
+      "coverage": 0.94,
+      "coverage_ci95": [
+        0.8980683070423372,
+        0.9653478057456681
+      ],
+      "covered": 188,
+      "criterion_met": true,
+      "mean_bias": 0.004501384621880991,
+      "mean_estimate": 0.0731033203125,
+      "mean_interval_width": 0.14702475585937502,
+      "repetitions": 200,
+      "truth": 0.06860193569061901
+    },
+    {
+      "condition": "fixed_victims_new_detectors",
+      "coverage": 0.905,
+      "coverage_ci95": [
+        0.8563983883518006,
+        0.9383368972826135
+      ],
+      "covered": 181,
+      "criterion_met": false,
+      "mean_bias": 0.001003501151334309,
+      "mean_estimate": 0.011910611979166666,
+      "mean_interval_width": 0.028337926432291667,
+      "repetitions": 200,
+      "truth": 0.010907110827832356
+    }
+  ],
+  "limits": [
+    "Five marginal coverage diagnostics, no joint 95% guarantee or universal coverage proof.",
+    "Independent simulated victim identities; shared training-data or trigger-family dependence is outside this model.",
+    "Four detector seeds in crossed simulation deliberately expose finite-seed limitations.",
+    "Historical score tables and scientific rankings are not re-analysed.",
+    "A failed calibration criterion triggers a new version and fresh simulation seeds, not retrospective threshold changes."
+  ],
+  "protocol": {
+    "bootstrap": {
+      "coverage_draws": 399,
+      "detectors": "resample whole detector score vectors; preserve arm pairing; never independent per-victim seeds",
+      "interval": "95% paired percentile",
+      "stability_draw_prefixes": [
+        128,
+        512,
+        2048
+      ],
+      "victims": "stratified by clean/backdoored class"
+    },
+    "criteria": {
+      "coverage_each": "empirical coverage >=0.90 and two-sided 95% Wilson interval contains nominal 0.95",
+      "stability": "512-vs-2048 prefix CI width ratio in [0.80,1.25] and maximum endpoint difference <=0.02 AUROC",
+      "wrong_formula_control": "deliberately incorrect t interval over bootstrap draws has width ratio <0.65 at 2048 vs 512 draws"
+    },
+    "estimands": {
+      "fixed_victims_new_detectors": "expected paired AUROC difference across new independent detector fits on this exact victim corpus",
+      "new_victims_fixed_detectors": "paired AUROC difference on new victims for the average of these fixed detector fits",
+      "new_victims_new_detectors": "expected paired AUROC difference over new victim models and independent detector fits"
+    },
+    "familywise_claim": false,
+    "fixed_victim_simulation": {
+      "conditional_truth": "mean over victim pairs of Gaussian comparison probabilities; fixed latent corpus",
+      "detector_noise_sd": 0.5,
+      "detector_seeds": 12,
+      "draw_seed_base": 2026310400,
+      "latent_seed": 2026210300,
+      "models_per_class": 80,
+      "repetitions": 200
+    },
+    "id": "uncertainty-calibration-v1",
+    "limits": [
+      "Five marginal coverage diagnostics, no joint 95% guarantee or universal coverage proof.",
+      "Independent simulated victim identities; shared training-data or trigger-family dependence is outside this model.",
+      "Four detector seeds in crossed simulation deliberately expose finite-seed limitations.",
+      "Historical score tables and scientific rankings are not re-analysed."
+    ],
+    "population_simulations": {
+      "arm_latent_correlation": 0.6,
+      "conditions": [
+        "fixed_detector_null",
+        "fixed_detector_effect",
+        "crossed_null",
+        "crossed_effect"
+      ],
+      "crossed_detector_noise_sd": 0.3,
+      "crossed_detector_seeds": 4,
+      "fixed_detector_seeds": 1,
+      "models_per_class": 80,
+      "mu_baseline": 0.7,
+      "mu_candidate_effect": 1.0,
+      "mu_candidate_null": 0.7,
+      "repetitions_per_condition": 200,
+      "seed_base": 2026110200
+    },
+    "stability_table": {
+      "arm_latent_correlation": 0.6,
+      "bootstrap_seed": 2026410501,
+      "data_seed": 2026410500,
+      "detector_noise_sd": 0.0,
+      "detector_seeds": 1,
+      "models_per_class": 80,
+      "mu_baseline": 0.7,
+      "mu_candidate": 1.0
+    },
+    "stage": "synthetic_calibration",
+    "stopping": "fixed repetitions and draws; no extension or tuning after results",
+    "truth": "analytic normal-score AUROC, not estimated by another Monte Carlo sample",
+    "version": "paired-auroc-estimands-v1"
+  },
+  "records_file": "uncertainty-simulation-records.json",
+  "result": "not_met",
+  "stability": {
+    "analytic_truth": 0.07055891212536813,
+    "bootstrap_seed": 2026410501,
+    "criterion_met": true,
+    "max_endpoint_difference": 0.004085937499999956,
+    "negative_control_detected": true,
+    "point": {
+      "baseline": 0.720625,
+      "candidate": 0.7625,
+      "effect": 0.041874999999999996,
+      "per_detector": [
+        [
+          0.720625,
+          0.7625
+        ]
+      ],
+      "per_detector_effect": [
+        0.041874999999999996
+      ]
+    },
+    "prefixes": [
+      {
+        "ci95": [
+          -0.030589843749999988,
+          0.12092968750000002
+        ],
+        "draws": 128,
+        "incorrect_t_over_draws": [
+          0.03411650502318854,
+          0.04719941294556147
+        ],
+        "incorrect_width": 0.013082907922372931,
+        "width": 0.15151953125
+      },
+      {
+        "ci95": [
+          -0.032992187500000006,
+          0.11762499999999997
+        ],
+        "draws": 512,
+        "incorrect_t_over_draws": [
+          0.03786221723239218,
+          0.044499232962920326
+        ],
+        "incorrect_width": 0.006637015730528145,
+        "width": 0.15061718749999997
+      },
+      {
+        "ci95": [
+          -0.03091015624999999,
+          0.11353906250000001
+        ],
+        "draws": 2048,
+        "incorrect_t_over_draws": [
+          0.03894099118005998,
+          0.042195788605096284
+        ],
+        "incorrect_width": 0.0032547974250362976,
+        "width": 0.14444921875
+      }
+    ],
+    "table_seed": 2026410500,
+    "width_ratio_512_over_2048": 1.042699910760161,
+    "wrong_formula_width_ratio_2048_over_512": 0.49040073990864186
+  },
+  "stability_file": "uncertainty-stability.npz"
+}

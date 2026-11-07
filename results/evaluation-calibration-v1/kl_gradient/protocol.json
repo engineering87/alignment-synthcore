@@ -1,0 +1,55 @@
+{
+  "name": "enumerated-kl-gradient-contract-v1",
+  "scope": "New explicit toy implementations; does not validate archived KL training code or establish alignment behavior.",
+  "cases": "3 nonstationary categorical 3-action fixtures and 3 deterministic two-state, two-action, horizon-3 MDP fixtures",
+  "reference_support": "strictly positive fixed reference policy; current policy softmax over float64 logits",
+  "objectives": {
+    "reverse": "sum_trajectories p * log(p/q)",
+    "forward": "sum_trajectories q * log(q/p)"
+  },
+  "sampling_contract": "Enumerate all categorical actions or all 2^3 trajectories. For sampled-loss variants, current-policy probability weights are detached; score-surrogate also detaches the log-ratio coefficient. Gradients are exact expectations, not individual sample gradients.",
+  "k3_contract": "k3=q/p-log(q/p)-1; direct loss with detached p sampling weights has the forward-KL gradient in this full-trajectory construction, despite its reverse-KL expected value.",
+  "mdp": "start state 0; action 0 preserves state, action 1 flips state; full trajectory log probabilities include all 3 decisions; fixed reference uses same dynamics",
+  "variants": {
+    "reverse_exact": {
+      "declared_objective": "reverse",
+      "expected_accept": true
+    },
+    "reverse_score_surrogate": {
+      "declared_objective": "reverse",
+      "expected_accept": true
+    },
+    "forward_exact": {
+      "declared_objective": "forward",
+      "expected_accept": true
+    },
+    "k3_detached_sampling_forward": {
+      "declared_objective": "forward",
+      "expected_accept": true
+    },
+    "k1_detached_sampling_as_reverse": {
+      "declared_objective": "reverse",
+      "expected_accept": false
+    },
+    "k3_detached_sampling_misdeclared_reverse": {
+      "declared_objective": "reverse",
+      "expected_accept": false
+    },
+    "fully_detached_reverse": {
+      "declared_objective": "reverse",
+      "expected_accept": false
+    },
+    "misnormalized_reverse": {
+      "declared_objective": "reverse",
+      "expected_accept": false
+    }
+  },
+  "negative_controls": "k1 direct sampled loss lacks the score-distribution term; k3 deliberately assigned wrong objective; fully detached gradient; mean reduction substituted for declared sum",
+  "finite_difference": {
+    "method": "central difference of separately evaluated NumPy objective",
+    "epsilon": 1e-06,
+    "max_absolute_error_tolerance": 1e-07
+  },
+  "categorical_analytic_crosscheck": "reverse: p*(log(p/q)-KL); forward: p-q",
+  "stopping": "All 6 cases and 8 variants, fixed tolerances and no result-driven modifications; engineering unit checks may use other fixtures before freeze."
+}

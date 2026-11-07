@@ -1,0 +1,842 @@
+[
+  {
+    "battery": 103101,
+    "kind": "mixture",
+    "fit": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.2098137120751638,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103101,
+    "kind": "soft_w_0.3",
+    "fit": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.28237378792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 186,
+          "unreached": 0,
+          "lower": 0.6216556439624181,
+          "upper": 0.8314693560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 134,
+          "unreached": 0,
+          "lower": 0.41853064396241807,
+          "upper": 0.6283443560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 80,
+          "unreached": 0,
+          "lower": 0.20759314396241807,
+          "upper": 0.41740685603758193
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 40,
+          "unreached": 0,
+          "lower": 0.05134314396241807,
+          "upper": 0.26115685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 18,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.17521935603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 8,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.13615685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 4,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.12053185603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103101,
+    "kind": "soft_w_0.7",
+    "fit": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.28237378792483625,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 252,
+          "unreached": 0,
+          "lower": 0.8794681439624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 248,
+          "unreached": 0,
+          "lower": 0.8638431439624181,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 238,
+          "unreached": 0,
+          "lower": 0.8247806439624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 216,
+          "unreached": 0,
+          "lower": 0.7388431439624181,
+          "upper": 0.9486568560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 176,
+          "unreached": 0,
+          "lower": 0.5825931439624181,
+          "upper": 0.7924068560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 122,
+          "unreached": 0,
+          "lower": 0.37165564396241807,
+          "upper": 0.5814693560375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 70,
+          "unreached": 0,
+          "lower": 0.16853064396241807,
+          "upper": 0.37834435603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103101,
+    "kind": "stationary",
+    "fit": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.0,
+      "tail_gap_lower": -1,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103102,
+    "kind": "mixture",
+    "fit": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.2098137120751638,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103102,
+    "kind": "soft_w_0.3",
+    "fit": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.28237378792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 186,
+          "unreached": 0,
+          "lower": 0.6216556439624181,
+          "upper": 0.8314693560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 134,
+          "unreached": 0,
+          "lower": 0.41853064396241807,
+          "upper": 0.6283443560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 80,
+          "unreached": 0,
+          "lower": 0.20759314396241807,
+          "upper": 0.41740685603758193
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 40,
+          "unreached": 0,
+          "lower": 0.05134314396241807,
+          "upper": 0.26115685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 18,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.17521935603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 8,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.13615685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 4,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.12053185603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103102,
+    "kind": "soft_w_0.7",
+    "fit": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.28237378792483625,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 252,
+          "unreached": 0,
+          "lower": 0.8794681439624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 248,
+          "unreached": 0,
+          "lower": 0.8638431439624181,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 238,
+          "unreached": 0,
+          "lower": 0.8247806439624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 216,
+          "unreached": 0,
+          "lower": 0.7388431439624181,
+          "upper": 0.9486568560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 176,
+          "unreached": 0,
+          "lower": 0.5825931439624181,
+          "upper": 0.7924068560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 122,
+          "unreached": 0,
+          "lower": 0.37165564396241807,
+          "upper": 0.5814693560375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 70,
+          "unreached": 0,
+          "lower": 0.16853064396241807,
+          "upper": 0.37834435603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103102,
+    "kind": "stationary",
+    "fit": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.0,
+      "tail_gap_lower": -1,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103103,
+    "kind": "mixture",
+    "fit": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.2098137120751638,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103103,
+    "kind": "soft_w_0.3",
+    "fit": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.28237378792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 186,
+          "unreached": 0,
+          "lower": 0.6216556439624181,
+          "upper": 0.8314693560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 134,
+          "unreached": 0,
+          "lower": 0.41853064396241807,
+          "upper": 0.6283443560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 80,
+          "unreached": 0,
+          "lower": 0.20759314396241807,
+          "upper": 0.41740685603758193
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 40,
+          "unreached": 0,
+          "lower": 0.05134314396241807,
+          "upper": 0.26115685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 18,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.17521935603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 8,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.13615685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 4,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.12053185603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103103,
+    "kind": "soft_w_0.7",
+    "fit": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.28237378792483625,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 252,
+          "unreached": 0,
+          "lower": 0.8794681439624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 248,
+          "unreached": 0,
+          "lower": 0.8638431439624181,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 238,
+          "unreached": 0,
+          "lower": 0.8247806439624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 216,
+          "unreached": 0,
+          "lower": 0.7388431439624181,
+          "upper": 0.9486568560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 176,
+          "unreached": 0,
+          "lower": 0.5825931439624181,
+          "upper": 0.7924068560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 122,
+          "unreached": 0,
+          "lower": 0.37165564396241807,
+          "upper": 0.5814693560375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 70,
+          "unreached": 0,
+          "lower": 0.16853064396241807,
+          "upper": 0.37834435603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  },
+  {
+    "battery": 103103,
+    "kind": "stationary",
+    "fit": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.0,
+      "tail_gap_lower": -1,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 256,
+          "lower": 0,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "passed": true
+  }
+]

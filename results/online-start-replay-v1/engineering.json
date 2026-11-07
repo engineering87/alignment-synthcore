@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "different_start_difficulty_not_regret": true,
+  "same_start_deficit_detected": true,
+  "oracle_queries": 0
+}

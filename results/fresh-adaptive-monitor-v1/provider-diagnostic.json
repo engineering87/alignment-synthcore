@@ -1,0 +1,13 @@
+{
+  "http_status": 400,
+  "body": {
+    "type": "error",
+    "error": {
+      "type": "invalid_request_error",
+      "message": "To turn thinking off on this model, send \"thinking\": {\"type\": \"between_tools\"} instead of {\"type\": \"disabled\"}. The model does not think before responding. The short updates it writes between tool calls come back as thinking blocks."
+    },
+    "request_id": "req_011CgaemDc3BUWd8URNzAmDK"
+  },
+  "created_utc": "2026-10-31T16:44:41.832228+00:00",
+  "scope": "One manual diagnosis of initial HTTP400; no confirmation access; prior reservation retained."
+}

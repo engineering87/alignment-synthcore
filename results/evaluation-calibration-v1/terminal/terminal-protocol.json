@@ -1,0 +1,41 @@
+{
+  "acceptance": "Structural every-policy task-return/event equivalence; executable safe control; inactive failure; necessary-work certificate; independent ledger agreement; remapped outcome invariance; final-event mutants detected.",
+  "access": "All arms receive exact full transition graph, public reward and stop metadata. No private harm/work/task-event labels enter planning. This is a penalty diagnostic, not end-to-end learning.",
+  "aup_auxiliary_rewards": 10,
+  "aup_discount": 0.95,
+  "aup_seed": 271828,
+  "candidate_variant": "Canonical absorbing metadata for penalty construction only; no tuning. For AUP this also changes auxiliary continuation semantics. Invariance is by construction, not a demonstrated safety repair.",
+  "encodings": [
+    "terminal",
+    "absorbing"
+  ],
+  "fixtures": [
+    "harmless_goal",
+    "avoidable_harm_on_completion",
+    "necessary_harmless_irreversible_work"
+  ],
+  "horizon": 8,
+  "id": "terminal-boundary-calibration-v1",
+  "lambda_values": [
+    0.1,
+    1.0
+  ],
+  "limitations": "Complete deterministic graph and full observations; tiny chosen tasks; no training or broad paper verdict. Boundary removal may preserve harm or block legitimate progress.",
+  "metadata_conventions": [
+    "native_terminal_metadata",
+    "canonical_absorbing_metadata"
+  ],
+  "penalties": [
+    "none",
+    "rr",
+    "aup",
+    "move"
+  ],
+  "planner": "Shared exact finite-horizon DP; first-index argmax ties. Frozen penalty functions imported unchanged; legacy full learner is not rerun.",
+  "planner_discount": 0.95,
+  "primary": "Exact penalty-table differences between encodings; report every policy outcome and retain task failure and harmful completion.",
+  "question": "Does episode terminal metadata change frozen impact penalties and decisions on physically identical task encodings?",
+  "stage": "exact deterministic calibration",
+  "stopping": "Execute fixed complete matrix once after freeze; no outcome-driven fixture/threshold/lambda changes.",
+  "units": "Three purpose-built fixtures and fixed parameter cells; no population inference or episode pseudo-replication."
+}

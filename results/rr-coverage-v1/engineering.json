@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "deleted_return_edge_creates_false_irreversibility": true,
+  "noop_and_state_set_preserved": true,
+  "terminal_exempt": true
+}

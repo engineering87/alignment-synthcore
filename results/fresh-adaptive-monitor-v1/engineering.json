@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "bounded_ast_interpreter": true,
+  "model_code_never_executed": true,
+  "task_count": 88,
+  "fresh_generation_required": true
+}

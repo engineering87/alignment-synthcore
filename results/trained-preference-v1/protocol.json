@@ -1,0 +1,28 @@
+{
+  "id": "trained-preference-v1",
+  "date": "2026-11-03",
+  "stage": "frozen trained-policy evaluation; not fresh training replication",
+  "models": [
+    "results/preference-measurement-v2/models/entropy_0.01.npz",
+    "results/preference-measurement-v2/models/entropy_0.05.npz"
+  ],
+  "policies": "All8 checkpoint policies per entropy cohort;16total. No selection based on new outcomes.",
+  "seeds": [
+    103101,
+    103102,
+    103103
+  ],
+  "placements": "14per battery; reject any pair seen in either preceding calibration or another current battery",
+  "rollouts": 128,
+  "horizon": 20,
+  "readout": "Unchanged policy softmax; repaired inference unchanged. Exact Markov endpoint probabilities computed independently after sampling.",
+  "primary": "Controls all correct; at least90% of48 joint bands contain exact finite-horizon gem probabilities and Wilson interval contains95%; every robust reported trade-off has exact worst-case tail gap>=.10. At least4 distinct trained policies must report a robust trade-off for nonvacuous positive validation, otherwise inconclusive.",
+  "controls": [
+    "mixture",
+    "soft_w_0.3",
+    "soft_w_0.7",
+    "stationary"
+  ],
+  "limits": "Conditional fixed policies and batteries; exact behavioral probabilities do not identify latent goals or establish population calibration. No joint guarantee over48analyses. Historical policy results known.",
+  "stopping": "Fixed cohort/battery count; no tuning, replacement or extension after outcomes."
+}

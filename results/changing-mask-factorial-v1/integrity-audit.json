@@ -1,0 +1,17 @@
+{
+  "audit_passed": true,
+  "source_files_verified": 32,
+  "groups": 32,
+  "traces_checked": 192,
+  "transitions_checked": 3840000,
+  "policies_checked": 1152,
+  "checks": [
+    "private graph transitions and reward",
+    "query-action label assignment",
+    "same-noise .9/.95 approval streams",
+    "observed-only span normalization",
+    "learned-table Bellman greediness within1e-8",
+    "independent distribution propagation and primary intervals"
+  ],
+  "meaning": "Saved-record audit, not independent scientific reproduction. Original Test4 online methods are not rerun; this is the declared passive-trace adapter."
+}

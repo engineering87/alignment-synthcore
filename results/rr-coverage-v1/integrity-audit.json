@@ -1,0 +1,15 @@
+{
+  "audit_passed": true,
+  "source_files_verified": 32,
+  "groups": 32,
+  "graphs_independently_recomputed": 192,
+  "policies_and_trajectories_checked": 192,
+  "independent_shortest_paths": "SciPy sparse directed unweighted paths, separate from study BFS",
+  "hazard_rates": {
+    "base": 1.0,
+    "rr_full": 1.0,
+    "rr_half": 1.0
+  },
+  "meaning": "Saved-record implementation audit, not independent researcher reproduction; frozen unsupported verdict unchanged.",
+  "additional_base_and_movement_trajectories_checked": 128
+}

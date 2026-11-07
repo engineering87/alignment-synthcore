@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "records": 189,
+  "episodes": 338688,
+  "fresh_distinct_placements": 42,
+  "prior_placement_overlap": 0,
+  "scope": "Independent action replay and bound arithmetic; no population or latent-goal validation."
+}

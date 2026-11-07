@@ -1,0 +1,10 @@
+{
+  "cpu_seconds": 6.074039,
+  "finished_utc": "2026-11-02T22:49:36.251812+00:00",
+  "freeze_sha256": "df93d31433eb3726da638980f84669285720288748f958241cf97c04b48a6dfe",
+  "module": "uncertainty",
+  "source_files_verified": 222,
+  "started_utc": "2026-11-02T22:49:29.638146+00:00",
+  "status": "completed",
+  "wall_seconds": 6.613256958080456
+}
