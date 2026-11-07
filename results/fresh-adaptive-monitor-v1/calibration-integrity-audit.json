@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "source_freeze_and_registration_verified": true,
+  "task_manifest_verified": true,
+  "calibration_records_checked": 8,
+  "cached_requests_checked": 56,
+  "cost_recomputed": true,
+  "confirmation_calls": 0,
+  "phase_authorization_checked": true,
+  "attack_eligibility_and_selection_recomputed": true,
+  "monitor_parse_scores_recomputed": true,
+  "bounded_interpreter": "Uses frozen bounded interpreter, not independent semantic reimplementation",
+  "completed_utc": "2026-10-31T17:12:24.697543+00:00"
+}

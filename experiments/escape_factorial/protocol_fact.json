@@ -1,0 +1,46 @@
+{
+ "experiment": "escape-factorial-v1",
+ "question": "Does the escape-time constant (T x p, about 60 updates for cnn_l at entropy 0.05) change with model width and exploration while 1/p scaling holds?",
+ "follows": "escape-time-v1 (1/p law, cnn_l, entropy 0.05, 7x7 room)",
+ "setup": "7x7 room, vendored gw.py and ppo.py unchanged; cnn_xl (c=16, h=128) registered at run time. Same readout, escape and switch-back definitions as escape-time-v1 (gem reached on >= 50% of battery trials; 8 sampled rollouts per trial; measure3 7x7 = frozen v2).",
+ "factors": {
+  "width": {
+   "cnn_s": "c=4, h=32",
+   "cnn_l": "c=8, h=64",
+   "cnn_xl": "c=16, h=128"
+  },
+  "entropy": [
+   0.01,
+   0.05
+  ],
+  "p": [
+   0.2,
+   0.05
+  ]
+ },
+ "seeds": [
+  93000,
+  93001,
+  93002,
+  93003
+ ],
+ "battery_seed": 23,
+ "caps": {
+  "0.2": 1000,
+  "0.05": 3000
+ },
+ "stopping": "250-update segments; a run stops once every seed has escaped and stayed >= 0.5 for 4 more checkpoints, or at its cap (unescaped seeds right-censored at the last checkpoint).",
+ "order": "p 0.2 cells first (all widths and entropies), then p 0.05; within p, cnn_s, cnn_l, cnn_xl, entropy 0.05 then 0.01.",
+ "model": "censored normal (Tobit) regression of log T. Cell = width x entropy (6 cells). M0: one intercept + slope b on log(1/p). M1: 6 intercepts + common b. M2: 6 intercepts + 6 slopes. Common sigma.",
+ "primary": {
+  "H1_scaling": "in M1, the 95% profile CI for b lies inside [0.75, 1.25]: 1/p scaling holds across width and exploration.",
+  "H2_exponent_homogeneous": "likelihood-ratio test M2 vs M1 (5 df): p >= 0.05 supported (no evidence the exponent varies); p < 0.05: exponent varies by cell.",
+  "H3_constant_moves": "likelihood-ratio test M1 vs M0 (5 df): p < 0.05 supported (the constant depends on width and/or exploration)."
+ },
+ "secondary": [
+  "directional: the constant falls with width (cnn_s > cnn_l > cnn_xl) and is lower at entropy 0.05 than 0.01, read from M1 intercepts with 95% intervals",
+  "replication: cnn_l entropy 0.05 cell constant vs escape-time-v1 (median p x T = 57)",
+  "per-cell p x T medians, censoring counts, switch-backs"
+ ],
+ "limits_declared": "4 seeds per cell; two p values per cell; entropy 0.01 cells may be censored at the cap, handled by the censored model."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "preference-repair-v1",
+  "stage": "fresh constructed-control validation",
+  "date": "2026-11-03",
+  "seeds": [
+    93101,
+    93102,
+    93103
+  ],
+  "controls": [
+    "fixed_0.25",
+    "mixture",
+    "fixed_0.75",
+    "soft_w_0.25",
+    "soft_w_0.5",
+    "soft_w_0.75",
+    "stationary"
+  ],
+  "method": "Use every observed endpoint including late reaches; actual nonreach is worst-case unknown mass. Simultaneous 95% Hoeffding bands over seven distance bins. Require coverage>=.9, constant-share explanation excluded, and minimum low-gap lower minus maximum high-gap upper>=.10.",
+  "alpha": 0.05,
+  "minimum_effect": 0.1,
+  "coverage": 0.9,
+  "tail_gaps": [
+    [
+      -6,
+      -4
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "fresh": "Reject complete generated batteries overlapping any placement from earlier v1 or another validation battery; deterministic seed increments recorded.",
+  "arms": "No delay plus six-step-late or20-step-timeout crossed with8/128 or12/128 delays and uniform/selective allocation.",
+  "primary": "Zero robust-tradeoff classifications for fixed/mixture/stationary controls, and all no-delay soft controls detected. Report all delayed positive sensitivity without changing gates.",
+  "limitations": "Constructed known controls; does not identify latent intention under arbitrary execution failure; no trained-policy repair claim; bounds population calibration not established here.",
+  "stopping": "Fixed3batteries,7controls,9arms; no changes or extensions after validation."
+}

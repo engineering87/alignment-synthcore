@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "analyses": 48,
+  "sampled_episodes_reproduced": 86016,
+  "fresh_distinct_placements": 42,
+  "exact_reference_max_forward_backward_error": 6.661338147750939e-16,
+  "scope": "Separate NumPy sampler and backward propagation. Saved transition construction is not independently rederived from network logits here; finite floating-point policy evaluation and conditional cohort limits remain."
+}

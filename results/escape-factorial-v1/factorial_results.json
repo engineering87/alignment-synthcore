@@ -1,0 +1,635 @@
+{
+ "n": 48,
+ "H1": {
+  "b": 0.8983796412576841,
+  "b_ci95": [
+   0.7483796412576842,
+   1.0483796412576842
+  ],
+  "sigma": 0.33640136878765675,
+  "verdict": "not_supported"
+ },
+ "H2": {
+  "LR": 4.43219971237928,
+  "df": 5,
+  "p": 0.48900580877502087,
+  "verdict": "supported"
+ },
+ "H3": {
+  "LR": 88.93326825543949,
+  "df": 5,
+  "p": 1.1255567459754853e-17,
+  "verdict": "supported"
+ },
+ "constants": [
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "log_intercept": 8.507455470272767,
+   "T_at_p1": 4951.547684716552,
+   "T_at_p1_ci95": [
+    1104.8396278733912,
+    22191.297139851922
+   ],
+   "median_pT": 175.0,
+   "censored": 8,
+   "n": 8
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "log_intercept": 5.0316232913393995,
+   "T_at_p1": 153.1814691346662,
+   "T_at_p1_ci95": [
+    100.14541616204507,
+    234.30490765834693
+   ],
+   "median_pT": 136.25,
+   "censored": 1,
+   "n": 8
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "log_intercept": 5.199311453385171,
+   "T_at_p1": 181.14747044704728,
+   "T_at_p1_ci95": [
+    118.42874283098148,
+    277.08143534205846
+   ],
+   "median_pT": 141.25,
+   "censored": 2,
+   "n": 8
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "log_intercept": 4.225338851668798,
+   "T_at_p1": 68.39767628902797,
+   "T_at_p1_ci95": [
+    44.71633413085868,
+    104.62043037893422
+   ],
+   "median_pT": 53.75,
+   "censored": 0,
+   "n": 8
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "log_intercept": 4.395372920430461,
+   "T_at_p1": 81.07485959744277,
+   "T_at_p1_ci95": [
+    53.0042935384527,
+    124.01132851580196
+   ],
+   "median_pT": 66.25,
+   "censored": 0,
+   "n": 8
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "log_intercept": 3.40159683554129,
+   "T_at_p1": 30.011986010143787,
+   "T_at_p1_ci95": [
+    19.62092964517169,
+    45.906046276187276
+   ],
+   "median_pT": 23.75,
+   "censored": 0,
+   "n": 8
+  }
+ ],
+ "switch_backs": 0,
+ "rows": [
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93000,
+   "T": 1000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 200.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93001,
+   "T": 1000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 200.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93002,
+   "T": 1000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 200.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93003,
+   "T": 1000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 200.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93000,
+   "T": 3000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 150.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93001,
+   "T": 3000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 150.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93002,
+   "T": 3000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 150.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93003,
+   "T": 3000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 150.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93000,
+   "T": 1000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 200.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93001,
+   "T": 350,
+   "censored": false,
+   "switch_back": false,
+   "pT": 70.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93002,
+   "T": 850,
+   "censored": false,
+   "switch_back": false,
+   "pT": 170.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93003,
+   "T": 400,
+   "censored": false,
+   "switch_back": false,
+   "pT": 80.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93000,
+   "T": 2750,
+   "censored": false,
+   "switch_back": false,
+   "pT": 137.5,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93001,
+   "T": 1500,
+   "censored": false,
+   "switch_back": false,
+   "pT": 75.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93002,
+   "T": 2700,
+   "censored": false,
+   "switch_back": false,
+   "pT": 135.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_s",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93003,
+   "T": 3000,
+   "censored": false,
+   "switch_back": false,
+   "pT": 150.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93000,
+   "T": 1000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 200.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93001,
+   "T": 750,
+   "censored": false,
+   "switch_back": false,
+   "pT": 150.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93002,
+   "T": 550,
+   "censored": false,
+   "switch_back": false,
+   "pT": 110.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93003,
+   "T": 850,
+   "censored": false,
+   "switch_back": false,
+   "pT": 170.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93000,
+   "T": 3000,
+   "censored": true,
+   "switch_back": false,
+   "pT": 150.0,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93001,
+   "T": 2150,
+   "censored": false,
+   "switch_back": false,
+   "pT": 107.5,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93002,
+   "T": 2650,
+   "censored": false,
+   "switch_back": false,
+   "pT": 132.5,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93003,
+   "T": 1950,
+   "censored": false,
+   "switch_back": false,
+   "pT": 97.5,
+   "last_checkpoint": 3000
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93000,
+   "T": 450,
+   "censored": false,
+   "switch_back": false,
+   "pT": 90.0,
+   "last_checkpoint": 750
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93001,
+   "T": 250,
+   "censored": false,
+   "switch_back": false,
+   "pT": 50.0,
+   "last_checkpoint": 750
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93002,
+   "T": 150,
+   "censored": false,
+   "switch_back": false,
+   "pT": 30.0,
+   "last_checkpoint": 750
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93003,
+   "T": 250,
+   "censored": false,
+   "switch_back": false,
+   "pT": 50.0,
+   "last_checkpoint": 750
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93000,
+   "T": 1350,
+   "censored": false,
+   "switch_back": false,
+   "pT": 67.5,
+   "last_checkpoint": 1750
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93001,
+   "T": 1250,
+   "censored": false,
+   "switch_back": false,
+   "pT": 62.5,
+   "last_checkpoint": 1750
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93002,
+   "T": 900,
+   "censored": false,
+   "switch_back": false,
+   "pT": 45.0,
+   "last_checkpoint": 1750
+  },
+  {
+   "arch": "cnn_l",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93003,
+   "T": 1150,
+   "censored": false,
+   "switch_back": false,
+   "pT": 57.5,
+   "last_checkpoint": 1750
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93000,
+   "T": 650,
+   "censored": false,
+   "switch_back": false,
+   "pT": 130.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93001,
+   "T": 500,
+   "censored": false,
+   "switch_back": false,
+   "pT": 100.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93002,
+   "T": 450,
+   "censored": false,
+   "switch_back": false,
+   "pT": 90.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.2,
+   "seed": 93003,
+   "T": 200,
+   "censored": false,
+   "switch_back": false,
+   "pT": 40.0,
+   "last_checkpoint": 1000
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93000,
+   "T": 1000,
+   "censored": false,
+   "switch_back": false,
+   "pT": 50.0,
+   "last_checkpoint": 1850
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93001,
+   "T": 1650,
+   "censored": false,
+   "switch_back": false,
+   "pT": 82.5,
+   "last_checkpoint": 1850
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93002,
+   "T": 850,
+   "censored": false,
+   "switch_back": false,
+   "pT": 42.5,
+   "last_checkpoint": 1850
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.01,
+   "p": 0.05,
+   "seed": 93003,
+   "T": 700,
+   "censored": false,
+   "switch_back": false,
+   "pT": 35.0,
+   "last_checkpoint": 1850
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93000,
+   "T": 150,
+   "censored": false,
+   "switch_back": false,
+   "pT": 30.0,
+   "last_checkpoint": 500
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93001,
+   "T": 100,
+   "censored": false,
+   "switch_back": false,
+   "pT": 20.0,
+   "last_checkpoint": 500
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93002,
+   "T": 150,
+   "censored": false,
+   "switch_back": false,
+   "pT": 30.0,
+   "last_checkpoint": 500
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.2,
+   "seed": 93003,
+   "T": 100,
+   "censored": false,
+   "switch_back": false,
+   "pT": 20.0,
+   "last_checkpoint": 500
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93000,
+   "T": 450,
+   "censored": false,
+   "switch_back": false,
+   "pT": 22.5,
+   "last_checkpoint": 750
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93001,
+   "T": 500,
+   "censored": false,
+   "switch_back": false,
+   "pT": 25.0,
+   "last_checkpoint": 750
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93002,
+   "T": 500,
+   "censored": false,
+   "switch_back": false,
+   "pT": 25.0,
+   "last_checkpoint": 750
+  },
+  {
+   "arch": "cnn_xl",
+   "entropy": 0.05,
+   "p": 0.05,
+   "seed": 93003,
+   "T": 400,
+   "censored": false,
+   "switch_back": false,
+   "pT": 20.0,
+   "last_checkpoint": 750
+  }
+ ]
+}

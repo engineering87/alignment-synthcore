@@ -1,0 +1,11 @@
+{
+  "study": "enumerated-kl-gradient-contract-v1",
+  "cases": 6,
+  "contracts": 48,
+  "correct_accept_reject": 48,
+  "positive_contracts_accepted": 24,
+  "negative_controls_rejected": 24,
+  "all_probability_sums_valid": true,
+  "all_analytic_crosschecks_passed": true,
+  "scope": "New explicit toy implementations; does not validate archived KL training code or establish alignment behavior."
+}

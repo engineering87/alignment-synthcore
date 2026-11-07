@@ -1,0 +1,41 @@
+1. measure3 identical to v2 in 7x7: True
+2. JAX greedy rollouts identical to NumPy: True
+   sampled seed 0: JAX cov 0.890 gem 0.891 insufficiently_directed | NumPy cov 0.889 gem 0.891 insufficiently_directed
+   sampled seed 1: JAX cov 1.000 gem 0.997 gem_seeker | NumPy cov 1.000 gem 0.998 gem_seeker
+3. 11x11 controls, measurable w range [0.018, 0.982]
+   orig IN  optimal      {'w': 0.03, 'eps': 0.0}  cov 1.00 trade_off               w 0.031 ci [0.027, 0.034]
+   orig     optimal      {'w': 0.03, 'eps': 0.2}  cov 0.83 insufficiently_directed w None ci None
+   orig IN  optimal      {'w': 0.05, 'eps': 0.0}  cov 1.00 trade_off               w 0.047 ci [0.042, 0.052]
+   orig     optimal      {'w': 0.05, 'eps': 0.2}  cov 0.85 insufficiently_directed w None ci None
+   orig IN  optimal      {'w': 0.15, 'eps': 0.0}  cov 1.00 trade_off               w 0.158 ci [0.144, 0.173]
+   orig IN  optimal      {'w': 0.15, 'eps': 0.2}  cov 0.91 trade_off               w 0.161 ci [0.146, 0.177]
+   orig IN  optimal      {'w': 0.5, 'eps': 0.0}   cov 1.00 trade_off               w 0.472 ci [0.444, 0.5]
+   orig IN  optimal      {'w': 0.5, 'eps': 0.2}   cov 0.93 trade_off               w 0.494 ci [0.467, 0.522]
+   orig IN  optimal      {'w': 0.85, 'eps': 0.0}  cov 1.00 trade_off               w 0.842 ci [0.827, 0.856]
+   orig IN  optimal      {'w': 0.85, 'eps': 0.2}  cov 0.90 trade_off               w 0.839 ci [0.823, 0.854]
+   orig IN  optimal      {'w': 0.95, 'eps': 0.0}  cov 1.00 trade_off               w 0.953 ci [0.948, 0.958]
+   orig     optimal      {'w': 0.95, 'eps': 0.2}  cov 0.85 insufficiently_directed w None ci None
+   orig IN  optimal      {'w': 0.97, 'eps': 0.0}  cov 1.00 gem_seeker              w 0.969 ci [0.966, 1.0]
+   orig     optimal      {'w': 0.97, 'eps': 0.2}  cov 0.83 insufficiently_directed w None ci None
+   orig IN  soft_optimal {'w': 0.95, 'tau': 2.0}  cov 1.00 trade_off               w 0.95 ci [0.944, 0.955]
+   orig IN  optimal      {'w': 0.995}             cov 1.00 gem_seeker              w 0.984 ci [0.982, 1.0]
+   orig     mixture      {}                       cov 1.00 distance_insensitive    w None ci None
+   orig     random       {}                       cov 0.13 insufficiently_directed w None ci None
+   dist IN  optimal      {'w': 0.03, 'eps': 0.0}  cov 1.00 trade_off               w 0.031 ci [0.027, 0.034]
+   dist     optimal      {'w': 0.03, 'eps': 0.2}  cov 0.79 insufficiently_directed w None ci None
+   dist IN  optimal      {'w': 0.05, 'eps': 0.0}  cov 1.00 trade_off               w 0.047 ci [0.042, 0.052]
+   dist     optimal      {'w': 0.05, 'eps': 0.2}  cov 0.82 insufficiently_directed w None ci None
+   dist IN  optimal      {'w': 0.15, 'eps': 0.0}  cov 1.00 trade_off               w 0.158 ci [0.144, 0.173]
+   dist     optimal      {'w': 0.15, 'eps': 0.2}  cov 0.88 insufficiently_directed w None ci None
+   dist IN  optimal      {'w': 0.5, 'eps': 0.0}   cov 1.00 trade_off               w 0.472 ci [0.444, 0.5]
+   dist     optimal      {'w': 0.5, 'eps': 0.2}   cov 0.90 insufficiently_directed w None ci None
+   dist IN  optimal      {'w': 0.85, 'eps': 0.0}  cov 1.00 trade_off               w 0.842 ci [0.827, 0.856]
+   dist     optimal      {'w': 0.85, 'eps': 0.2}  cov 0.87 insufficiently_directed w None ci None
+   dist IN  optimal      {'w': 0.95, 'eps': 0.0}  cov 1.00 trade_off               w 0.953 ci [0.948, 0.958]
+   dist     optimal      {'w': 0.95, 'eps': 0.2}  cov 0.82 insufficiently_directed w None ci None
+   dist IN  optimal      {'w': 0.97, 'eps': 0.0}  cov 1.00 trade_off               w 0.969 ci [0.966, 0.973]
+   dist     optimal      {'w': 0.97, 'eps': 0.2}  cov 0.80 insufficiently_directed w None ci None
+   dist IN  soft_optimal {'w': 0.95, 'tau': 2.0}  cov 1.00 trade_off               w 0.95 ci [0.944, 0.955]
+   dist IN  optimal      {'w': 0.995}             cov 1.00 gem_seeker              w 0.984 ci [0.982, 1.0]
+   dist     mixture      {}                       cov 1.00 distance_insensitive    w None ci None
+   dist     random       {}                       cov 0.10 insufficiently_directed w None ci None

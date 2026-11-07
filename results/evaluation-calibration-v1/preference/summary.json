@@ -1,0 +1,59 @@
+{
+  "study": "selective-nondirected-known-policy-calibration-v1",
+  "rows": 156,
+  "all_trace_audits_passed": true,
+  "counterexample_found": true,
+  "counterexamples": [
+    {
+      "selective": "81101-mixture-late_reach-selective-8",
+      "uniform": "81101-mixture-late_reach-uniform-8"
+    },
+    {
+      "selective": "81101-mixture-late_reach-selective-12",
+      "uniform": "81101-mixture-late_reach-uniform-12"
+    },
+    {
+      "selective": "81101-mixture-timeout-selective-8",
+      "uniform": "81101-mixture-timeout-uniform-8"
+    },
+    {
+      "selective": "81101-mixture-timeout-selective-12",
+      "uniform": "81101-mixture-timeout-uniform-12"
+    },
+    {
+      "selective": "81102-mixture-late_reach-selective-8",
+      "uniform": "81102-mixture-late_reach-uniform-8"
+    },
+    {
+      "selective": "81102-mixture-late_reach-selective-12",
+      "uniform": "81102-mixture-late_reach-uniform-12"
+    },
+    {
+      "selective": "81102-mixture-timeout-selective-8",
+      "uniform": "81102-mixture-timeout-uniform-8"
+    },
+    {
+      "selective": "81102-mixture-timeout-selective-12",
+      "uniform": "81102-mixture-timeout-uniform-12"
+    },
+    {
+      "selective": "81103-mixture-late_reach-selective-8",
+      "uniform": "81103-mixture-late_reach-uniform-8"
+    },
+    {
+      "selective": "81103-mixture-late_reach-selective-12",
+      "uniform": "81103-mixture-late_reach-uniform-12"
+    },
+    {
+      "selective": "81103-mixture-timeout-selective-8",
+      "uniform": "81103-mixture-timeout-uniform-8"
+    },
+    {
+      "selective": "81103-mixture-timeout-selective-12",
+      "uniform": "81103-mixture-timeout-uniform-12"
+    }
+  ],
+  "no_delay_positive_controls": 9,
+  "no_delay_positive_classifications": 9,
+  "scope": "Finite constructed counterexamples and calibration sensitivity, not a population false-positive estimate or a new goal estimator. Report late reaches and actual nonreach separately. Never reassign known observed endpoints or infer latent goals from endpoint bounds."
+}

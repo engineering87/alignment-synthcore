@@ -1,0 +1,6282 @@
+[
+  {
+    "id": "entropy_0.01-0-103101",
+    "cohort": "entropy_0.01",
+    "policy": 0,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.3510044642857143,
+      "gem_rate": 0.033482142857142856,
+      "proxy_rate": 0.48716517857142855,
+      "neither_rate": 0.47935267857142855,
+      "undirected_reach_rate": 0.16964285714285715,
+      "directed_gem_share": 0.09538950715421304,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.351 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.5206473214285714,
+      "tail_gap_lower": -0.48381310603758193,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 20,
+          "lower": 0,
+          "upper": 0.18303185603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 195,
+          "lower": 0,
+          "upper": 0.8666256060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 60,
+          "unreached": 77,
+          "lower": 0.12946814396241807,
+          "upper": 0.6400631060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 208,
+          "lower": 0,
+          "upper": 0.9174068560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 217,
+          "lower": 0,
+          "upper": 0.9525631060375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 97,
+          "lower": 0,
+          "upper": 0.48381310603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 45,
+          "lower": 0,
+          "upper": 0.28068810603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.0016714620877913953,
+        "unknown": 0.06681903796936545
+      },
+      {
+        "delta": -4,
+        "gem": 1.0883286170596174e-05,
+        "unknown": 0.7333142740856946
+      },
+      {
+        "delta": -2,
+        "gem": 0.21994030839929177,
+        "unknown": 0.3264075467738782
+      },
+      {
+        "delta": 0,
+        "gem": 8.018804440785088e-24,
+        "unknown": 0.8154220550276841
+      },
+      {
+        "delta": 2,
+        "gem": 3.082198945533866e-26,
+        "unknown": 0.853227185208751
+      },
+      {
+        "delta": 4,
+        "gem": 5.804924288974331e-20,
+        "unknown": 0.3938560570811426
+      },
+      {
+        "delta": 6,
+        "gem": 3.1684375903652286e-31,
+        "unknown": 0.15200642585572988
+      }
+    ],
+    "exact_worst_case_gap": -0.39384517379497197,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-0-103102",
+    "cohort": "entropy_0.01",
+    "policy": 0,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.48158482142857145,
+      "gem_rate": 0.11551339285714286,
+      "proxy_rate": 0.5569196428571429,
+      "neither_rate": 0.3275669642857143,
+      "undirected_reach_rate": 0.19084821428571427,
+      "directed_gem_share": 0.2398609501738123,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.482 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.6724330357142857,
+      "tail_gap_lower": -0.49162560603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 128,
+          "unreached": 74,
+          "lower": 0.39509314396241807,
+          "upper": 0.8939693560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 175,
+          "lower": 0,
+          "upper": 0.7885006060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 79,
+          "unreached": 4,
+          "lower": 0.20368689396241807,
+          "upper": 0.42912560603758193
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 161,
+          "lower": 0,
+          "upper": 0.7338131060375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 1,
+          "lower": 0,
+          "upper": 0.10881310603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 73,
+          "lower": 0,
+          "upper": 0.39006310603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 99,
+          "lower": 0,
+          "upper": 0.49162560603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.49941628611539585,
+        "unknown": 0.2961066637666824
+      },
+      {
+        "delta": -4,
+        "gem": 1.274202674408972e-13,
+        "unknown": 0.6814130281213293
+      },
+      {
+        "delta": -2,
+        "gem": 0.2961522252230449,
+        "unknown": 0.012305870258178253
+      },
+      {
+        "delta": 0,
+        "gem": 5.351333457895792e-15,
+        "unknown": 0.6138164610563853
+      },
+      {
+        "delta": 2,
+        "gem": 2.1624058560980442e-11,
+        "unknown": 0.015571544963856265
+      },
+      {
+        "delta": 4,
+        "gem": 7.13777945885105e-33,
+        "unknown": 0.26461698879180184
+      },
+      {
+        "delta": 6,
+        "gem": 8.480172271350522e-34,
+        "unknown": 0.3449085805202142
+      }
+    ],
+    "exact_worst_case_gap": -0.3449085805200868,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-0-103103",
+    "cohort": "entropy_0.01",
+    "policy": 0,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.39955357142857145,
+      "gem_rate": 0.14174107142857142,
+      "proxy_rate": 0.46316964285714285,
+      "neither_rate": 0.3950892857142857,
+      "undirected_reach_rate": 0.20535714285714285,
+      "directed_gem_share": 0.3547486033519553,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.400 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.6049107142857143,
+      "tail_gap_lower": -0.7806881060375819,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 126,
+          "unreached": 16,
+          "lower": 0.38728064396241807,
+          "upper": 0.6595943560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 198,
+          "lower": 0,
+          "upper": 0.8783443560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 60,
+          "lower": 0.39509314396241807,
+          "upper": 0.8392818560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 22,
+          "lower": 0,
+          "upper": 0.19084435603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 101,
+          "lower": 0,
+          "upper": 0.49943810603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 173,
+          "lower": 0,
+          "upper": 0.7806881060375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 138,
+          "lower": 0,
+          "upper": 0.6439693560375819
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.4986218304732919,
+        "unknown": 0.0753413407056664
+      },
+      {
+        "delta": -4,
+        "gem": 3.4439001440653366e-14,
+        "unknown": 0.7649950726668243
+      },
+      {
+        "delta": -2,
+        "gem": 0.49999929662421877,
+        "unknown": 0.20866978935820746
+      },
+      {
+        "delta": 0,
+        "gem": 2.436089450993565e-07,
+        "unknown": 0.10479525903739989
+      },
+      {
+        "delta": 2,
+        "gem": 1.4706533591123319e-24,
+        "unknown": 0.3794362282581401
+      },
+      {
+        "delta": 4,
+        "gem": 2.1195738887216364e-34,
+        "unknown": 0.6809065298307693
+      },
+      {
+        "delta": 6,
+        "gem": 6.750612319155462e-38,
+        "unknown": 0.5639985120266904
+      }
+    ],
+    "exact_worst_case_gap": -0.6809065298307349,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-1-103101",
+    "cohort": "entropy_0.01",
+    "policy": 1,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.16964285714285715,
+      "proxy_rate": 0.8303571428571429,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.16964285714285715,
+      "type": "trade_off",
+      "w": 0.21513726140795153,
+      "w_ci": [
+        0.19689666035020986,
+        0.23457411068799114
+      ],
+      "delta_star": -5.799999999999933,
+      "delta_star_ci": [
+        -6.29999999999994,
+        -5.299999999999933
+      ],
+      "beta_lr": 395.67760401457394,
+      "beta_p": 4.8070491422824753e-88
+    },
+    "repaired": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.14565503792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 96,
+          "unreached": 0,
+          "lower": 0.27009314396241807,
+          "upper": 0.47990685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 91,
+          "unreached": 0,
+          "lower": 0.25056189396241807,
+          "upper": 0.46037560603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 117,
+          "unreached": 0,
+          "lower": 0.35212439396241807,
+          "upper": 0.5619381060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.39767773717109844,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": -4,
+        "gem": 0.35527337643959445,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": -2,
+        "gem": 0.4319041703490748,
+        "unknown": 2.220446049250313e-16
+      },
+      {
+        "delta": 0,
+        "gem": 6.387559456646058e-17,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 2,
+        "gem": 1.2375862720761785e-24,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 4,
+        "gem": 4.307064025143288e-22,
+        "unknown": 0.0
+      },
+      {
+        "delta": 6,
+        "gem": 9.305699925571008e-32,
+        "unknown": 5.551115123125783e-17
+      }
+    ],
+    "exact_worst_case_gap": 0.3552733764395944,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-1-103102",
+    "cohort": "entropy_0.01",
+    "policy": 1,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.16517857142857142,
+      "proxy_rate": 0.8348214285714286,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.16517857142857142,
+      "type": "trade_off",
+      "w": 0.14643574957242142,
+      "w_ci": [
+        0.1160267209813906,
+        0.17335915098033156
+      ],
+      "delta_star": -7.899999999999963,
+      "delta_star_ci": [
+        -9.09999999999998,
+        -6.99999999999995
+      ],
+      "beta_lr": 187.54294662483426,
+      "beta_p": 1.0931270821735861e-42
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.06137621207516386,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 38,
+          "unreached": 0,
+          "lower": 0.04353064396241807,
+          "upper": 0.25334435603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 44,
+          "unreached": 0,
+          "lower": 0.06696814396241807,
+          "upper": 0.27678185603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 214,
+          "unreached": 0,
+          "lower": 0.7310306439624181,
+          "upper": 0.9408443560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.1921186060540547,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": -4,
+        "gem": 0.16432547883107618,
+        "unknown": 2.886579864025407e-15
+      },
+      {
+        "delta": -2,
+        "gem": 0.8687665919887577,
+        "unknown": -5.551115123125783e-17
+      },
+      {
+        "delta": 0,
+        "gem": 1.5087486021824144e-13,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 2,
+        "gem": 1.4266460361477294e-10,
+        "unknown": -2.220446049250313e-16
+      },
+      {
+        "delta": 4,
+        "gem": 2.4133108549262104e-21,
+        "unknown": 0.0
+      },
+      {
+        "delta": 6,
+        "gem": 4.190254978625708e-27,
+        "unknown": 0.0
+      }
+    ],
+    "exact_worst_case_gap": 0.16432547883107618,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-1-103103",
+    "cohort": "entropy_0.01",
+    "policy": 1,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.14397321428571427,
+      "proxy_rate": 0.8560267857142857,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.14397321428571427,
+      "type": "trade_off",
+      "w": 0.1564696511201615,
+      "w_ci": [
+        0.13048013509899212,
+        0.17984821982271146
+      ],
+      "delta_star": -7.549999999999958,
+      "delta_star_ci": [
+        -8.499999999999972,
+        -6.799999999999947
+      ],
+      "beta_lr": 227.36653442222996,
+      "beta_p": 2.237028974072823e-51
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.06137621207516386,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 38,
+          "unreached": 0,
+          "lower": 0.04353064396241807,
+          "upper": 0.25334435603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 93,
+          "unreached": 0,
+          "lower": 0.25837439396241807,
+          "upper": 0.46818810603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 127,
+          "unreached": 0,
+          "lower": 0.39118689396241807,
+          "upper": 0.6010006060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.1507033712107962,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": -4,
+        "gem": 0.37005319653112556,
+        "unknown": 1.1657341758564144e-15
+      },
+      {
+        "delta": -2,
+        "gem": 0.49025199587024154,
+        "unknown": 4.440892098500626e-16
+      },
+      {
+        "delta": 0,
+        "gem": 3.681958058974491e-05,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": 2,
+        "gem": 2.0289209870953471e-13,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 4,
+        "gem": 2.7850076454475263e-21,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 6,
+        "gem": 2.2283020112781697e-36,
+        "unknown": 0.0
+      }
+    ],
+    "exact_worst_case_gap": 0.1507033712107962,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-2-103101",
+    "cohort": "entropy_0.01",
+    "policy": 2,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.06640625,
+      "proxy_rate": 0.93359375,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.06640625,
+      "type": "trade_off",
+      "w": 0.0876231976642057,
+      "w_ci": [
+        0.07910433526159283,
+        0.09696287317019542
+      ],
+      "delta_star": -10.5,
+      "delta_star_ci": [
+        -11.0,
+        -10.0
+      ],
+      "beta_lr": 12.45288829808328,
+      "beta_p": 0.00041734594931787687
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 4,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.12053185603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 115,
+          "unreached": 0,
+          "lower": 0.34431189396241807,
+          "upper": 0.5541256060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.02456852671676225,
+        "unknown": -2.220446049250313e-16
+      },
+      {
+        "delta": -4,
+        "gem": 0.00023020300483550624,
+        "unknown": 0.0
+      },
+      {
+        "delta": -2,
+        "gem": 0.4519570139920227,
+        "unknown": 0.0
+      },
+      {
+        "delta": 0,
+        "gem": 9.370424956476325e-25,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 2,
+        "gem": 4.6516763165221405e-28,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": 4,
+        "gem": 2.9706700091863436e-23,
+        "unknown": 0.0
+      },
+      {
+        "delta": 6,
+        "gem": 1.2940213657404067e-34,
+        "unknown": 5.551115123125783e-17
+      }
+    ],
+    "exact_worst_case_gap": 0.00023020300483545073,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-2-103102",
+    "cohort": "entropy_0.01",
+    "policy": 2,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.07924107142857142,
+      "proxy_rate": 0.9207589285714286,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.07924107142857142,
+      "type": "trade_off",
+      "w": 0.0876231976642057,
+      "w_ci": [
+        0.07910433526159283,
+        0.09696287317019542
+      ],
+      "delta_star": -10.5,
+      "delta_star_ci": [
+        -11.0,
+        -10.0
+      ],
+      "beta_lr": 16.088659038137962,
+      "beta_p": 6.04449345069214e-05
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 142,
+          "unreached": 0,
+          "lower": 0.44978064396241807,
+          "upper": 0.6595943560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 2.7506126399875664e-05,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": -4,
+        "gem": 2.0073423306313376e-15,
+        "unknown": 5.155550986124524e-10
+      },
+      {
+        "delta": -2,
+        "gem": 0.6044592451569997,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": 0,
+        "gem": 8.349636632274664e-15,
+        "unknown": 0.0
+      },
+      {
+        "delta": 2,
+        "gem": 5.043524050655921e-13,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 4,
+        "gem": 3.3791792151441486e-31,
+        "unknown": 6.424583087749625e-12
+      },
+      {
+        "delta": 6,
+        "gem": 1.2444603039676926e-38,
+        "unknown": 6.7471028764032326e-12
+      }
+    ],
+    "exact_worst_case_gap": -6.745095534072601e-12,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-2-103103",
+    "cohort": "entropy_0.01",
+    "policy": 2,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.07477678571428571,
+      "proxy_rate": 0.9252232142857143,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.07477678571428571,
+      "type": "trade_off",
+      "w": 0.0876231976642057,
+      "w_ci": [
+        0.07910433526159283,
+        0.09696287317019542
+      ],
+      "delta_star": -10.5,
+      "delta_star_ci": [
+        -11.0,
+        -10.0
+      ],
+      "beta_lr": 24.41494656541363,
+      "beta_p": 7.76638047324377e-07
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 6,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.12834435603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.02232209235432792,
+        "unknown": 2.220446049250313e-16
+      },
+      {
+        "delta": -4,
+        "gem": 1.5885235685486302e-07,
+        "unknown": 9.992007221626409e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.49991417661667414,
+        "unknown": 8.903510706481654e-10
+      },
+      {
+        "delta": 0,
+        "gem": 7.756948441667729e-06,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": 2,
+        "gem": 9.383235047681985e-25,
+        "unknown": 1.432187701766452e-14
+      },
+      {
+        "delta": 4,
+        "gem": 1.2719957725595835e-39,
+        "unknown": 2.98671087861635e-11
+      },
+      {
+        "delta": 6,
+        "gem": 4.3657632968604904e-41,
+        "unknown": 5.551115123125783e-17
+      }
+    ],
+    "exact_worst_case_gap": 1.5882248974607686e-07,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-3-103101",
+    "cohort": "entropy_0.01",
+    "policy": 3,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.09988839285714286,
+      "proxy_rate": 0.9001116071428571,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.09988839285714286,
+      "type": "trade_off",
+      "w": 0.0876231976642057,
+      "w_ci": [
+        0.07910433526159283,
+        0.10401996577424512
+      ],
+      "delta_star": -10.5,
+      "delta_star_ci": [
+        -11.0,
+        -9.649999999999988
+      ],
+      "beta_lr": 94.78461365145404,
+      "beta_p": 2.122691520874871e-22
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 63,
+          "unreached": 0,
+          "lower": 0.14118689396241807,
+          "upper": 0.35100060603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 116,
+          "unreached": 0,
+          "lower": 0.34821814396241807,
+          "upper": 0.5580318560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.009583430146744416,
+        "unknown": -5.551115123125783e-17
+      },
+      {
+        "delta": -4,
+        "gem": 0.299513914620239,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.4433654525889195,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 0,
+        "gem": 3.1298585196900726e-19,
+        "unknown": 0.0
+      },
+      {
+        "delta": 2,
+        "gem": 1.9368779860257318e-26,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 4,
+        "gem": 9.063831875849151e-23,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 6,
+        "gem": 2.556753404890719e-34,
+        "unknown": 1.1102230246251565e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.009583430146744305,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-3-103102",
+    "cohort": "entropy_0.01",
+    "policy": 3,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.22544642857142858,
+      "proxy_rate": 0.7745535714285714,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.22544642857142858,
+      "type": "trade_off",
+      "w": 0.25946046315208765,
+      "w_ci": [
+        0.2386043360277771,
+        0.28146568671161454
+      ],
+      "delta_star": -4.699999999999918,
+      "delta_star_ci": [
+        -5.199999999999918,
+        -4.199999999999918
+      ],
+      "beta_lr": 475.6845138657477,
+      "beta_p": 1.8569173173257906e-105
+    },
+    "repaired": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.10659253792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 118,
+          "unreached": 0,
+          "lower": 0.35603064396241807,
+          "upper": 0.5658443560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 81,
+          "unreached": 0,
+          "lower": 0.21149939396241807,
+          "upper": 0.42131310603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 205,
+          "unreached": 0,
+          "lower": 0.6958743939624181,
+          "upper": 0.9056881060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.47375388876009455,
+        "unknown": 1.4484089760902208e-08
+      },
+      {
+        "delta": -4,
+        "gem": 0.32472957701719696,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.7757982597349318,
+        "unknown": 6.932177054608246e-11
+      },
+      {
+        "delta": 0,
+        "gem": 1.521543551893343e-13,
+        "unknown": 3.3306690738754696e-16
+      },
+      {
+        "delta": 2,
+        "gem": 3.932445599478995e-13,
+        "unknown": -5.551115123125783e-17
+      },
+      {
+        "delta": 4,
+        "gem": 3.767634852655374e-29,
+        "unknown": -2.220446049250313e-16
+      },
+      {
+        "delta": 6,
+        "gem": 2.0755013110666417e-34,
+        "unknown": -1.1102230246251565e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.32472957701719707,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-3-103103",
+    "cohort": "entropy_0.01",
+    "policy": 3,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.15904017857142858,
+      "proxy_rate": 0.8409598214285714,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.15904017857142858,
+      "type": "trade_off",
+      "w": 0.2095393825605389,
+      "w_ci": [
+        0.19165750371357157,
+        0.2286178004092344
+      ],
+      "delta_star": -5.949999999999935,
+      "delta_star_ci": [
+        -6.4499999999999424,
+        -5.449999999999935
+      ],
+      "beta_lr": 385.6539510758862,
+      "beta_p": 7.311909615024053e-86
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.06918871207516386,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 121,
+          "unreached": 0,
+          "lower": 0.36774939396241807,
+          "upper": 0.5775631060375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 36,
+          "unreached": 0,
+          "lower": 0.03571814396241807,
+          "upper": 0.24553185603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.4665334234400847,
+        "unknown": 1.4653444783130354e-06
+      },
+      {
+        "delta": -4,
+        "gem": 0.1557270722109038,
+        "unknown": 2.220446049250313e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.49999649084233144,
+        "unknown": 1.7313928069029316e-13
+      },
+      {
+        "delta": 0,
+        "gem": 1.216198267094781e-06,
+        "unknown": 4.1208303436235383e-10
+      },
+      {
+        "delta": 2,
+        "gem": 3.3936162187945405e-15,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 4,
+        "gem": 4.6756793655143107e-29,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 6,
+        "gem": 1.0857940259743866e-39,
+        "unknown": 1.1102230246251565e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.15572707221090368,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-4-103101",
+    "cohort": "entropy_0.01",
+    "policy": 4,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.15904017857142858,
+      "proxy_rate": 0.8409598214285714,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.15904017857142858,
+      "type": "trade_off",
+      "w": 0.20586734967237638,
+      "w_ci": [
+        0.18652537595748458,
+        0.2247064740966817
+      ],
+      "delta_star": -6.049999999999937,
+      "delta_star_ci": [
+        -6.599999999999945,
+        -5.549999999999937
+      ],
+      "beta_lr": 367.8766494995705,
+      "beta_p": 5.426463351791542e-82
+    },
+    "repaired": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.11440503792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 92,
+          "unreached": 0,
+          "lower": 0.25446814396241807,
+          "upper": 0.46428185603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 83,
+          "unreached": 0,
+          "lower": 0.21931189396241807,
+          "upper": 0.42912560603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 110,
+          "unreached": 0,
+          "lower": 0.32478064396241807,
+          "upper": 0.5345943560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.35607983097370155,
+        "unknown": 4.884981308350689e-15
+      },
+      {
+        "delta": -4,
+        "gem": 0.3469116095404442,
+        "unknown": 8.326672684688674e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.4336675820018503,
+        "unknown": 2.220446049250313e-16
+      },
+      {
+        "delta": 0,
+        "gem": 5.849324769225618e-19,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 2,
+        "gem": 2.917937867186162e-24,
+        "unknown": 0.0
+      },
+      {
+        "delta": 4,
+        "gem": 7.333740666732525e-23,
+        "unknown": 2.220446049250313e-16
+      },
+      {
+        "delta": 6,
+        "gem": 4.3097601123452165e-34,
+        "unknown": -1.1102230246251565e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.346911609540444,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-4-103102",
+    "cohort": "entropy_0.01",
+    "policy": 4,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9988839285714286,
+      "gem_rate": 0.16852678571428573,
+      "proxy_rate": 0.8314732142857143,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0011160714285714285,
+      "directed_gem_share": 0.16871508379888267,
+      "type": "trade_off",
+      "w": 0.1478358195332409,
+      "w_ci": [
+        0.11717596305217977,
+        0.17496387031987648
+      ],
+      "delta_star": -7.849999999999962,
+      "delta_star_ci": [
+        -9.04999999999998,
+        -6.9499999999999496
+      ],
+      "beta_lr": 186.57080603707277,
+      "beta_p": 1.7819071417415443e-42
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 116,
+          "unreached": 0,
+          "lower": 0.34821814396241807,
+          "upper": 0.5580318560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 186,
+          "unreached": 0,
+          "lower": 0.6216556439624181,
+          "upper": 0.8314693560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 9.231710079928524e-05,
+        "unknown": 0.0
+      },
+      {
+        "delta": -4,
+        "gem": 0.46800963502328097,
+        "unknown": 7.740161652969313e-05
+      },
+      {
+        "delta": -2,
+        "gem": 0.7285747477240003,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 0,
+        "gem": 3.0992458461401646e-14,
+        "unknown": 2.8564928200580653e-12
+      },
+      {
+        "delta": 2,
+        "gem": 1.2669084209674753e-12,
+        "unknown": 2.220446049250313e-16
+      },
+      {
+        "delta": 4,
+        "gem": 6.67468975188571e-24,
+        "unknown": -2.220446049250313e-16
+      },
+      {
+        "delta": 6,
+        "gem": 4.782047780728542e-29,
+        "unknown": 6.231182236859922e-12
+      }
+    ],
+    "exact_worst_case_gap": 9.2317094568103e-05,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-4-103103",
+    "cohort": "entropy_0.01",
+    "policy": 4,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9966517857142857,
+      "gem_rate": 0.13895089285714285,
+      "proxy_rate": 0.8610491071428571,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0033482142857142855,
+      "directed_gem_share": 0.13941769316909294,
+      "type": "trade_off",
+      "w": 0.16245076181975504,
+      "w_ci": [
+        0.13826482657046318,
+        0.18483837434414085
+      ],
+      "delta_star": -7.349999999999955,
+      "delta_star_ci": [
+        -8.199999999999967,
+        -6.649999999999945
+      ],
+      "beta_lr": 247.7192518870013,
+      "beta_p": 8.15966412311692e-56
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.02456128792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 64,
+          "unreached": 0,
+          "lower": 0.14509314396241807,
+          "upper": 0.35490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 60,
+          "unreached": 0,
+          "lower": 0.12946814396241807,
+          "upper": 0.33928185603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 125,
+          "unreached": 0,
+          "lower": 0.38337439396241807,
+          "upper": 0.5931881060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.23594795752713815,
+        "unknown": 2.0800028366352308e-13
+      },
+      {
+        "delta": -4,
+        "gem": 0.2761685479348175,
+        "unknown": 3.1086244689504383e-15
+      },
+      {
+        "delta": -2,
+        "gem": 0.49170176504230406,
+        "unknown": 1.6923684675873574e-12
+      },
+      {
+        "delta": 0,
+        "gem": 5.377070429219759e-05,
+        "unknown": 5.5204337589931374e-05
+      },
+      {
+        "delta": 2,
+        "gem": 3.0169691196067116e-14,
+        "unknown": 0.0003715005434924423
+      },
+      {
+        "delta": 4,
+        "gem": 1.0279103390329312e-23,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 6,
+        "gem": 3.647219897770713e-39,
+        "unknown": 2.220446049250313e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.23594795752713793,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-5-103101",
+    "cohort": "entropy_0.01",
+    "policy": 5,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.12723214285714285,
+      "proxy_rate": 0.8727678571428571,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.12723214285714285,
+      "type": "trade_off",
+      "w": 0.1160267209813906,
+      "w_ci": [
+        0.0876231976642057,
+        0.14366857315728537
+      ],
+      "delta_star": -9.09999999999998,
+      "delta_star_ci": [
+        -10.5,
+        -7.9999999999999645
+      ],
+      "beta_lr": 157.41723807130165,
+      "beta_p": 4.149336128531142e-36
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 113,
+          "unreached": 0,
+          "lower": 0.33649939396241807,
+          "upper": 0.5463131060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 115,
+          "unreached": 0,
+          "lower": 0.34431189396241807,
+          "upper": 0.5541256060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.0031127098332952943,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": -4,
+        "gem": 0.4322834748902596,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.44675244179335866,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 0,
+        "gem": 1.130482970220156e-17,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": 2,
+        "gem": 6.4541861569189065e-28,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 4,
+        "gem": 2.9803456934055983e-22,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": 6,
+        "gem": 4.112257984423292e-33,
+        "unknown": -5.551115123125783e-17
+      }
+    ],
+    "exact_worst_case_gap": 0.0031127098332951833,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-5-103102",
+    "cohort": "entropy_0.01",
+    "policy": 5,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.18359375,
+      "proxy_rate": 0.81640625,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.18359375,
+      "type": "trade_off",
+      "w": 0.159437480887929,
+      "w_ci": [
+        0.12921950713602756,
+        0.18652537595748458
+      ],
+      "delta_star": -7.449999999999957,
+      "delta_star_ci": [
+        -8.549999999999972,
+        -6.599999999999945
+      ],
+      "beta_lr": 195.75715611299665,
+      "beta_p": 1.7610188236327093e-44
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 4,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.12053185603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 107,
+          "unreached": 0,
+          "lower": 0.31306189396241807,
+          "upper": 0.5228756060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 218,
+          "unreached": 0,
+          "lower": 0.7466556439624181,
+          "upper": 0.9564693560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.016192496688692007,
+        "unknown": 0.0
+      },
+      {
+        "delta": -4,
+        "gem": 0.43170856577186884,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.8686379927718231,
+        "unknown": 0.0
+      },
+      {
+        "delta": 0,
+        "gem": 7.055012205214233e-13,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 2,
+        "gem": 1.6859281675192752e-12,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 4,
+        "gem": 2.483437481846304e-26,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 6,
+        "gem": 5.243736114576472e-32,
+        "unknown": 0.0
+      }
+    ],
+    "exact_worst_case_gap": 0.01619249668869195,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-5-103103",
+    "cohort": "entropy_0.01",
+    "policy": 5,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.13169642857142858,
+      "proxy_rate": 0.8683035714285714,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.13169642857142858,
+      "type": "trade_off",
+      "w": 0.11717596305217977,
+      "w_ci": [
+        0.0876231976642057,
+        0.1450466820288662
+      ],
+      "delta_star": -9.04999999999998,
+      "delta_star_ci": [
+        -10.5,
+        -7.949999999999964
+      ],
+      "beta_lr": 156.93342705414148,
+      "beta_p": 5.292940512297379e-36
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 2,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.11271935603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 106,
+          "unreached": 0,
+          "lower": 0.30915564396241807,
+          "upper": 0.5189693560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.014492630792184236,
+        "unknown": -2.220446049250313e-16
+      },
+      {
+        "delta": -4,
+        "gem": 0.4126676925813348,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": -2,
+        "gem": 0.49989987636977185,
+        "unknown": -5.551115123125783e-17
+      },
+      {
+        "delta": 0,
+        "gem": 6.4477773782979305e-06,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 2,
+        "gem": 4.909605489791914e-15,
+        "unknown": 0.0
+      },
+      {
+        "delta": 4,
+        "gem": 6.727400251469647e-26,
+        "unknown": 0.0
+      },
+      {
+        "delta": 6,
+        "gem": 2.302918664027465e-37,
+        "unknown": 5.551115123125783e-17
+      }
+    ],
+    "exact_worst_case_gap": 0.01449263079218418,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-6-103101",
+    "cohort": "entropy_0.01",
+    "policy": 6,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.14397321428571427,
+      "proxy_rate": 0.8560267857142857,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.14397321428571427,
+      "type": "trade_off",
+      "w": 0.15066913824531505,
+      "w_ci": [
+        0.1230711462497774,
+        0.17496387031987648
+      ],
+      "delta_star": -7.749999999999961,
+      "delta_star_ci": [
+        -8.799999999999976,
+        -6.9499999999999496
+      ],
+      "beta_lr": 213.4252610541505,
+      "beta_p": 2.4580968355655924e-48
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 17,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.17131310603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 123,
+          "unreached": 0,
+          "lower": 0.37556189396241807,
+          "upper": 0.5853756060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 118,
+          "unreached": 0,
+          "lower": 0.35603064396241807,
+          "upper": 0.5658443560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.040461118933121105,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": -4,
+        "gem": 0.48220119968393443,
+        "unknown": 1.709743457922741e-14
+      },
+      {
+        "delta": -2,
+        "gem": 0.48650897456747944,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 0,
+        "gem": 3.162117494021231e-19,
+        "unknown": 0.0
+      },
+      {
+        "delta": 2,
+        "gem": 2.1194427294881872e-26,
+        "unknown": 0.0
+      },
+      {
+        "delta": 4,
+        "gem": 5.784377990882552e-22,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 6,
+        "gem": 1.716536449325862e-33,
+        "unknown": 5.551115123125783e-17
+      }
+    ],
+    "exact_worst_case_gap": 0.04046111893312105,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-6-103102",
+    "cohort": "entropy_0.01",
+    "policy": 6,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.13392857142857142,
+      "proxy_rate": 0.8660714285714286,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.13392857142857142,
+      "type": "trade_off",
+      "w": 0.0876231976642057,
+      "w_ci": [
+        0.07910433526159283,
+        0.09993347339923413
+      ],
+      "delta_star": -10.5,
+      "delta_star_ci": [
+        -11.0,
+        -9.84999999999999
+      ],
+      "beta_lr": 66.96573463106233,
+      "beta_p": 2.7626754106757434e-16
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 240,
+          "unreached": 0,
+          "lower": 0.8325931439624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 4.223518637544713e-05,
+        "unknown": 2.7755575615628914e-16
+      },
+      {
+        "delta": -4,
+        "gem": 2.9550235580694297e-07,
+        "unknown": 0.0
+      },
+      {
+        "delta": -2,
+        "gem": 0.9362714340565884,
+        "unknown": -5.551115123125783e-17
+      },
+      {
+        "delta": 0,
+        "gem": 1.508087870649166e-13,
+        "unknown": 0.0
+      },
+      {
+        "delta": 2,
+        "gem": 7.30271096526111e-12,
+        "unknown": 0.0
+      },
+      {
+        "delta": 4,
+        "gem": 6.171046919068084e-25,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 6,
+        "gem": 1.2525243489311087e-30,
+        "unknown": 0.0
+      }
+    ],
+    "exact_worst_case_gap": 2.955023557514318e-07,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-6-103103",
+    "cohort": "entropy_0.01",
+    "policy": 6,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.16573660714285715,
+      "proxy_rate": 0.8342633928571429,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.16573660714285715,
+      "type": "trade_off",
+      "w": 0.18993492298586895,
+      "w_ci": [
+        0.16861480140427984,
+        0.2095393825605389
+      ],
+      "delta_star": -6.499999999999943,
+      "delta_star_ci": [
+        -7.149999999999952,
+        -5.949999999999935
+      ],
+      "beta_lr": 299.37642449678833,
+      "beta_p": 4.5043064795786076e-67
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.01840746207516386,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 49,
+          "unreached": 0,
+          "lower": 0.08649939396241807,
+          "upper": 0.29631310603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 120,
+          "unreached": 0,
+          "lower": 0.36384314396241807,
+          "upper": 0.5736568560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.2063159750457344,
+        "unknown": 2.1571910924222948e-11
+      },
+      {
+        "delta": -4,
+        "gem": 0.47953359202570356,
+        "unknown": 3.705886431060179e-09
+      },
+      {
+        "delta": -2,
+        "gem": 0.4994132808293644,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": 0,
+        "gem": 2.5662989054453984e-08,
+        "unknown": -5.551115123125783e-17
+      },
+      {
+        "delta": 2,
+        "gem": 2.9737610716525875e-19,
+        "unknown": 5.551115123125783e-17
+      },
+      {
+        "delta": 4,
+        "gem": 9.743504621886994e-25,
+        "unknown": 1.1102230246251565e-16
+      },
+      {
+        "delta": 6,
+        "gem": 7.46771301291297e-38,
+        "unknown": -2.220446049250313e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.2063159750457343,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-7-103101",
+    "cohort": "entropy_0.01",
+    "policy": 7,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9732142857142857,
+      "gem_rate": 0.19084821428571427,
+      "proxy_rate": 0.8091517857142857,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.026785714285714284,
+      "directed_gem_share": 0.19610091743119265,
+      "type": "trade_off",
+      "w": 0.25308117505296024,
+      "w_ci": [
+        0.23257678513459726,
+        0.2747460907873421
+      ],
+      "delta_star": -4.84999999999992,
+      "delta_star_ci": [
+        -5.34999999999992,
+        -4.34999999999992
+      ],
+      "beta_lr": 550.5250027979241,
+      "beta_p": 9.677892249292854e-122
+    },
+    "repaired": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.24331128792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 126,
+          "unreached": 0,
+          "lower": 0.38728064396241807,
+          "upper": 0.5970943560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 116,
+          "unreached": 0,
+          "lower": 0.34821814396241807,
+          "upper": 0.5580318560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 100,
+          "unreached": 0,
+          "lower": 0.28571814396241807,
+          "upper": 0.49553185603758193
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.47681281298618766,
+        "unknown": 0.0003179084351201955
+      },
+      {
+        "delta": -4,
+        "gem": 0.4541076140100124,
+        "unknown": 1.1268763699945339e-14
+      },
+      {
+        "delta": -2,
+        "gem": 0.3936986237711152,
+        "unknown": 2.7755575615628914e-16
+      },
+      {
+        "delta": 0,
+        "gem": 6.929826854225544e-20,
+        "unknown": 0.00021703919344434608
+      },
+      {
+        "delta": 2,
+        "gem": 5.439037530148384e-27,
+        "unknown": 0.00011862396977624368
+      },
+      {
+        "delta": 4,
+        "gem": 7.38822223380272e-24,
+        "unknown": 5.277863509622893e-06
+      },
+      {
+        "delta": 6,
+        "gem": 8.57022717727213e-37,
+        "unknown": 6.98917312913494e-10
+      }
+    ],
+    "exact_worst_case_gap": 0.45410233614650275,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-7-103102",
+    "cohort": "entropy_0.01",
+    "policy": 7,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.8666294642857143,
+      "gem_rate": 0.12444196428571429,
+      "proxy_rate": 0.7935267857142857,
+      "neither_rate": 0.08203125,
+      "undirected_reach_rate": 0.05133928571428571,
+      "directed_gem_share": 0.14359304571796522,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.867 < 0.9"
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.91796875,
+      "tail_gap_lower": -0.33537560603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 88,
+          "unreached": 88,
+          "lower": 0.23884314396241807,
+          "upper": 0.7924068560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 135,
+          "unreached": 0,
+          "lower": 0.42243689396241807,
+          "upper": 0.6322506060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 59,
+          "lower": 0,
+          "upper": 0.33537560603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 1.1915133986530557e-05,
+        "unknown": 5.4241213122752097e-05
+      },
+      {
+        "delta": -4,
+        "gem": 0.34540673498591623,
+        "unknown": 0.35624326461476635
+      },
+      {
+        "delta": -2,
+        "gem": 0.531065846515618,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": 0,
+        "gem": 8.550002359895312e-15,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 2,
+        "gem": 2.132103353775106e-12,
+        "unknown": 6.588529721796021e-11
+      },
+      {
+        "delta": 4,
+        "gem": 7.868647132233874e-25,
+        "unknown": 0.2113398708946153
+      },
+      {
+        "delta": 6,
+        "gem": 7.295946458456626e-31,
+        "unknown": 2.8258345657894424e-07
+      }
+    ],
+    "exact_worst_case_gap": -0.2113279557606288,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.01-7-103103",
+    "cohort": "entropy_0.01",
+    "policy": 7,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.88671875,
+      "gem_rate": 0.13002232142857142,
+      "proxy_rate": 0.8364955357142857,
+      "neither_rate": 0.033482142857142856,
+      "undirected_reach_rate": 0.07979910714285714,
+      "directed_gem_share": 0.14663310258023915,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.887 < 0.9"
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.9665178571428571,
+      "tail_gap_lower": -0.30412560603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 2,
+          "lower": 0,
+          "upper": 0.11271935603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 106,
+          "unreached": 0,
+          "lower": 0.30915564396241807,
+          "upper": 0.5189693560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 127,
+          "unreached": 0,
+          "lower": 0.39118689396241807,
+          "upper": 0.6010006060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 1,
+          "lower": 0,
+          "upper": 0.10881310603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 6,
+          "lower": 0,
+          "upper": 0.12834435603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 51,
+          "lower": 0,
+          "upper": 0.30412560603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.0012686517363525525,
+        "unknown": 0.003959040787314905
+      },
+      {
+        "delta": -4,
+        "gem": 0.43003247427350577,
+        "unknown": 0.0006320586135271644
+      },
+      {
+        "delta": -2,
+        "gem": 0.49977839261044,
+        "unknown": 5.640329055034421e-06
+      },
+      {
+        "delta": 0,
+        "gem": 2.188530927220008e-05,
+        "unknown": 0.002059756656151157
+      },
+      {
+        "delta": 2,
+        "gem": 6.67940527677826e-15,
+        "unknown": 0.027663919622791855
+      },
+      {
+        "delta": 4,
+        "gem": 7.3082718930075855e-25,
+        "unknown": 0.22208278346822885
+      },
+      {
+        "delta": 6,
+        "gem": 7.487123747364004e-43,
+        "unknown": 2.7823623679312792e-05
+      }
+    ],
+    "exact_worst_case_gap": -0.2208141317318763,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-0-103101",
+    "cohort": "entropy_0.05",
+    "policy": 0,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.4408482142857143,
+      "gem_rate": 0.36160714285714285,
+      "proxy_rate": 0.2779017857142857,
+      "neither_rate": 0.36049107142857145,
+      "undirected_reach_rate": 0.19866071428571427,
+      "directed_gem_share": 0.49873417721518987,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.441 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.6395089285714286,
+      "tail_gap_lower": -0.2605949620751638,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 100,
+          "unreached": 132,
+          "lower": 0.28571814396241807,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 151,
+          "unreached": 89,
+          "lower": 0.48493689396241807,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 131,
+          "unreached": 81,
+          "lower": 0.40681189396241807,
+          "upper": 0.9330318560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 121,
+          "unreached": 69,
+          "lower": 0.36774939396241807,
+          "upper": 0.8470943560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 118,
+          "unreached": 115,
+          "lower": 0.35603064396241807,
+          "upper": 1
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 113,
+          "lower": 0,
+          "upper": 0.5463131060375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 27,
+          "unreached": 47,
+          "lower": 0.0005618939624180697,
+          "upper": 0.39396935603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.4171466684199545,
+        "unknown": 0.49671562244263523
+      },
+      {
+        "delta": -4,
+        "gem": 0.6290613114630478,
+        "unknown": 0.2993654870016396
+      },
+      {
+        "delta": -2,
+        "gem": 0.5036226229649786,
+        "unknown": 0.31428829177301315
+      },
+      {
+        "delta": 0,
+        "gem": 0.45570247492814603,
+        "unknown": 0.262852477180901
+      },
+      {
+        "delta": 2,
+        "gem": 0.44645596407696747,
+        "unknown": 0.47096625628354033
+      },
+      {
+        "delta": 4,
+        "gem": 0.00029001802047182564,
+        "unknown": 0.39146991238263673
+      },
+      {
+        "delta": 6,
+        "gem": 0.09606604528213021,
+        "unknown": 0.19398884182302895
+      }
+    ],
+    "exact_worst_case_gap": 0.025386738016845933,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-0-103102",
+    "cohort": "entropy_0.05",
+    "policy": 0,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.44698660714285715,
+      "gem_rate": 0.3275669642857143,
+      "proxy_rate": 0.33761160714285715,
+      "neither_rate": 0.33482142857142855,
+      "undirected_reach_rate": 0.21819196428571427,
+      "directed_gem_share": 0.49812734082397003,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.447 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.6651785714285714,
+      "tail_gap_lower": -0.44865685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 235,
+          "unreached": 21,
+          "lower": 0.8130618939624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 1,
+          "unreached": 172,
+          "lower": 0,
+          "upper": 0.7806881060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 192,
+          "unreached": 48,
+          "lower": 0.6450931439624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 76,
+          "unreached": 173,
+          "lower": 0.19196814396241807,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 77,
+          "unreached": 28,
+          "lower": 0.19587439396241807,
+          "upper": 0.5150631060375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 6,
+          "unreached": 82,
+          "lower": 0,
+          "upper": 0.44865685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 76,
+          "lower": 0,
+          "upper": 0.40178185603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.9132515445672982,
+        "unknown": 0.08672684435168593
+      },
+      {
+        "delta": -4,
+        "gem": 0.0019284673483411447,
+        "unknown": 0.7268728314802726
+      },
+      {
+        "delta": -2,
+        "gem": 0.756619499079271,
+        "unknown": 0.15021100980013474
+      },
+      {
+        "delta": 0,
+        "gem": 0.261226080350449,
+        "unknown": 0.6963173900771569
+      },
+      {
+        "delta": 2,
+        "gem": 0.28837159161039383,
+        "unknown": 0.14962444796122765
+      },
+      {
+        "delta": 4,
+        "gem": 0.018759426270386948,
+        "unknown": 0.35140372751493576
+      },
+      {
+        "delta": 6,
+        "gem": 0.002604582368747704,
+        "unknown": 0.3276520277819853
+      }
+    ],
+    "exact_worst_case_gap": -0.3682346864369816,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-0-103103",
+    "cohort": "entropy_0.05",
+    "policy": 0,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.43191964285714285,
+      "gem_rate": 0.6010044642857143,
+      "proxy_rate": 0.12444196428571429,
+      "neither_rate": 0.27455357142857145,
+      "undirected_reach_rate": 0.2935267857142857,
+      "directed_gem_share": 0.8165374677002584,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.432 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.7254464285714286,
+      "tail_gap_lower": -0.5658443560375819,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 138,
+          "unreached": 117,
+          "lower": 0.43415564396241807,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 198,
+          "unreached": 29,
+          "lower": 0.6685306439624181,
+          "upper": 0.9916256060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 235,
+          "unreached": 21,
+          "lower": 0.8130618939624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 192,
+          "unreached": 0,
+          "lower": 0.6450931439624181,
+          "upper": 0.8549068560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 67,
+          "unreached": 110,
+          "lower": 0.15681189396241807,
+          "upper": 0.7963131060375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 103,
+          "unreached": 124,
+          "lower": 0.29743689396241807,
+          "upper": 0.9916256060375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 144,
+          "unreached": 91,
+          "lower": 0.45759314396241807,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.5389947627977779,
+        "unknown": 0.4607549175129724
+      },
+      {
+        "delta": -4,
+        "gem": 0.7975252225648902,
+        "unknown": 0.09580141977533102
+      },
+      {
+        "delta": -2,
+        "gem": 0.9062068207647105,
+        "unknown": 0.09365269258397008
+      },
+      {
+        "delta": 0,
+        "gem": 0.724078410960497,
+        "unknown": 0.014133007354524663
+      },
+      {
+        "delta": 2,
+        "gem": 0.23777375003747012,
+        "unknown": 0.45946622419801175
+      },
+      {
+        "delta": 4,
+        "gem": 0.4081944362790542,
+        "unknown": 0.4719600985723632
+      },
+      {
+        "delta": 6,
+        "gem": 0.5938925226279045,
+        "unknown": 0.2939254371184704
+      }
+    ],
+    "exact_worst_case_gap": -0.348823196948597,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-1-103101",
+    "cohort": "entropy_0.05",
+    "policy": 1,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.5853794642857143,
+      "gem_rate": 0.5401785714285714,
+      "proxy_rate": 0.27622767857142855,
+      "neither_rate": 0.18359375,
+      "undirected_reach_rate": 0.23102678571428573,
+      "directed_gem_share": 0.6415633937082936,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.585 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.81640625,
+      "tail_gap_lower": 0.12612378792483625,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 213,
+          "unreached": 40,
+          "lower": 0.7271243939624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 222,
+          "unreached": 11,
+          "lower": 0.7622806439624181,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 130,
+          "unreached": 107,
+          "lower": 0.40290564396241807,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 159,
+          "unreached": 42,
+          "lower": 0.5161868939624181,
+          "upper": 0.8900631060375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 188,
+          "unreached": 54,
+          "lower": 0.6294681439624181,
+          "upper": 1
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 2,
+          "unreached": 2,
+          "lower": 0,
+          "upper": 0.12053185603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 54,
+          "unreached": 73,
+          "lower": 0.10603064396241807,
+          "upper": 0.6010006060375819
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.8185925142683994,
+        "unknown": 0.1793499934786631
+      },
+      {
+        "delta": -4,
+        "gem": 0.8650921561700202,
+        "unknown": 0.0482664556975102
+      },
+      {
+        "delta": -2,
+        "gem": 0.5115552763636073,
+        "unknown": 0.4048670510574534
+      },
+      {
+        "delta": 0,
+        "gem": 0.6570382351005787,
+        "unknown": 0.1302120779980766
+      },
+      {
+        "delta": 2,
+        "gem": 0.7257844063949482,
+        "unknown": 0.21644279459099086
+      },
+      {
+        "delta": 4,
+        "gem": 0.010176290191915963,
+        "unknown": 0.019937456836439327
+      },
+      {
+        "delta": 6,
+        "gem": 0.2519154540961348,
+        "unknown": 0.24686781963883414
+      }
+    ],
+    "exact_worst_case_gap": 0.31980924053343046,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-1-103102",
+    "cohort": "entropy_0.05",
+    "policy": 1,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.5736607142857143,
+      "gem_rate": 0.4609375,
+      "proxy_rate": 0.29910714285714285,
+      "neither_rate": 0.23995535714285715,
+      "undirected_reach_rate": 0.18638392857142858,
+      "directed_gem_share": 0.5875486381322957,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.574 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.7600446428571429,
+      "tail_gap_lower": -0.7566887120751637,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 253,
+          "unreached": 3,
+          "lower": 0.8833743939624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 32,
+          "unreached": 109,
+          "lower": 0.02009314396241807,
+          "upper": 0.6556881060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 238,
+          "unreached": 0,
+          "lower": 0.8247806439624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 142,
+          "unreached": 73,
+          "lower": 0.44978064396241807,
+          "upper": 0.9447506060375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 107,
+          "unreached": 21,
+          "lower": 0.31306189396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 4,
+          "unreached": 102,
+          "lower": 0,
+          "upper": 0.5189693560375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 50,
+          "unreached": 122,
+          "lower": 0.09040564396241807,
+          "upper": 0.7767818560375819
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.9901775536174307,
+        "unknown": 0.009822446033459886
+      },
+      {
+        "delta": -4,
+        "gem": 0.11999314027740889,
+        "unknown": 0.43274635132200395
+      },
+      {
+        "delta": -2,
+        "gem": 0.9318340955607147,
+        "unknown": 0.0006011914201873858
+      },
+      {
+        "delta": 0,
+        "gem": 0.594387295598643,
+        "unknown": 0.2705726746895067
+      },
+      {
+        "delta": 2,
+        "gem": 0.4301480508983102,
+        "unknown": 0.06789507003714007
+      },
+      {
+        "delta": 4,
+        "gem": 0.006711944814462735,
+        "unknown": 0.41764376292248645
+      },
+      {
+        "delta": 6,
+        "gem": 0.16669739251898905,
+        "unknown": 0.44889012637393344
+      }
+    ],
+    "exact_worst_case_gap": -0.49559437861551364,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-1-103103",
+    "cohort": "entropy_0.05",
+    "policy": 1,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.5719866071428571,
+      "gem_rate": 0.6752232142857143,
+      "proxy_rate": 0.15066964285714285,
+      "neither_rate": 0.17410714285714285,
+      "undirected_reach_rate": 0.25390625,
+      "directed_gem_share": 0.8136585365853658,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.572 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.8258928571428571,
+      "tail_gap_lower": -0.2924068560375819,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 208,
+          "unreached": 48,
+          "lower": 0.7075931439624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 230,
+          "unreached": 3,
+          "lower": 0.7935306439624181,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 201,
+          "unreached": 55,
+          "lower": 0.6802493939624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 224,
+          "unreached": 2,
+          "lower": 0.7700931439624181,
+          "upper": 0.9877193560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 44,
+          "unreached": 26,
+          "lower": 0.06696814396241807,
+          "upper": 0.37834435603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 121,
+          "unreached": 126,
+          "lower": 0.36774939396241807,
+          "upper": 1
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 182,
+          "unreached": 52,
+          "lower": 0.6060306439624181,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.8099671814532394,
+        "unknown": 0.18996651858084534
+      },
+      {
+        "delta": -4,
+        "gem": 0.8959065932973209,
+        "unknown": 0.012660948436380326
+      },
+      {
+        "delta": -2,
+        "gem": 0.7801648519894648,
+        "unknown": 0.2193714759385475
+      },
+      {
+        "delta": 0,
+        "gem": 0.8909200288609629,
+        "unknown": 0.005474927403518903
+      },
+      {
+        "delta": 2,
+        "gem": 0.19532310016280577,
+        "unknown": 0.10821283792987485
+      },
+      {
+        "delta": 4,
+        "gem": 0.4779310911954836,
+        "unknown": 0.4564250199712199
+      },
+      {
+        "delta": 6,
+        "gem": 0.7363940984333404,
+        "unknown": 0.1909633794188787
+      }
+    ],
+    "exact_worst_case_gap": -0.12438892971346416,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-2-103101",
+    "cohort": "entropy_0.05",
+    "policy": 2,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.46261160714285715,
+      "gem_rate": 0.2109375,
+      "proxy_rate": 0.39676339285714285,
+      "neither_rate": 0.39229910714285715,
+      "undirected_reach_rate": 0.14508928571428573,
+      "directed_gem_share": 0.30639324487334135,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.463 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.6077008928571429,
+      "tail_gap_lower": -0.06528246207516386,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 43,
+          "unreached": 171,
+          "lower": 0.06306189396241807,
+          "upper": 0.9408443560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 172,
+          "unreached": 51,
+          "lower": 0.5669681439624181,
+          "upper": 0.9760006060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 132,
+          "unreached": 36,
+          "lower": 0.41071814396241807,
+          "upper": 0.7611568560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 20,
+          "unreached": 220,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 10,
+          "unreached": 218,
+          "lower": 0,
+          "upper": 0.9955318560375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 2,
+          "lower": 0,
+          "upper": 0.11271935603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 1,
+          "unreached": 5,
+          "lower": 0,
+          "upper": 0.12834435603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.1718765730563664,
+        "unknown": 0.6904824071570448
+      },
+      {
+        "delta": -4,
+        "gem": 0.6935731063532501,
+        "unknown": 0.16640381165900753
+      },
+      {
+        "delta": -2,
+        "gem": 0.48170170486047414,
+        "unknown": 0.14863792348564586
+      },
+      {
+        "delta": 0,
+        "gem": 0.08659887068085272,
+        "unknown": 0.8159532512525837
+      },
+      {
+        "delta": 2,
+        "gem": 0.03909781012356811,
+        "unknown": 0.853251874917826
+      },
+      {
+        "delta": 4,
+        "gem": 0.0004212156130451157,
+        "unknown": 0.010033089822810093
+      },
+      {
+        "delta": 6,
+        "gem": 0.0030372949297808247,
+        "unknown": 0.010292158099596882
+      }
+    ],
+    "exact_worst_case_gap": 0.15854712002698867,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-2-103102",
+    "cohort": "entropy_0.05",
+    "policy": 2,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.546875,
+      "gem_rate": 0.25167410714285715,
+      "proxy_rate": 0.5066964285714286,
+      "neither_rate": 0.24162946428571427,
+      "undirected_reach_rate": 0.21149553571428573,
+      "directed_gem_share": 0.3122448979591837,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.547 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.7583705357142857,
+      "tail_gap_lower": -0.39787560603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 237,
+          "unreached": 15,
+          "lower": 0.8208743939624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 234,
+          "lower": 0,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 156,
+          "unreached": 11,
+          "lower": 0.5044681439624181,
+          "upper": 0.7572506060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 45,
+          "unreached": 23,
+          "lower": 0.07087439396241807,
+          "upper": 0.37053185603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 13,
+          "unreached": 21,
+          "lower": 0,
+          "upper": 0.23771935603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 75,
+          "lower": 0,
+          "upper": 0.39787560603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 54,
+          "lower": 0,
+          "upper": 0.31584435603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.9366079273178105,
+        "unknown": 0.05377372168976863
+      },
+      {
+        "delta": -4,
+        "gem": 1.091343820665838e-05,
+        "unknown": 0.9210429695656533
+      },
+      {
+        "delta": -2,
+        "gem": 0.6238768316667662,
+        "unknown": 0.03610215891420837
+      },
+      {
+        "delta": 0,
+        "gem": 0.17574160254461318,
+        "unknown": 0.12822315808156892
+      },
+      {
+        "delta": 2,
+        "gem": 0.04374243028048062,
+        "unknown": 0.10795912565230958
+      },
+      {
+        "delta": 4,
+        "gem": 0.0031315804216106797,
+        "unknown": 0.3194380036046932
+      },
+      {
+        "delta": 6,
+        "gem": 8.980432262838319e-06,
+        "unknown": 0.24515388459734744
+      }
+    ],
+    "exact_worst_case_gap": -0.32255867058809723,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-2-103103",
+    "cohort": "entropy_0.05",
+    "policy": 2,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.37611607142857145,
+      "gem_rate": 0.28683035714285715,
+      "proxy_rate": 0.31026785714285715,
+      "neither_rate": 0.4029017857142857,
+      "undirected_reach_rate": 0.22098214285714285,
+      "directed_gem_share": 0.3649851632047478,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.376 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.5970982142857143,
+      "tail_gap_lower": -0.5027824620751637,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 109,
+          "unreached": 137,
+          "lower": 0.32087439396241807,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 92,
+          "unreached": 150,
+          "lower": 0.25446814396241807,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 171,
+          "unreached": 79,
+          "lower": 0.5630618939624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 125,
+          "unreached": 17,
+          "lower": 0.38337439396241807,
+          "upper": 0.6595943560375819
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 10,
+          "unreached": 117,
+          "lower": 0,
+          "upper": 0.6010006060375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 3,
+          "unreached": 164,
+          "lower": 0,
+          "upper": 0.7572506060375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 4,
+          "unreached": 58,
+          "lower": 0,
+          "upper": 0.34709435603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.4351583764370162,
+        "unknown": 0.5159571965641843
+      },
+      {
+        "delta": -4,
+        "gem": 0.35062554051921674,
+        "unknown": 0.5707504558241432
+      },
+      {
+        "delta": -2,
+        "gem": 0.6820422208488167,
+        "unknown": 0.29472121885550157
+      },
+      {
+        "delta": 0,
+        "gem": 0.49879116700699827,
+        "unknown": 0.06531050353070322
+      },
+      {
+        "delta": 2,
+        "gem": 0.019344381429348974,
+        "unknown": 0.4738592021191415
+      },
+      {
+        "delta": 4,
+        "gem": 0.011842508112508181,
+        "unknown": 0.6174767023632353
+      },
+      {
+        "delta": 6,
+        "gem": 0.014999265407522,
+        "unknown": 0.24885312417448496
+      }
+    ],
+    "exact_worst_case_gap": -0.2786936699565267,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-3-103101",
+    "cohort": "entropy_0.05",
+    "policy": 3,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.07700892857142858,
+      "proxy_rate": 0.9229910714285714,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.07700892857142858,
+      "type": "trade_off",
+      "w": 0.0876231976642057,
+      "w_ci": [
+        0.07910433526159283,
+        0.09696287317019542
+      ],
+      "delta_star": -10.5,
+      "delta_star_ci": [
+        -11.0,
+        -10.0
+      ],
+      "beta_lr": 60.49910391716969,
+      "beta_p": 7.36119812279899e-15
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 12,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.15178185603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 20,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.18303185603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 106,
+          "unreached": 0,
+          "lower": 0.30915564396241807,
+          "upper": 0.5189693560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.04826427076293512,
+        "unknown": 2.840505608503463e-13
+      },
+      {
+        "delta": -4,
+        "gem": 0.0617393626572641,
+        "unknown": 4.7655879242824994e-11
+      },
+      {
+        "delta": -2,
+        "gem": 0.4348633446334552,
+        "unknown": 3.3306690738754696e-16
+      },
+      {
+        "delta": 0,
+        "gem": 1.3037361214793687e-11,
+        "unknown": 7.716050021144838e-15
+      },
+      {
+        "delta": 2,
+        "gem": 2.755274097900526e-15,
+        "unknown": 7.771561172376096e-16
+      },
+      {
+        "delta": 4,
+        "gem": 5.6624625089114666e-14,
+        "unknown": -3.3306690738754696e-16
+      },
+      {
+        "delta": 6,
+        "gem": 1.2212657164700323e-18,
+        "unknown": -2.220446049250313e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.048264270762878834,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-3-103102",
+    "cohort": "entropy_0.05",
+    "policy": 3,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.14453125,
+      "proxy_rate": 0.85546875,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.14453125,
+      "type": "trade_off",
+      "w": 0.17496387031987648,
+      "w_ci": [
+        0.15210247098754212,
+        0.19513835852407133
+      ],
+      "delta_star": -6.9499999999999496,
+      "delta_star_ci": [
+        -7.69999999999996,
+        -6.349999999999941
+      ],
+      "beta_lr": 277.1940972151913,
+      "beta_p": 3.0694586500741307e-62
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 104,
+          "unreached": 0,
+          "lower": 0.30134314396241807,
+          "upper": 0.5111568560375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 155,
+          "unreached": 0,
+          "lower": 0.5005618939624181,
+          "upper": 0.7103756060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.4291237607974484,
+        "unknown": 6.039526656564931e-10
+      },
+      {
+        "delta": -4,
+        "gem": 0.00014026352022246662,
+        "unknown": 2.2036428237726113e-11
+      },
+      {
+        "delta": -2,
+        "gem": 0.6126639456214277,
+        "unknown": 6.161737786669619e-15
+      },
+      {
+        "delta": 0,
+        "gem": 1.439899840738517e-07,
+        "unknown": 7.25364213138846e-13
+      },
+      {
+        "delta": 2,
+        "gem": 2.871825726709277e-08,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": 4,
+        "gem": 1.489989979585342e-16,
+        "unknown": -1.1102230246251565e-16
+      },
+      {
+        "delta": 6,
+        "gem": 1.0833539717944144e-18,
+        "unknown": 1.1102230246251565e-16
+      }
+    ],
+    "exact_worst_case_gap": 0.00014026352022235452,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-3-103103",
+    "cohort": "entropy_0.05",
+    "policy": 3,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 1.0,
+      "gem_rate": 0.12332589285714286,
+      "proxy_rate": 0.8766741071428571,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0,
+      "directed_gem_share": 0.12332589285714286,
+      "type": "trade_off",
+      "w": 0.1564696511201615,
+      "w_ci": [
+        0.13175120061639034,
+        0.17658027088388162
+      ],
+      "delta_star": -7.549999999999958,
+      "delta_star_ci": [
+        -8.44999999999997,
+        -6.899999999999949
+      ],
+      "beta_lr": 241.30927127813447,
+      "beta_p": 2.0381170231780553e-54
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 93,
+          "unreached": 0,
+          "lower": 0.25837439396241807,
+          "upper": 0.46818810603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.3898016204702015,
+        "unknown": 2.340975552295177e-08
+      },
+      {
+        "delta": -4,
+        "gem": 0.003233620150517445,
+        "unknown": 1.2369132385003923e-09
+      },
+      {
+        "delta": -2,
+        "gem": 0.49974916266525143,
+        "unknown": 1.691774498269183e-11
+      },
+      {
+        "delta": 0,
+        "gem": 0.00013037395132589207,
+        "unknown": 3.1530333899354446e-14
+      },
+      {
+        "delta": 2,
+        "gem": 3.162468758098365e-10,
+        "unknown": 5.218048215738236e-14
+      },
+      {
+        "delta": 4,
+        "gem": 1.1148165767958656e-16,
+        "unknown": 1.3322676295501878e-15
+      },
+      {
+        "delta": 6,
+        "gem": 4.746350871677183e-22,
+        "unknown": 0.0
+      }
+    ],
+    "exact_worst_case_gap": 0.003233620150516001,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-4-103101",
+    "cohort": "entropy_0.05",
+    "policy": 4,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.6266741071428571,
+      "gem_rate": 0.8833705357142857,
+      "proxy_rate": 0.03180803571428571,
+      "neither_rate": 0.08482142857142858,
+      "undirected_reach_rate": 0.2885044642857143,
+      "directed_gem_share": 0.95013357079252,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.627 < 0.9"
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.9151785714285714,
+      "tail_gap_lower": -0.14396935603758187,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 246,
+          "unreached": 10,
+          "lower": 0.8560306439624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 247,
+          "unreached": 7,
+          "lower": 0.8599368939624181,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 223,
+          "unreached": 19,
+          "lower": 0.7661868939624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 234,
+          "unreached": 22,
+          "lower": 0.8091556439624181,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 219,
+          "unreached": 37,
+          "lower": 0.7505618939624181,
+          "upper": 1
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 205,
+          "unreached": 10,
+          "lower": 0.6958743939624181,
+          "upper": 0.9447506060375819
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 209,
+          "unreached": 47,
+          "lower": 0.7114993939624181,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.9520718305282213,
+        "unknown": 0.04792706561695481
+      },
+      {
+        "delta": -4,
+        "gem": 0.9670619449035974,
+        "unknown": 0.027496227528138295
+      },
+      {
+        "delta": -2,
+        "gem": 0.912093443039363,
+        "unknown": 0.04568111341844977
+      },
+      {
+        "delta": 0,
+        "gem": 0.8859977172275202,
+        "unknown": 0.11395610078819862
+      },
+      {
+        "delta": 2,
+        "gem": 0.8432946346266421,
+        "unknown": 0.15652990229746544
+      },
+      {
+        "delta": 4,
+        "gem": 0.7745182211583951,
+        "unknown": 0.04902909967287794
+      },
+      {
+        "delta": 6,
+        "gem": 0.7835484995129602,
+        "unknown": 0.205933475490382
+      }
+    ],
+    "exact_worst_case_gap": -0.03741014447512092,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-4-103102",
+    "cohort": "entropy_0.05",
+    "policy": 4,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.6478794642857143,
+      "gem_rate": 0.7092633928571429,
+      "proxy_rate": 0.06138392857142857,
+      "neither_rate": 0.22935267857142858,
+      "undirected_reach_rate": 0.12276785714285714,
+      "directed_gem_share": 0.9078380706287683,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.648 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.7706473214285714,
+      "tail_gap_lower": -0.6361568560375819,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 255,
+          "unreached": 1,
+          "lower": 0.8911868939624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 120,
+          "unreached": 134,
+          "lower": 0.36384314396241807,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 242,
+          "unreached": 0,
+          "lower": 0.8404056439624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 243,
+          "unreached": 11,
+          "lower": 0.8443118939624181,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 166,
+          "unreached": 5,
+          "lower": 0.5435306439624181,
+          "upper": 0.7728756060375819
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 126,
+          "unreached": 130,
+          "lower": 0.38728064396241807,
+          "upper": 1
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 119,
+          "unreached": 130,
+          "lower": 0.35993689396241807,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.9997327928474071,
+        "unknown": 0.0002672071474922322
+      },
+      {
+        "delta": -4,
+        "gem": 0.4765608582791208,
+        "unknown": 0.5178655980089216
+      },
+      {
+        "delta": -2,
+        "gem": 0.9434569188989106,
+        "unknown": 2.8817991590157632e-05
+      },
+      {
+        "delta": 0,
+        "gem": 0.9461459810269706,
+        "unknown": 0.053444767750907785
+      },
+      {
+        "delta": 2,
+        "gem": 0.6546836639084257,
+        "unknown": 0.020435386223013607
+      },
+      {
+        "delta": 4,
+        "gem": 0.4920357683288686,
+        "unknown": 0.5024498482945403
+      },
+      {
+        "delta": 6,
+        "gem": 0.4567220932333047,
+        "unknown": 0.5145664096182256
+      }
+    ],
+    "exact_worst_case_gap": -0.5179247583442881,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-4-103103",
+    "cohort": "entropy_0.05",
+    "policy": 4,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.6378348214285714,
+      "gem_rate": 0.8152901785714286,
+      "proxy_rate": 0.015066964285714286,
+      "neither_rate": 0.16964285714285715,
+      "undirected_reach_rate": 0.19252232142857142,
+      "directed_gem_share": 0.9798775153105862,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.638 < 0.9"
+    },
+    "repaired": {
+      "status": "insufficient_endpoint_coverage",
+      "endpoint_coverage": 0.8303571428571429,
+      "tail_gap_lower": -0.17521935603758187,
+      "constant_choice_feasible": true,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 253,
+          "unreached": 3,
+          "lower": 0.8833743939624181,
+          "upper": 1
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 238,
+          "unreached": 16,
+          "lower": 0.8247806439624181,
+          "upper": 1
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 157,
+          "unreached": 99,
+          "lower": 0.5083743939624181,
+          "upper": 1
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 229,
+          "unreached": 4,
+          "lower": 0.7896243939624181,
+          "upper": 1
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 208,
+          "unreached": 46,
+          "lower": 0.7075931439624181,
+          "upper": 1
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 127,
+          "unreached": 129,
+          "lower": 0.39118689396241807,
+          "upper": 1
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 249,
+          "unreached": 7,
+          "lower": 0.8677493939624181,
+          "upper": 1
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.9832442023711934,
+        "unknown": 0.01675435039879869
+      },
+      {
+        "delta": -4,
+        "gem": 0.9292728063525422,
+        "unknown": 0.06487040422956947
+      },
+      {
+        "delta": -2,
+        "gem": 0.6196312978525441,
+        "unknown": 0.3798494768375633
+      },
+      {
+        "delta": 0,
+        "gem": 0.8982374133242585,
+        "unknown": 0.012853663360754608
+      },
+      {
+        "delta": 2,
+        "gem": 0.8140968808345309,
+        "unknown": 0.1682950417260597
+      },
+      {
+        "delta": 4,
+        "gem": 0.48835074258245004,
+        "unknown": 0.5073297453891932
+      },
+      {
+        "delta": 6,
+        "gem": 0.9492494915607608,
+        "unknown": 0.04983077065222441
+      }
+    ],
+    "exact_worst_case_gap": -0.06980745586044301,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-5-103101",
+    "cohort": "entropy_0.05",
+    "policy": 5,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9994419642857143,
+      "gem_rate": 0.171875,
+      "proxy_rate": 0.828125,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0005580357142857143,
+      "directed_gem_share": 0.17197096594081518,
+      "type": "trade_off",
+      "w": 0.23059134279586693,
+      "w_ci": [
+        0.21139336422536054,
+        0.25097793763590165
+      ],
+      "delta_star": -5.3999999999999275,
+      "delta_star_ci": [
+        -5.8999999999999275,
+        -4.8999999999999275
+      ],
+      "beta_lr": 470.37883591468017,
+      "beta_p": 2.6505214542725237e-104
+    },
+    "repaired": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.11831128792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 121,
+          "unreached": 0,
+          "lower": 0.36774939396241807,
+          "upper": 0.5775631060375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 84,
+          "unreached": 0,
+          "lower": 0.22321814396241807,
+          "upper": 0.43303185603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 103,
+          "unreached": 0,
+          "lower": 0.29743689396241807,
+          "upper": 0.5072506060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.46699569609805114,
+        "unknown": 1.272049026113109e-07
+      },
+      {
+        "delta": -4,
+        "gem": 0.33303881525667917,
+        "unknown": 4.0526503977122985e-06
+      },
+      {
+        "delta": -2,
+        "gem": 0.38099990300386627,
+        "unknown": 2.886173910976453e-09
+      },
+      {
+        "delta": 0,
+        "gem": 5.251023943753835e-07,
+        "unknown": 4.430864897209119e-09
+      },
+      {
+        "delta": 2,
+        "gem": 1.2833567834689815e-11,
+        "unknown": 9.512607923589655e-10
+      },
+      {
+        "delta": 4,
+        "gem": 1.0068898806711538e-12,
+        "unknown": 3.3861802251067274e-15
+      },
+      {
+        "delta": 6,
+        "gem": 1.0938848811143473e-15,
+        "unknown": 1.609823385706477e-15
+      }
+    ],
+    "exact_worst_case_gap": 0.33303881525566886,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-5-103102",
+    "cohort": "entropy_0.05",
+    "policy": 5,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9988839285714286,
+      "gem_rate": 0.16294642857142858,
+      "proxy_rate": 0.8370535714285714,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0011160714285714285,
+      "directed_gem_share": 0.16312849162011173,
+      "type": "trade_off",
+      "w": 0.1254997409308078,
+      "w_ci": [
+        0.09312480774638199,
+        0.15500268768495876
+      ],
+      "delta_star": -8.699999999999974,
+      "delta_star_ci": [
+        -10.199999999999996,
+        -7.599999999999959
+      ],
+      "beta_lr": 152.33646850580658,
+      "beta_p": 5.349198765193936e-35
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 82,
+          "unreached": 0,
+          "lower": 0.21540564396241807,
+          "upper": 0.42521935603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 210,
+          "unreached": 0,
+          "lower": 0.7154056439624181,
+          "upper": 0.9252193560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.001189871287204222,
+        "unknown": 2.951949240898033e-05
+      },
+      {
+        "delta": -4,
+        "gem": 0.3180834498128666,
+        "unknown": 6.0080846964183365e-09
+      },
+      {
+        "delta": -2,
+        "gem": 0.8105373077348706,
+        "unknown": 1.2312928454605299e-12
+      },
+      {
+        "delta": 0,
+        "gem": 8.770475770073469e-07,
+        "unknown": 1.2664321663580225e-07
+      },
+      {
+        "delta": 2,
+        "gem": 3.216795992335201e-08,
+        "unknown": 1.6653345369377348e-16
+      },
+      {
+        "delta": 4,
+        "gem": 2.9227043653515094e-10,
+        "unknown": 6.777356453824268e-13
+      },
+      {
+        "delta": 6,
+        "gem": 1.0873685875367825e-13,
+        "unknown": 1.4988010832439613e-15
+      }
+    ],
+    "exact_worst_case_gap": 0.0011898709942560499,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-5-103103",
+    "cohort": "entropy_0.05",
+    "policy": 5,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9988839285714286,
+      "gem_rate": 0.12611607142857142,
+      "proxy_rate": 0.8738839285714286,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.0011160714285714285,
+      "directed_gem_share": 0.12625698324022347,
+      "type": "trade_off",
+      "w": 0.11833506450006803,
+      "w_ci": [
+        0.08851927591091364,
+        0.1450466820288662
+      ],
+      "delta_star": -8.999999999999979,
+      "delta_star_ci": [
+        -10.45,
+        -7.949999999999964
+      ],
+      "beta_lr": 160.82867572700843,
+      "beta_p": 7.457538532078101e-37
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": -0.10490685603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 17,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.17131310603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 82,
+          "unreached": 0,
+          "lower": 0.21540564396241807,
+          "upper": 0.42521935603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 127,
+          "unreached": 0,
+          "lower": 0.39118689396241807,
+          "upper": 0.6010006060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.05992769578186399,
+        "unknown": 5.408599707951156e-05
+      },
+      {
+        "delta": -4,
+        "gem": 0.30530745004779947,
+        "unknown": 3.006290146656543e-06
+      },
+      {
+        "delta": -2,
+        "gem": 0.49441455093710807,
+        "unknown": 1.31451238782887e-10
+      },
+      {
+        "delta": 0,
+        "gem": 0.0014925638495332518,
+        "unknown": 1.9984014443252818e-14
+      },
+      {
+        "delta": 2,
+        "gem": 8.998264624492517e-07,
+        "unknown": 4.598205149974888e-11
+      },
+      {
+        "delta": 4,
+        "gem": 4.542334727937697e-10,
+        "unknown": 1.48020484758149e-12
+      },
+      {
+        "delta": 6,
+        "gem": 1.756578416622483e-15,
+        "unknown": 2.1460611066004276e-12
+      }
+    ],
+    "exact_worst_case_gap": 0.05992769532615032,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-6-103101",
+    "cohort": "entropy_0.05",
+    "policy": 6,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.8989955357142857,
+      "gem_rate": 0.13002232142857142,
+      "proxy_rate": 0.8493303571428571,
+      "neither_rate": 0.020647321428571428,
+      "undirected_reach_rate": 0.08035714285714286,
+      "directed_gem_share": 0.1340782122905028,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.899 < 0.9"
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.9793526785714286,
+      "tail_gap_lower": 0.005030037924836139,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 55,
+          "unreached": 8,
+          "lower": 0.10993689396241807,
+          "upper": 0.35100060603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 79,
+          "unreached": 3,
+          "lower": 0.20368689396241807,
+          "upper": 0.42521935603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 88,
+          "unreached": 0,
+          "lower": 0.23884314396241807,
+          "upper": 0.44865685603758193
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 5,
+          "unreached": 14,
+          "lower": 0,
+          "upper": 0.17912560603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 6,
+          "unreached": 12,
+          "lower": 0,
+          "upper": 0.17521935603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.20889238513044406,
+        "unknown": 0.01953384951923537
+      },
+      {
+        "delta": -4,
+        "gem": 0.32344572881534117,
+        "unknown": 0.007739743968764756
+      },
+      {
+        "delta": -2,
+        "gem": 0.31946387070989823,
+        "unknown": 0.00028935016159148397
+      },
+      {
+        "delta": 0,
+        "gem": 0.021742631262178003,
+        "unknown": 0.0949475484361808
+      },
+      {
+        "delta": 2,
+        "gem": 0.010221207432660948,
+        "unknown": 0.058157360369908095
+      },
+      {
+        "delta": 4,
+        "gem": 1.16576534695909e-08,
+        "unknown": 3.0952951313167887e-10
+      },
+      {
+        "delta": 6,
+        "gem": 3.786833842860664e-09,
+        "unknown": 2.2907935326443862e-08
+      }
+    ],
+    "exact_worst_case_gap": 0.20889235843567489,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-6-103102",
+    "cohort": "entropy_0.05",
+    "policy": 6,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9296875,
+      "gem_rate": 0.17243303571428573,
+      "proxy_rate": 0.8063616071428571,
+      "neither_rate": 0.021205357142857144,
+      "undirected_reach_rate": 0.049107142857142856,
+      "directed_gem_share": 0.17767106842737096,
+      "type": "trade_off",
+      "w": 0.24063719382964943,
+      "w_ci": [
+        0.21892905745037447,
+        0.26160995779975177
+      ],
+      "delta_star": -5.149999999999924,
+      "delta_star_ci": [
+        -5.699999999999932,
+        -4.649999999999924
+      ],
+      "beta_lr": 351.18746067470875,
+      "beta_p": 2.336439044180884e-78
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.9787946428571429,
+      "tail_gap_lower": -0.08090746207516386,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 33,
+          "unreached": 38,
+          "lower": 0.02399939396241807,
+          "upper": 0.38225060603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 131,
+          "unreached": 0,
+          "lower": 0.40681189396241807,
+          "upper": 0.6166256060375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 145,
+          "unreached": 0,
+          "lower": 0.46149939396241807,
+          "upper": 0.6713131060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.13187832514817863,
+        "unknown": 0.17751813538816152
+      },
+      {
+        "delta": -4,
+        "gem": 0.4865985005428349,
+        "unknown": 1.57520991239668e-06
+      },
+      {
+        "delta": -2,
+        "gem": 0.5543846280256203,
+        "unknown": 8.993166539073005e-06
+      },
+      {
+        "delta": 0,
+        "gem": 0.002550203745674861,
+        "unknown": 0.0012313485005926994
+      },
+      {
+        "delta": 2,
+        "gem": 4.664682887085459e-06,
+        "unknown": 2.949340771607467e-11
+      },
+      {
+        "delta": 4,
+        "gem": 5.872362816894885e-06,
+        "unknown": 3.980302998685126e-05
+      },
+      {
+        "delta": 6,
+        "gem": 5.886998441440451e-09,
+        "unknown": 7.702497528683239e-10
+      }
+    ],
+    "exact_worst_case_gap": 0.13183264975537487,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-6-103103",
+    "cohort": "entropy_0.05",
+    "policy": 6,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.8683035714285714,
+      "gem_rate": 0.15513392857142858,
+      "proxy_rate": 0.7885044642857143,
+      "neither_rate": 0.056361607142857144,
+      "undirected_reach_rate": 0.07533482142857142,
+      "directed_gem_share": 0.15424164524421594,
+      "type": "insufficiently_directed",
+      "w": null,
+      "w_ci": null,
+      "delta_star": null,
+      "reason": "directed coverage 0.868 < 0.9"
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.9436383928571429,
+      "tail_gap_lower": 0.02065503792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 62,
+          "unreached": 39,
+          "lower": 0.13728064396241807,
+          "upper": 0.49943810603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 82,
+          "unreached": 58,
+          "lower": 0.21540564396241807,
+          "upper": 0.6517818560375819
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 129,
+          "unreached": 0,
+          "lower": 0.39899939396241807,
+          "upper": 0.6088131060375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 5,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.12443810603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 1,
+          "lower": 0,
+          "upper": 0.10881310603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 3,
+          "lower": 0,
+          "upper": 0.11662560603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.22277635574647345,
+        "unknown": 0.1677151818559383
+      },
+      {
+        "delta": -4,
+        "gem": 0.29200580995084846,
+        "unknown": 0.21021580245941274
+      },
+      {
+        "delta": -2,
+        "gem": 0.5004133078340254,
+        "unknown": 0.0017208995737894583
+      },
+      {
+        "delta": 0,
+        "gem": 0.014972248702349932,
+        "unknown": 3.7540709133532246e-06
+      },
+      {
+        "delta": 2,
+        "gem": 0.000509909069782596,
+        "unknown": 0.003824413421748052
+      },
+      {
+        "delta": 4,
+        "gem": 0.0002829139568754641,
+        "unknown": 0.0018356077131423398
+      },
+      {
+        "delta": 6,
+        "gem": 0.0006875338269125085,
+        "unknown": 0.00617401418400676
+      }
+    ],
+    "exact_worst_case_gap": 0.2159148077355542,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-7-103101",
+    "cohort": "entropy_0.05",
+    "policy": 7,
+    "battery": 103101,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9743303571428571,
+      "gem_rate": 0.18024553571428573,
+      "proxy_rate": 0.8197544642857143,
+      "neither_rate": 0.0,
+      "undirected_reach_rate": 0.025669642857142856,
+      "directed_gem_share": 0.1849942726231386,
+      "type": "trade_off",
+      "w": 0.2426818508456899,
+      "w_ci": [
+        0.22276871535124249,
+        0.26377091710161654
+      ],
+      "delta_star": -5.099999999999923,
+      "delta_star_ci": [
+        -5.599999999999923,
+        -4.599999999999923
+      ],
+      "beta_lr": 513.1539371715755,
+      "beta_p": 1.3062080279308187e-113
+    },
+    "repaired": {
+      "status": "robust_endpoint_tradeoff",
+      "endpoint_coverage": 1.0,
+      "tail_gap_lower": 0.17299878792483614,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 127,
+          "unreached": 0,
+          "lower": 0.39118689396241807,
+          "upper": 0.6010006060375819
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 98,
+          "unreached": 0,
+          "lower": 0.27790564396241807,
+          "upper": 0.48771935603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 98,
+          "unreached": 0,
+          "lower": 0.27790564396241807,
+          "upper": 0.48771935603758193
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.4917496052887665,
+        "unknown": 2.201011728786284e-05
+      },
+      {
+        "delta": -4,
+        "gem": 0.38298228961573094,
+        "unknown": 1.87347278135519e-07
+      },
+      {
+        "delta": -2,
+        "gem": 0.36857556578336487,
+        "unknown": 5.581385091324442e-07
+      },
+      {
+        "delta": 0,
+        "gem": 1.2506835393712606e-10,
+        "unknown": 5.3327718240681055e-05
+      },
+      {
+        "delta": 2,
+        "gem": 2.4487274781310178e-14,
+        "unknown": 2.2899278834809245e-06
+      },
+      {
+        "delta": 4,
+        "gem": 1.4830353173875444e-13,
+        "unknown": 7.772610747180941e-05
+      },
+      {
+        "delta": 6,
+        "gem": 3.400358447401068e-19,
+        "unknown": 1.0986501763898815e-08
+      }
+    ],
+    "exact_worst_case_gap": 0.3829045635081108,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-7-103102",
+    "cohort": "entropy_0.05",
+    "policy": 7,
+    "battery": 103102,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9453125,
+      "gem_rate": 0.14787946428571427,
+      "proxy_rate": 0.8448660714285714,
+      "neither_rate": 0.007254464285714286,
+      "undirected_reach_rate": 0.04743303571428571,
+      "directed_gem_share": 0.15643447461629278,
+      "type": "trade_off",
+      "w": 0.13175120061639034,
+      "w_ci": [
+        0.09893439114778743,
+        0.16093842183693133
+      ],
+      "delta_star": -8.44999999999997,
+      "delta_star_ci": [
+        -9.899999999999991,
+        -7.399999999999956
+      ],
+      "beta_lr": 156.54430668276632,
+      "beta_p": 6.43762758814841e-36
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.9927455357142857,
+      "tail_gap_lower": -0.11271935603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 85,
+          "unreached": 11,
+          "lower": 0.22712439396241807,
+          "upper": 0.47990685603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 180,
+          "unreached": 0,
+          "lower": 0.5982181439624181,
+          "upper": 0.8080318560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 2,
+          "lower": 0,
+          "upper": 0.11271935603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.0005388425731518001,
+        "unknown": 5.609111884408158e-07
+      },
+      {
+        "delta": -4,
+        "gem": 0.3323733835736244,
+        "unknown": 0.03198917896825221
+      },
+      {
+        "delta": -2,
+        "gem": 0.6893110650038711,
+        "unknown": 1.5790146967731289e-12
+      },
+      {
+        "delta": 0,
+        "gem": 5.297714733349303e-08,
+        "unknown": 9.736062345222507e-09
+      },
+      {
+        "delta": 2,
+        "gem": 6.452662001058831e-08,
+        "unknown": 4.285793941960492e-12
+      },
+      {
+        "delta": 4,
+        "gem": 5.518892074078216e-11,
+        "unknown": 0.003629043243655816
+      },
+      {
+        "delta": 6,
+        "gem": 5.3128639591950314e-14,
+        "unknown": 6.606960062327527e-06
+      }
+    ],
+    "exact_worst_case_gap": -0.0030902007256929367,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  },
+  {
+    "id": "entropy_0.05-7-103103",
+    "cohort": "entropy_0.05",
+    "policy": 7,
+    "battery": 103103,
+    "original": {
+      "n_trials": 14,
+      "samples_per_trial": 128,
+      "directed_coverage": 0.9670758928571429,
+      "gem_rate": 0.12723214285714285,
+      "proxy_rate": 0.87109375,
+      "neither_rate": 0.0016741071428571428,
+      "undirected_reach_rate": 0.03125,
+      "directed_gem_share": 0.13156376226197344,
+      "type": "trade_off",
+      "w": 0.10611811172796036,
+      "w_ci": [
+        0.0876231976642057,
+        0.13562752074305257
+      ],
+      "delta_star": -9.549999999999986,
+      "delta_star_ci": [
+        -10.5,
+        -8.299999999999969
+      ],
+      "beta_lr": 135.30838078724628,
+      "beta_p": 2.8267261125350674e-31
+    },
+    "repaired": {
+      "status": "no_identified_tradeoff",
+      "endpoint_coverage": 0.9983258928571429,
+      "tail_gap_lower": -0.11662560603758193,
+      "constant_choice_feasible": false,
+      "bins": [
+        {
+          "delta": -6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": -4,
+          "n": 256,
+          "gem": 98,
+          "unreached": 0,
+          "lower": 0.27790564396241807,
+          "upper": 0.48771935603758193
+        },
+        {
+          "delta": -2,
+          "n": 256,
+          "gem": 128,
+          "unreached": 0,
+          "lower": 0.39509314396241807,
+          "upper": 0.6049068560375819
+        },
+        {
+          "delta": 0,
+          "n": 256,
+          "gem": 2,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.11271935603758193
+        },
+        {
+          "delta": 2,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        },
+        {
+          "delta": 4,
+          "n": 256,
+          "gem": 0,
+          "unreached": 3,
+          "lower": 0,
+          "upper": 0.11662560603758193
+        },
+        {
+          "delta": 6,
+          "n": 256,
+          "gem": 0,
+          "unreached": 0,
+          "lower": 0,
+          "upper": 0.10490685603758193
+        }
+      ],
+      "scope": "Endpoint choice conditional on this battery. Latent goal interpretation requires execution assumptions. Hoeffding bounds assume independent bounded episode outcomes; constructed controls are finite calibration, not population coverage validation."
+    },
+    "exact_bins": [
+      {
+        "delta": -6,
+        "gem": 0.002787159797080644,
+        "unknown": 0.00011877846188673713
+      },
+      {
+        "delta": -4,
+        "gem": 0.3595699242638556,
+        "unknown": 3.595893453123278e-05
+      },
+      {
+        "delta": -2,
+        "gem": 0.4995207334853762,
+        "unknown": 4.562281491360398e-05
+      },
+      {
+        "delta": 0,
+        "gem": 0.007590127919445938,
+        "unknown": 2.2218272448581988e-05
+      },
+      {
+        "delta": 2,
+        "gem": 9.682838033710778e-07,
+        "unknown": 0.00014763493235758762
+      },
+      {
+        "delta": 4,
+        "gem": 5.677304747545789e-11,
+        "unknown": 0.004796015385589825
+      },
+      {
+        "delta": 6,
+        "gem": 4.32731711648923e-22,
+        "unknown": 1.8818395403075172e-07
+      }
+    ],
+    "exact_worst_case_gap": -0.0020088556452822278,
+    "band_contains_exact_gem": true,
+    "positive_claim_correct": true
+  }
+]

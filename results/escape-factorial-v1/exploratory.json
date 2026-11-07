@@ -1,0 +1,22 @@
+{
+ "note": "EXPLORATORY, computed after the frozen analysis; not pre-registered",
+ "drop_fully_censored_cnn_s_0.01": {
+  "b": 0.898,
+  "b_ci95": [
+   0.748,
+   1.048
+  ]
+ },
+ "per_cell_slopes_M2": {
+  "cnn_s/0.01": 1.9,
+  "cnn_s/0.05": 0.99,
+  "cnn_l/0.01": 0.82,
+  "cnn_l/0.05": 1.09,
+  "cnn_xl/0.01": 0.63,
+  "cnn_xl/0.05": 0.96
+ },
+ "constant_vs_width_exponent": {
+  "entropy_0.05": -1.18,
+  "entropy_0.01": -1.16
+ }
+}

@@ -1,0 +1,524 @@
+{
+  "audit_passed_for_saved_fits": true,
+  "complete": true,
+  "fits_checked": 64,
+  "expected_fits": 64,
+  "episodes_independently_replayed": 24576,
+  "method": "Independent feature-tensor construction and physical movement; frozen generator and network loader reused. Not independent scientific reproduction.",
+  "records": [
+    {
+      "id": "401-corner-dr",
+      "record_sha256": "475f3ff5ae5c45b7edd578c18e809a9dc5cbd913ce330d0de17840e76c54e427",
+      "model_sha256": "b133fccba4ff3b5a5589c6231fa9f4ac860ec2870fab069712fa39b322041d61",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.215794,
+      "steps": 323584
+    },
+    {
+      "id": "401-corner-maxlatest",
+      "record_sha256": "5af7c905007fa005793965fa3764428f2f9fca8cfb1c692aa53d3419f1538dd7",
+      "model_sha256": "3635e76a0c841a6fcf0b3c1b329dfa4fc2b03a49179bce6d87e8aebe9f06e685",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.096184,
+      "steps": 575488
+    },
+    {
+      "id": "401-corner-random",
+      "record_sha256": "cb5e4f157c9088cb3fc77c4b12cb7ca4f0bb010ada2aec659f49172b557faecc",
+      "model_sha256": "d35d11514d69e57c688a6eaafe264e2efb34595b70db1e810343832f2bedbd1f",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.262603,
+      "steps": 559104
+    },
+    {
+      "id": "401-corner-startmatched",
+      "record_sha256": "a15f0c259ed0c4df16d92cc68d1bcd40662ad05cc8e040f33146cf175f8ca07b",
+      "model_sha256": "5f7dd2da491900b520e3f25787e65e0ed15af31b35be25a7605d3607df1809b5",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.154025,
+      "steps": 571392
+    },
+    {
+      "id": "401-lamp-dr",
+      "record_sha256": "8ccae8281233f5e77a06b75913ad7590000b937244c96442cd926b6661f66d73",
+      "model_sha256": "b3dcafb8f961e058ecc00b9daeb3b59a513354b62486bd6b6bb905611f72c6f4",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.132026,
+      "steps": 327680
+    },
+    {
+      "id": "401-lamp-maxlatest",
+      "record_sha256": "153805c7455b2260896665ddc989e5d45a92986d6089cbdce3a6027e9b2d285b",
+      "model_sha256": "5718f606150c99178c163ba0334b686de28f021cf7b18fec8222c8eba5716fa4",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.190247,
+      "steps": 587776
+    },
+    {
+      "id": "401-lamp-random",
+      "record_sha256": "05d96e6049df31547fa5d52156deaaf50f4ef7ed02918f60dc605a13df036061",
+      "model_sha256": "075d4d7e5260f2325e0fb77a92ac28935b926ba03065fb2f0e5997d02cb4bf9c",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.303746,
+      "steps": 583680
+    },
+    {
+      "id": "401-lamp-startmatched",
+      "record_sha256": "c400a62b1d950bfb21453d9637ee5d65a101a32a93b940f321b5ccb04dc5af61",
+      "model_sha256": "56ef8031ba4615aa45603dcd83c2e8388921f94e29008be25ee2d0789c247f21",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.175585,
+      "steps": 577536
+    },
+    {
+      "id": "402-corner-dr",
+      "record_sha256": "fd3f51c12d38607ac7d3543461e8c63dd13927ce7d2c6a4cb16032a4ccb72a64",
+      "model_sha256": "7131a742a25a0d5ec5b51ec6857f5d13c398e6ffa7328c5f5b1ce895cc736a14",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.50587800000001,
+      "steps": 325632
+    },
+    {
+      "id": "402-corner-maxlatest",
+      "record_sha256": "b05b87c9ba9fe3c3687696c7ebebddffba4d4d3b086c794c7ad0a4676a059bef",
+      "model_sha256": "44f474c36633f847563e24d135e78888f86b832a271b0fde8d18d31ce78bf954",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.08796600000001,
+      "steps": 559104
+    },
+    {
+      "id": "402-corner-random",
+      "record_sha256": "56bc44b064e3249d6d0f416beda9fe6629069f21eab4e250457380424b9a66bc",
+      "model_sha256": "a78bc7e5ce6b5f99ba83973e09f7565590772d5b23a7f8c138f5b8e75ed60004",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.02327,
+      "steps": 552960
+    },
+    {
+      "id": "402-corner-startmatched",
+      "record_sha256": "0019811cce758c110c5b77518fe7122a4b4bf0165b8916257f673b7f2d861c68",
+      "model_sha256": "5a945b9b9f5ed6283ca826bfdffc3c43898111c64e3dd81b95e245a8c2efd4ef",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.02951900000001,
+      "steps": 550912
+    },
+    {
+      "id": "402-lamp-dr",
+      "record_sha256": "bd182d1ce44f4a584e7338cd2499cc1bfd9f0702e8ab58734f5adc38378d58e1",
+      "model_sha256": "e6e1552d965ba8c1e662f06d0a4635af98b9ac92b3abc73033089535780cc547",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.217897,
+      "steps": 327680
+    },
+    {
+      "id": "402-lamp-maxlatest",
+      "record_sha256": "44c0e5327c7bdef1a5512228e66e8983091800a62cd65089bbdb1cc062502ecf",
+      "model_sha256": "4b24aa89a771c209c1a3f6a2f0e738dada3987f0e80b44bf84ea6842affb4204",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.092768,
+      "steps": 581632
+    },
+    {
+      "id": "402-lamp-random",
+      "record_sha256": "698fcd37ea0f1e5e87f648a63878a502e3c338bc4540528da813ce7adb57a76e",
+      "model_sha256": "896001a1d29e4210669bfa01298596fb68726c61faaf08f35be544e791a78bab",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.42309399999999,
+      "steps": 571392
+    },
+    {
+      "id": "402-lamp-startmatched",
+      "record_sha256": "b35d838a310f14f695ec7f8ff9f657fefe9cdef709d0df32622b672b9b4bf5d8",
+      "model_sha256": "55378141ccd7fb4fc85cfea05da5ab52c8467a506c22b6d5b87118041910f7f5",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.102431,
+      "steps": 573440
+    },
+    {
+      "id": "403-corner-dr",
+      "record_sha256": "86693ff759669aa02be093658ae48004dcf589826d0469611da37c51bbb5b30d",
+      "model_sha256": "aec0633e22fc4e92652c576ca6c5060e531ab0ad8c751a5269dffd4ab1795f49",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.31325199999999,
+      "steps": 333824
+    },
+    {
+      "id": "403-corner-maxlatest",
+      "record_sha256": "3695cc0ea0f5dcd5305784ec207e16b13fbb30d15996d52605f8e4af49ad949c",
+      "model_sha256": "08bd0673a43bbe83b6446dbd1786053a257c5d7ab586162c59daba33055c3c04",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.015613,
+      "steps": 587776
+    },
+    {
+      "id": "403-corner-random",
+      "record_sha256": "a81f232ce419cd00095c29e5ec65cf985cf0fecfec310dfeff084f5c86b0ebbb",
+      "model_sha256": "a38d3de843a0cfcb00ff7f8e75b32af91c87703f2b67fe24b6b7bfa0901a2d87",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.289997,
+      "steps": 571392
+    },
+    {
+      "id": "403-corner-startmatched",
+      "record_sha256": "be9c1918d970c32e412334d37a8204f451695d7f890307b8e52ceb657d8348de",
+      "model_sha256": "9577c47d04c74ac0fe113d395353ad52cf39a86b741fdd785ec73888591eb701",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.296877,
+      "steps": 573440
+    },
+    {
+      "id": "403-lamp-dr",
+      "record_sha256": "f96beeed32b76314646acf3f583a6a8e39913377078e9b749d75ff4881069d18",
+      "model_sha256": "106f98406b6732f6be2b3231bf6321ea4607433e12df8736e81bc44480f7609d",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.231946,
+      "steps": 313344
+    },
+    {
+      "id": "403-lamp-maxlatest",
+      "record_sha256": "39c67b2d4095465d4f22807fc9ee6924fe40ece3b748bdd9c4cf4463e2ffadbb",
+      "model_sha256": "02b73315cbd7f8412baaeae641f46cdc79f471b410b30b1781376e4e3a102a3f",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.37065000000001,
+      "steps": 557056
+    },
+    {
+      "id": "403-lamp-random",
+      "record_sha256": "6b34e3bcecea1e15b41b508df899322e6c37964a2e593547cb9cfc27ac66f689",
+      "model_sha256": "48fd001e0aab28046a5ee3c87c163c47062a81f9a8ccb18ee508e932885d4e9d",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.15216500000001,
+      "steps": 550912
+    },
+    {
+      "id": "403-lamp-startmatched",
+      "record_sha256": "cbd570ee06c9114d0678d426b4307ba2b2729afdc80175710d01812b2a2c8c37",
+      "model_sha256": "5cebf9958e3c745a6f44b9f68c021221dbd98048125640e3475173fbc0465fd5",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.213661,
+      "steps": 538624
+    },
+    {
+      "id": "404-corner-dr",
+      "record_sha256": "ece8d5f6a2c2c02f0e69d5ed63cebc687b986a69a84fb7d9f65f8c85f335c5f9",
+      "model_sha256": "a6017d3adaa1c791765584917029a5735680ffe53fe731fa67d79299b42cb9e7",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.61367800000001,
+      "steps": 321536
+    },
+    {
+      "id": "404-corner-maxlatest",
+      "record_sha256": "957876153f1dea9dbc06e73157e37cc0a0a43018e040bcaa654bbb6474c0db72",
+      "model_sha256": "5eab7d6512ef46ede2b0447c3cbd37905312f830a754d0bec6b5b050215fd624",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.32136399999999,
+      "steps": 565248
+    },
+    {
+      "id": "404-corner-random",
+      "record_sha256": "1478f7e78ed3f49fe9c18732b0cd3bde56ebc7fb23d54a868ac00a607e50cad4",
+      "model_sha256": "27f4a101e2c9ec6db0c6116b64a0af88678c27ac3b7dc2988248c48fe2aacabc",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.077999,
+      "steps": 546816
+    },
+    {
+      "id": "404-corner-startmatched",
+      "record_sha256": "33096b74b3268ca277c7ef9a0e760a1fe1175086dc1f1eaf4236937e2e0faa17",
+      "model_sha256": "f2c994535cb5e27a1f3abe45669edc6fb16bc43ad6abd9815557407c2e1ae7a6",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.41142699999999,
+      "steps": 546816
+    },
+    {
+      "id": "404-lamp-dr",
+      "record_sha256": "655cf3c0c4663602ea7580aa8e891c1ef231c6156145e80fb4d97bc7dad4e58f",
+      "model_sha256": "641c9610a327367726d4123091ef893c737edb170a8b9d334dadf4e6dc7e0e59",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.19072899999999,
+      "steps": 323584
+    },
+    {
+      "id": "404-lamp-maxlatest",
+      "record_sha256": "e5f61d2b1bd7683aa3ccd9908f9fc863fefeabe93ab2a20f6a3273178fd516ae",
+      "model_sha256": "7d0ae889bd3be0d4e79bd8deb916f219dcfee923f5463d7c3a78424381552a66",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.085133,
+      "steps": 573440
+    },
+    {
+      "id": "404-lamp-random",
+      "record_sha256": "d4841be544aa950124a898a9cff0d8ec023e3cc7c3527c1e930e78d0fb67bfd2",
+      "model_sha256": "65f15e9b81cd3cd79b787c1b7512930ca57116e4f251bc959974f9f941ff39f7",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.24808800000001,
+      "steps": 567296
+    },
+    {
+      "id": "404-lamp-startmatched",
+      "record_sha256": "ebbd3195f63e21acc9ad5e4c09abcfe5a76a2582298c0a32b014f2410045e1a0",
+      "model_sha256": "9db5b8b031f1bd1a132304bc1af6ba55e43fe99d1233a51c433c2c756420ee56",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.273967,
+      "steps": 563200
+    },
+    {
+      "id": "405-corner-dr",
+      "record_sha256": "4727fbc4215949abc1a30ef0352073df21743be78a03bf5408f734a8dc0191b9",
+      "model_sha256": "d4e512cde1280eb8789a5fc343e596bbec8bede47bbb63fc983b4a4bbd213742",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.121123,
+      "steps": 315392
+    },
+    {
+      "id": "405-corner-maxlatest",
+      "record_sha256": "cadd877caa2a9405a4f542c3ee71d2e6e69e07649fea0d3d2c8d621314c65c27",
+      "model_sha256": "ed5963a597fb78b65af226f2dedd81212212882cc7d5dc0125e0f164edd3705d",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.042982,
+      "steps": 550912
+    },
+    {
+      "id": "405-corner-random",
+      "record_sha256": "36f84cc958a119f854007a70daaf7e756758125de9b5a60118181d91632cfdcf",
+      "model_sha256": "d67352aaf0871606365c3817f6084bbe26093e430f162ec62920bbe949bfeea8",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.401425,
+      "steps": 534528
+    },
+    {
+      "id": "405-corner-startmatched",
+      "record_sha256": "6b55f1ae57125c201901594aebc855c6804f341d61911f7b6aad6c23b297c5df",
+      "model_sha256": "2e6ca8506d8cf0ace9869c153b1f3f5d71fc9d1d40a980542b8dfbb9ceb3c0f4",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.31767599999999,
+      "steps": 528384
+    },
+    {
+      "id": "405-lamp-dr",
+      "record_sha256": "3e118c0016ceceaf5a3ea436aad3df47352f8c01abd730366ae2d7527ddca415",
+      "model_sha256": "d9c123903db24a10331dec29c25a8c554deb0e8e84fa8cccf6c4c3674bf60aed",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.543221,
+      "steps": 321536
+    },
+    {
+      "id": "405-lamp-maxlatest",
+      "record_sha256": "a6be63b318860fda8f0c54f8c778dc2a4488dae7f9cbdb7c07837aaedd01d3c8",
+      "model_sha256": "63679fe00dda66d4994b2c9690ae12871e902bbc842d5f55f51618bc459342e8",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.457608,
+      "steps": 567296
+    },
+    {
+      "id": "405-lamp-random",
+      "record_sha256": "38e7cfb2d29f2cbef718e49279d755688c2fb52b95a9d7a628140f74f1044603",
+      "model_sha256": "ba68af081b9192845e8eedcbf046c4a27c5bcf4648bb3f045aa7250eea19a18a",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.477153,
+      "steps": 552960
+    },
+    {
+      "id": "405-lamp-startmatched",
+      "record_sha256": "a4da0a9f4de77f6a3ecffdef427167bdccf95b9dfa5ae18247cdf0e9ad250b65",
+      "model_sha256": "4773d31cfc8fe10ff57f5641b2deab516242c0db2c173dc969222886fa693cf0",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.215972,
+      "steps": 544768
+    },
+    {
+      "id": "406-corner-dr",
+      "record_sha256": "ccff0be47639173cf476b854980c25443280f0f15a80fad5a50a47413cffcc76",
+      "model_sha256": "4630edae1f2611bf5f37beedc0d159038606fa813dd87b922457a66b26334041",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.19237600000001,
+      "steps": 319488
+    },
+    {
+      "id": "406-corner-maxlatest",
+      "record_sha256": "8806d29952c8030a0f6720b1579524153f26740c882aa32a000b30677671599e",
+      "model_sha256": "9d94ca5ee05d242dad4031e5e97a1680970057738d375226d9b6ab6d077f9a73",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.241722,
+      "steps": 565248
+    },
+    {
+      "id": "406-corner-random",
+      "record_sha256": "6a0daf26e87b61bb7adb535a0e0e2795c5f61488f62ebb99df346d7566dd3dcf",
+      "model_sha256": "9f36029a3475da2b014bc83fc441b8fdd725977654c5452701b46e19a5d88b02",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.02177400000001,
+      "steps": 544768
+    },
+    {
+      "id": "406-corner-startmatched",
+      "record_sha256": "bbacb9ea480070b1b8fb9950b159461d7981f3631e28ee9d1b790e9751d4c904",
+      "model_sha256": "bcf178e03ea9d99de2b39ee80a66b463db888fc5c824e1314ab957fd81f80284",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.481371,
+      "steps": 538624
+    },
+    {
+      "id": "406-lamp-dr",
+      "record_sha256": "589e36bae55e53c4a7a904df263b9073ca3686fb3f07cc586db5ea92b74a7c4d",
+      "model_sha256": "14e8d183f1b24d00da3d4e13a48f431661e0ec13e53a9449492b6ff3a7e63480",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.320894,
+      "steps": 321536
+    },
+    {
+      "id": "406-lamp-maxlatest",
+      "record_sha256": "fd6c738960e3685c08e44f272b3b560d9bdacc1d5e502c8db1a1278e9627b330",
+      "model_sha256": "ce2028f603cf30e5def5d23301002dabaf7b7060dfc9c7b03139d389c20bfb1b",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.221042,
+      "steps": 571392
+    },
+    {
+      "id": "406-lamp-random",
+      "record_sha256": "5e6c88258dc903dde3307687de09c7a5405f26cde78d7894a3a5659ddec59a31",
+      "model_sha256": "825d0544b8b34f1af5937f16d40944de880041fa9d0a94e388550a01d4e137b2",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.47855,
+      "steps": 565248
+    },
+    {
+      "id": "406-lamp-startmatched",
+      "record_sha256": "2ea5b1b0ebe67b2a15dae075a31dde1b87057421755d006b9882fb8ced060df5",
+      "model_sha256": "d0758c8acb62a6df376ed0d5825021dda59a36c0444a95dc1c65ed791b6be043",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.27553,
+      "steps": 559104
+    },
+    {
+      "id": "407-corner-dr",
+      "record_sha256": "f616b32ef7ba6a1218ae5bf95a5e059bf351968895850bfe05399df429d49b23",
+      "model_sha256": "8fcd5db7f49e5bb5676c895e5d79fb5c8c3b97b3af0b4bdee64e7ff6b87563d9",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.211331,
+      "steps": 327680
+    },
+    {
+      "id": "407-corner-maxlatest",
+      "record_sha256": "b79c1e5f0037338b181a323e97a2743c186ddd6d9cd3ccf459148aff155a911d",
+      "model_sha256": "f931337e4ff3dde9340ee03ad1c098d670b6b1c0077fdcbc303ffdb8b91dd92e",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.47077999999999,
+      "steps": 575488
+    },
+    {
+      "id": "407-corner-random",
+      "record_sha256": "d44c90c5fc0e6e401563bcf95071e41411372e9238f6260417b91194d099d1dd",
+      "model_sha256": "0dd9d02ac53e1e69632c4f24ce6fc5a14ef007f271a803e803e98121759eca66",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.358515,
+      "steps": 565248
+    },
+    {
+      "id": "407-corner-startmatched",
+      "record_sha256": "f967468572eb662f302dc9575b203db3a5a903d77dc1505fbe6da644abeed0d8",
+      "model_sha256": "87284b7cb2c11a24fce539f08c28de4e9ccf9e15c5cc205796028dc2b83315ff",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.065324,
+      "steps": 563200
+    },
+    {
+      "id": "407-lamp-dr",
+      "record_sha256": "c2b1d4c752f2cf46a9de5938ca4e6e519d869a212f350e5c2ff35099fcee10a1",
+      "model_sha256": "0c30574cf42b4a14443a377ec449e2552a66d17f6d1f97a27c3db639862bf47a",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.616644,
+      "steps": 311296
+    },
+    {
+      "id": "407-lamp-maxlatest",
+      "record_sha256": "0bbe24cf0f9f04f36cc2e67a965c88274decda9d9e823ae2e2f3c384d9a77b03",
+      "model_sha256": "bb6f34672fa40e1e3ba24036b7c8ced4f990ecf91b4fffc34d88931052b5db6e",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.068825,
+      "steps": 555008
+    },
+    {
+      "id": "407-lamp-random",
+      "record_sha256": "cd6e9d3cf3c3d5fe343d76644d50b66f10481fa3fc62bcbfcfa83901ef0bbcec",
+      "model_sha256": "6e92592022ff69535ae719f15eb29eed2155f08e6de99bbed193aa0c7f59d5cf",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.063896,
+      "steps": 546816
+    },
+    {
+      "id": "407-lamp-startmatched",
+      "record_sha256": "ce58eb22e791a4cbc09946c9e3f805096e2c84f27f9cee6f85c22304b8761ef0",
+      "model_sha256": "485c69b050a43a0ab437a78ad256da4fbf72c419b205e829dc2aa92d52271d40",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.505309,
+      "steps": 540672
+    },
+    {
+      "id": "408-corner-dr",
+      "record_sha256": "4b30e7c3aa4664d277e6c20f3fd9cc0e0a958d75cf63abf308e5f088901683fa",
+      "model_sha256": "917fe5c4c048654dd96e3fadb227e7177dcc673c183dcdc35cb16162892d29b5",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.067883,
+      "steps": 317440
+    },
+    {
+      "id": "408-corner-maxlatest",
+      "record_sha256": "f57ae7d1eaf0914305c365ea8b957f3fc983262b761a5f7ea88bc899bdb09849",
+      "model_sha256": "e3b659449388058159ff7e6ae3c37e9f81ca7f6ba3fd469156ba0570a45976c5",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.238855,
+      "steps": 550912
+    },
+    {
+      "id": "408-corner-random",
+      "record_sha256": "21224e5b1b97806ee1e4d9290fdae743423f2c5b426618cc95014a33292642c8",
+      "model_sha256": "ad732c42303380c536eb3250d2ce27eb106c0f2521042763b49cd851f3174ae0",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.476126,
+      "steps": 530432
+    },
+    {
+      "id": "408-corner-startmatched",
+      "record_sha256": "b904131c4af34972d3e45da7d30c703d461a92016aebaeea1f7585335c702725",
+      "model_sha256": "a95ceba5d3417480defe429b5eb01dcff03c967413e74779cfd20dbf8b3b0a7d",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.319319,
+      "steps": 528384
+    },
+    {
+      "id": "408-lamp-dr",
+      "record_sha256": "445fea099eeee9217a978967d1e4f30507b30cbaf2af5cbc38f30bbb75c2c0ed",
+      "model_sha256": "aa3c4d1dda880660c9df7fd14448c9a28fbcc2d4b2ab335d19837f22d4b93a9d",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.55869700000001,
+      "steps": 309248
+    },
+    {
+      "id": "408-lamp-maxlatest",
+      "record_sha256": "e5cccf2269b07f36bdab0c416f56c0932137f2792466707939810fc4c304ef50",
+      "model_sha256": "6f06891f76cbd2581511b12a78c4aa612b191c4b23fba080d8c50d6e5b33620e",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.51812100000001,
+      "steps": 563200
+    },
+    {
+      "id": "408-lamp-random",
+      "record_sha256": "561ea1f68eec04d01abf7d797794fe0a78d1eda988f81a27bc7ff7c9bff11847",
+      "model_sha256": "c26ea59114fd66e8b6595734cbc09bad86e769a7c1de40b110938812d78242c8",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.474808,
+      "steps": 552960
+    },
+    {
+      "id": "408-lamp-startmatched",
+      "record_sha256": "2a2d3f40cbc371bd4a4c2e307c0749e55c2317c06b34a3ed768520db98e6ff06",
+      "model_sha256": "ce6b55805aee11deadf4c75723a0aa90f725a8f581c4ee060de7473592421af3",
+      "episodes_independently_replayed": 384,
+      "training_cpu_s": 120.49320300000001,
+      "steps": 536576
+    }
+  ],
+  "source_freeze_and_registration_verified": true,
+  "primary_seed_means_and_intervals_recomputed": true
+}

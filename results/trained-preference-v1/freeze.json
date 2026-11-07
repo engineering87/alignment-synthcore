@@ -1,0 +1,12 @@
+{
+  "files": {
+    "experiments/trained_preference_v1.py": "99a6e38d6ce8ce66fae102caf63f817dcfe1242311357ab7910aca559dea1aa2",
+    "experiments/preference_repair_v1.py": "9603ba7d7462de2d1ef7748631af1b05a87d0aac986ab19189b672de90c2de3e",
+    "experiments/evaluation_calibration_v1/preference.py": "d1c94c7da0d1da428fddb1f3e77118fa5373cd781f72052e58637e3bfc2ccda0",
+    "experiments/preference_measurement/measure.py": "f926a87706261f0a4cd42d9787225819f661b095b13f5340880cb2c5c90a357b",
+    "experiments/preference_measurement/policy.py": "8cb26e26a4c368681a38b5ab97e46eba695f1b5c8eaa77c49135b205134e8f1d",
+    "results/preference-measurement-v2/models/entropy_0.01.npz": "7bd14ff2e1f79836906dd2e5cacac3e1b925aa2cad5d81057daef056df207a46",
+    "results/preference-measurement-v2/models/entropy_0.05.npz": "0f182a4203c879b3c584c306c140913120961e6c35ffd506b41d297cc47fda1c"
+  },
+  "protocol_sha256": "918e813ea87ef0cae5c33dac682a341fb20ad4cf9d56a7699f6faa0d2669f130"
+}

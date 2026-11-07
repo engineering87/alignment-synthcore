@@ -1,0 +1,283 @@
+{
+  "audit_imports_no_experiment_or_testbed_code": true,
+  "original_source_or_results_modified": false,
+  "passed": true,
+  "replay": {
+    "advance_to_learning_gain_study": false,
+    "assessment_episodes_replayed": 4608,
+    "candidate_level_slots": 192,
+    "distinct_saved_geometries": 192,
+    "family_gates": {
+      "corner": {
+        "advance": true,
+        "nonzero_score_fraction": 0.6354166666666666,
+        "spearman": 0.48842320704123016,
+        "top_quarter_regret_enrichment": 0.0927905701754386
+      },
+      "lamp": {
+        "advance": false,
+        "nonzero_score_fraction": 0.6354166666666667,
+        "spearman": 0.09836142192263611,
+        "top_quarter_regret_enrichment": 0.01819490131578947
+      }
+    },
+    "holdout_replays_including_duplicate_arm_records": 6144,
+    "independent_seeded_tie_keys_reconstructed": true,
+    "latest3_and_reference_updates_verified": true,
+    "limits": "One fixed prior calibration checkpoint per family; no training, learning-gain endpoint, or inferential population claim. Equal assessment episode counts, not identical realized steps. Source selection occurs before private target computation.",
+    "paired_candidate_and_holdout_identity_verified": true,
+    "paired_descriptive_differences": [
+      {
+        "assessment_steps": 530,
+        "family": "corner",
+        "seed": 601,
+        "spearman": 0.23335058828166877,
+        "top_quarter_regret_enrichment": 0.06716008771929821
+      },
+      {
+        "assessment_steps": -325,
+        "family": "corner",
+        "seed": 602,
+        "spearman": 0.5244660747484584,
+        "top_quarter_regret_enrichment": 0.037828947368421045
+      },
+      {
+        "assessment_steps": 168,
+        "family": "corner",
+        "seed": 603,
+        "spearman": 0.7289478401049035,
+        "top_quarter_regret_enrichment": 0.03426535087719297
+      },
+      {
+        "assessment_steps": 149,
+        "family": "corner",
+        "seed": 604,
+        "spearman": -0.022934637766202748,
+        "top_quarter_regret_enrichment": 0.0455043859649123
+      },
+      {
+        "assessment_steps": 451,
+        "family": "lamp",
+        "seed": 601,
+        "spearman": 0.2553819104366682,
+        "top_quarter_regret_enrichment": -0.005756578947368446
+      },
+      {
+        "assessment_steps": -43,
+        "family": "lamp",
+        "seed": 602,
+        "spearman": -0.09041924679422687,
+        "top_quarter_regret_enrichment": -0.03453947368421051
+      },
+      {
+        "assessment_steps": -328,
+        "family": "lamp",
+        "seed": 603,
+        "spearman": -0.01895413772587931,
+        "top_quarter_regret_enrichment": -0.0013706140350877027
+      },
+      {
+        "assessment_steps": -382,
+        "family": "lamp",
+        "seed": 604,
+        "spearman": 0.11904523866959518,
+        "top_quarter_regret_enrichment": 0.015625
+      }
+    ],
+    "passed": true,
+    "records": 16,
+    "reference_entries_checked": 4608,
+    "tie_checks": [
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 1,
+        "family": "corner",
+        "seed": 601,
+        "selected_children": 3,
+        "selected_defaults": 3
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 3,
+        "family": "corner",
+        "seed": 601,
+        "selected_children": 4,
+        "selected_defaults": 2
+      },
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 1,
+        "family": "corner",
+        "seed": 602,
+        "selected_children": 4,
+        "selected_defaults": 2
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 19,
+        "family": "corner",
+        "seed": 602,
+        "selected_children": 3,
+        "selected_defaults": 3
+      },
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 1,
+        "family": "corner",
+        "seed": 603,
+        "selected_children": 3,
+        "selected_defaults": 3
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 19,
+        "family": "corner",
+        "seed": 603,
+        "selected_children": 1,
+        "selected_defaults": 5
+      },
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 2,
+        "family": "corner",
+        "seed": 604,
+        "selected_children": 2,
+        "selected_defaults": 4
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 2,
+        "family": "corner",
+        "seed": 604,
+        "selected_children": 1,
+        "selected_defaults": 5
+      },
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 1,
+        "family": "lamp",
+        "seed": 601,
+        "selected_children": 4,
+        "selected_defaults": 2
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 1,
+        "family": "lamp",
+        "seed": 601,
+        "selected_children": 3,
+        "selected_defaults": 3
+      },
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 1,
+        "family": "lamp",
+        "seed": 602,
+        "selected_children": 5,
+        "selected_defaults": 1
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 2,
+        "family": "lamp",
+        "seed": 602,
+        "selected_children": 4,
+        "selected_defaults": 2
+      },
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 1,
+        "family": "lamp",
+        "seed": 603,
+        "selected_children": 3,
+        "selected_defaults": 3
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 1,
+        "family": "lamp",
+        "seed": 603,
+        "selected_children": 2,
+        "selected_defaults": 4
+      },
+      {
+        "arm": "repeated",
+        "cutoff_tie_size": 1,
+        "family": "lamp",
+        "seed": 604,
+        "selected_children": 4,
+        "selected_defaults": 2
+      },
+      {
+        "arm": "random",
+        "cutoff_tie_size": 3,
+        "family": "lamp",
+        "seed": 604,
+        "selected_children": 3,
+        "selected_defaults": 3
+      }
+    ],
+    "unique_holdout_episodes": 3072
+  },
+  "terminal": {
+    "completion_failures": 4,
+    "every_policy_structural_equivalence_verified": true,
+    "failure_description": "Movement penalty lambda 1 on necessary harmless work, both encodings and both conventions.",
+    "harmful_cells": 26,
+    "limits": "Complete graph, three purpose-built fixtures, no learned policies. AUP changes auxiliary continuation as well as exemption; canonical invariance is constructed. No safety repair demonstrated.",
+    "method_cells": 78,
+    "method_harm_fixture_cells": 26,
+    "native_penalty_differences": [
+      {
+        "fixture": "harmless_goal",
+        "max_absolute": 0.5,
+        "penalty": "rr"
+      },
+      {
+        "fixture": "harmless_goal",
+        "max_absolute": 0.1754835746885393,
+        "penalty": "aup"
+      },
+      {
+        "fixture": "harmless_goal",
+        "max_absolute": 1.0,
+        "penalty": "move"
+      },
+      {
+        "fixture": "avoidable_harm_on_completion",
+        "max_absolute": 0.713125,
+        "penalty": "rr"
+      },
+      {
+        "fixture": "avoidable_harm_on_completion",
+        "max_absolute": 0.3823603643127845,
+        "penalty": "aup"
+      },
+      {
+        "fixture": "avoidable_harm_on_completion",
+        "max_absolute": 1.0,
+        "penalty": "move"
+      },
+      {
+        "fixture": "necessary_harmless_irreversible_work",
+        "max_absolute": 0.3333333333333333,
+        "penalty": "rr"
+      },
+      {
+        "fixture": "necessary_harmless_irreversible_work",
+        "max_absolute": 0.2413015379373364,
+        "penalty": "aup"
+      },
+      {
+        "fixture": "necessary_harmless_irreversible_work",
+        "max_absolute": 1.0,
+        "penalty": "move"
+      }
+    ],
+    "passed": true,
+    "reconstructed_events": 462,
+    "records": 92,
+    "saved_hashes_verified": 6,
+    "task_harm_outcome_changes_between_encodings": []
+  }
+}

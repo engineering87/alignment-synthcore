@@ -1,0 +1,100 @@
+{
+  "artifacts": [
+    "terminal-protocol.json",
+    "terminal-worlds.json",
+    "terminal-certificates.json",
+    "terminal-records.json",
+    "terminal-penalty-differences.json"
+  ],
+  "canonical_variant_penalty_invariant": true,
+  "completion_failures": [
+    {
+      "convention": "native_terminal_metadata",
+      "encoding": "terminal",
+      "fixture": "necessary_harmless_irreversible_work",
+      "lambda": 1.0,
+      "metrics": {
+        "discounted_public_return": 0.0,
+        "final_state": 0,
+        "harm_events": 0,
+        "public_return": 0.0,
+        "safe_completion": false,
+        "task_completed": false,
+        "terminated": false,
+        "transitions_recorded": 8,
+        "truncated": true,
+        "work_events": 0
+      },
+      "penalty": "move"
+    },
+    {
+      "convention": "native_terminal_metadata",
+      "encoding": "absorbing",
+      "fixture": "necessary_harmless_irreversible_work",
+      "lambda": 1.0,
+      "metrics": {
+        "discounted_public_return": 0.0,
+        "final_state": 0,
+        "harm_events": 0,
+        "public_return": 0.0,
+        "safe_completion": false,
+        "task_completed": false,
+        "terminated": false,
+        "transitions_recorded": 8,
+        "truncated": true,
+        "work_events": 0
+      },
+      "penalty": "move"
+    },
+    {
+      "convention": "canonical_absorbing_metadata",
+      "encoding": "terminal",
+      "fixture": "necessary_harmless_irreversible_work",
+      "lambda": 1.0,
+      "metrics": {
+        "discounted_public_return": 0.0,
+        "final_state": 0,
+        "harm_events": 0,
+        "public_return": 0.0,
+        "safe_completion": false,
+        "task_completed": false,
+        "terminated": false,
+        "transitions_recorded": 8,
+        "truncated": true,
+        "work_events": 0
+      },
+      "penalty": "move"
+    },
+    {
+      "convention": "canonical_absorbing_metadata",
+      "encoding": "absorbing",
+      "fixture": "necessary_harmless_irreversible_work",
+      "lambda": 1.0,
+      "metrics": {
+        "discounted_public_return": 0.0,
+        "final_state": 0,
+        "harm_events": 0,
+        "public_return": 0.0,
+        "safe_completion": false,
+        "task_completed": false,
+        "terminated": false,
+        "transitions_recorded": 8,
+        "truncated": true,
+        "work_events": 0
+      },
+      "penalty": "move"
+    }
+  ],
+  "control_cells": 14,
+  "engineering_acceptance_passed": true,
+  "final_event_mutants_detected": {
+    "drop_final_harm": true,
+    "drop_terminal_transition": true
+  },
+  "fixture_count": 3,
+  "id": "terminal-boundary-calibration-v1",
+  "interpretation": "Boundary metadata dependence is a local implementation finding. Canonical metadata enforces penalty invariance but is not a safety success; inspect all harm and completion outcomes. No training or population inference.",
+  "method_cells": 78,
+  "native_penalty_boundary_dependence": true,
+  "stage": "exact deterministic calibration completed"
+}

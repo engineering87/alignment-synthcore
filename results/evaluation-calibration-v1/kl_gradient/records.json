@@ -1,0 +1,1412 @@
+[
+  {
+    "case": {
+      "id": "categorical-1",
+      "kind": "categorical",
+      "logits": [
+        0.7,
+        -0.2,
+        1.3
+      ],
+      "reference": [
+        0.2,
+        0.5,
+        0.3
+      ]
+    },
+    "current_probability_sum": 1.0,
+    "reference_probability_sum": 1.0,
+    "current_probabilities": [
+      0.30972328620377104,
+      0.1259240910856074,
+      0.5643526227106216
+    ],
+    "reference_probabilities": [
+      0.2,
+      0.5,
+      0.3
+    ],
+    "rows": [
+      {
+        "variant": "reverse_exact",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 6.528433349473062e-11,
+        "gradient": [
+          0.0368349206122387,
+          -0.2137387984185757,
+          0.17690387780633687
+        ],
+        "finite_difference_gradient": [
+          0.03683492066919314,
+          -0.21373879843800125,
+          0.17690387774105254
+        ]
+      },
+      {
+        "variant": "reverse_score_surrogate",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 6.528438900588185e-11,
+        "gradient": [
+          0.03683492061223877,
+          -0.21373879841857568,
+          0.17690387780633693
+        ],
+        "finite_difference_gradient": [
+          0.03683492066919314,
+          -0.21373879843800125,
+          0.17690387774105254
+        ]
+      },
+      {
+        "variant": "forward_exact",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 8.434630771603224e-11,
+        "gradient": [
+          0.10972328620377103,
+          -0.3740759089143926,
+          0.2643526227106216
+        ],
+        "finite_difference_gradient": [
+          0.10972328617908644,
+          -0.3740759089987389,
+          0.2643526227641413
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_forward",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 8.434630771603224e-11,
+        "gradient": [
+          0.10972328620377102,
+          -0.3740759089143926,
+          0.26435262271062154
+        ],
+        "finite_difference_gradient": [
+          0.10972328617908644,
+          -0.3740759089987389,
+          0.2643526227641413
+        ]
+      },
+      {
+        "variant": "k1_detached_sampling_as_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.21373879843800125,
+        "gradient": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_difference_gradient": [
+          0.03683492066919314,
+          -0.21373879843800125,
+          0.17690387774105254
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_misdeclared_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.16033711047639132,
+        "gradient": [
+          0.10972328620377102,
+          -0.3740759089143926,
+          0.26435262271062154
+        ],
+        "finite_difference_gradient": [
+          0.03683492066919314,
+          -0.21373879843800125,
+          0.17690387774105254
+        ]
+      },
+      {
+        "variant": "fully_detached_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.21373879843800125,
+        "gradient": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_difference_gradient": [
+          0.03683492066919314,
+          -0.21373879843800125,
+          0.17690387774105254
+        ]
+      },
+      {
+        "variant": "misnormalized_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.14249253229847603,
+        "gradient": [
+          0.01227830687074627,
+          -0.07124626613952523,
+          0.058967959268778986
+        ],
+        "finite_difference_gradient": [
+          0.03683492066919314,
+          -0.21373879843800125,
+          0.17690387774105254
+        ]
+      }
+    ],
+    "analytic_crosscheck": {
+      "reverse": {
+        "gradient": [
+          0.03683492061223877,
+          -0.21373879841857568,
+          0.1769038778063369
+        ],
+        "max_absolute_error": 6.528436125030623e-11,
+        "passed": true
+      },
+      "forward": {
+        "gradient": [
+          0.10972328620377103,
+          -0.3740759089143926,
+          0.2643526227106216
+        ],
+        "max_absolute_error": 8.434630771603224e-11,
+        "passed": true
+      }
+    }
+  },
+  {
+    "case": {
+      "id": "categorical-2",
+      "kind": "categorical",
+      "logits": [
+        -1.0,
+        0.3,
+        0.1
+      ],
+      "reference": [
+        0.6,
+        0.3,
+        0.1
+      ]
+    },
+    "current_probability_sum": 1.0,
+    "reference_probability_sum": 0.9999999999999999,
+    "current_probabilities": [
+      0.13031926265819405,
+      0.4781800361983084,
+      0.39150070114349766
+    ],
+    "reference_probabilities": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "rows": [
+      {
+        "variant": "reverse_exact",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 2.0564683289592267e-10,
+        "gradient": [
+          -0.27174290597409306,
+          -0.044022148391198335,
+          0.31576505436529145
+        ],
+        "finite_difference_gradient": [
+          -0.2717429061216414,
+          -0.04402214831555895,
+          0.3157650541596446
+        ]
+      },
+      {
+        "variant": "reverse_score_surrogate",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 2.0564677738477144e-10,
+        "gradient": [
+          -0.27174290597409306,
+          -0.04402214839119842,
+          0.3157650543652914
+        ],
+        "finite_difference_gradient": [
+          -0.2717429061216414,
+          -0.04402214831555895,
+          0.3157650541596446
+        ]
+      },
+      {
+        "variant": "forward_exact",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 8.269757101331265e-11,
+        "gradient": [
+          -0.46968073734180593,
+          0.1781800361983084,
+          0.29150070114349763
+        ],
+        "finite_difference_gradient": [
+          -0.4696807373583134,
+          0.17818003628100598,
+          0.29150070113281856
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_forward",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 8.269759876888827e-11,
+        "gradient": [
+          -0.46968073734180593,
+          0.17818003619830838,
+          0.2915007011434976
+        ],
+        "finite_difference_gradient": [
+          -0.4696807373583134,
+          0.17818003628100598,
+          0.29150070113281856
+        ]
+      },
+      {
+        "variant": "k1_detached_sampling_as_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.3157650541596446,
+        "gradient": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_difference_gradient": [
+          -0.2717429061216414,
+          -0.04402214831555895,
+          0.3157650541596446
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_misdeclared_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.22220218451386733,
+        "gradient": [
+          -0.46968073734180593,
+          0.17818003619830838,
+          0.2915007011434976
+        ],
+        "finite_difference_gradient": [
+          -0.2717429061216414,
+          -0.04402214831555895,
+          0.3157650541596446
+        ]
+      },
+      {
+        "variant": "fully_detached_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.3157650541596446,
+        "gradient": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_difference_gradient": [
+          -0.2717429061216414,
+          -0.04402214831555895,
+          0.3157650541596446
+        ]
+      },
+      {
+        "variant": "misnormalized_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.21051003603788082,
+        "gradient": [
+          -0.09058096865803103,
+          -0.014674049463732769,
+          0.1052550181217638
+        ],
+        "finite_difference_gradient": [
+          -0.2717429061216414,
+          -0.04402214831555895,
+          0.3157650541596446
+        ]
+      }
+    ],
+    "analytic_crosscheck": {
+      "reverse": {
+        "gradient": [
+          -0.2717429059740931,
+          -0.04402214839119839,
+          0.3157650543652915
+        ],
+        "max_absolute_error": 2.056468884070739e-10,
+        "passed": true
+      },
+      "forward": {
+        "gradient": [
+          -0.46968073734180593,
+          0.1781800361983084,
+          0.2915007011434977
+        ],
+        "max_absolute_error": 8.269757101331265e-11,
+        "passed": true
+      }
+    }
+  },
+  {
+    "case": {
+      "id": "categorical-3",
+      "kind": "categorical",
+      "logits": [
+        0.5,
+        0.1,
+        -0.4
+      ],
+      "reference": [
+        0.15,
+        0.25,
+        0.6
+      ]
+    },
+    "current_probability_sum": 1.0,
+    "reference_probability_sum": 1.0,
+    "current_probabilities": [
+      0.48148921785244714,
+      0.32275187467651634,
+      0.1957589074710366
+    ],
+    "reference_probabilities": [
+      0.15,
+      0.25,
+      0.6
+    ],
+    "rows": [
+      {
+        "variant": "reverse_exact",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 1.9505896897697994e-10,
+        "gradient": [
+          0.3570402230804809,
+          -0.05463945880199789,
+          -0.3024007642784826
+        ],
+        "finite_difference_gradient": [
+          0.35704022327553986,
+          -0.05463945890182842,
+          -0.3024007641794224
+        ]
+      },
+      {
+        "variant": "reverse_score_surrogate",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 1.9505913551043363e-10,
+        "gradient": [
+          0.3570402230804807,
+          -0.054639458801998,
+          -0.30240076427848267
+        ],
+        "finite_difference_gradient": [
+          0.35704022327553986,
+          -0.05463945890182842,
+          -0.3024007641794224
+        ]
+      },
+      {
+        "variant": "forward_exact",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 1.937600080381685e-10,
+        "gradient": [
+          0.331489217852447,
+          0.07275187467651623,
+          -0.4042410925289634
+        ],
+        "finite_difference_gradient": [
+          0.331489217658687,
+          0.07275187485777934,
+          -0.4042410925719775
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_forward",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 1.9376006354931974e-10,
+        "gradient": [
+          0.33148921785244706,
+          0.07275187467651628,
+          -0.40424109252896334
+        ],
+        "finite_difference_gradient": [
+          0.331489217658687,
+          0.07275187485777934,
+          -0.4042410925719775
+        ]
+      },
+      {
+        "variant": "k1_detached_sampling_as_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.3570402232755398,
+        "gradient": [
+          5.551115123125783e-17,
+          5.551115123125783e-17,
+          2.7755575615628914e-17
+        ],
+        "finite_difference_gradient": [
+          0.35704022327553986,
+          -0.05463945890182842,
+          -0.3024007641794224
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_misdeclared_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.1273913335783447,
+        "gradient": [
+          0.33148921785244706,
+          0.07275187467651628,
+          -0.40424109252896334
+        ],
+        "finite_difference_gradient": [
+          0.35704022327553986,
+          -0.05463945890182842,
+          -0.3024007641794224
+        ]
+      },
+      {
+        "variant": "fully_detached_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.35704022327553986,
+        "gradient": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_difference_gradient": [
+          0.35704022327553986,
+          -0.05463945890182842,
+          -0.3024007641794224
+        ]
+      },
+      {
+        "variant": "misnormalized_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.23802681558204627,
+        "gradient": [
+          0.11901340769349358,
+          -0.018213152933999333,
+          -0.10080025475949422
+        ],
+        "finite_difference_gradient": [
+          0.35704022327553986,
+          -0.05463945890182842,
+          -0.3024007641794224
+        ]
+      }
+    ],
+    "analytic_crosscheck": {
+      "reverse": {
+        "gradient": [
+          0.3570402230804808,
+          -0.05463945880199804,
+          -0.3024007642784828
+        ],
+        "max_absolute_error": 1.950590799992824e-10,
+        "passed": true
+      },
+      "forward": {
+        "gradient": [
+          0.3314892178524471,
+          0.07275187467651634,
+          -0.40424109252896334
+        ],
+        "max_absolute_error": 1.9376011906047097e-10,
+        "passed": true
+      }
+    }
+  },
+  {
+    "case": {
+      "id": "mdp-1",
+      "kind": "mdp",
+      "horizon": 3,
+      "logits": [
+        [
+          0.4,
+          -0.7
+        ],
+        [
+          -0.2,
+          0.9
+        ]
+      ],
+      "reference": [
+        [
+          0.7,
+          0.3
+        ],
+        [
+          0.2,
+          0.8
+        ]
+      ]
+    },
+    "current_probability_sum": 1.0000000000000002,
+    "reference_probability_sum": 1.0,
+    "current_probabilities": [
+      0.42231408043292995,
+      0.1405761456146673,
+      0.046793733932853326,
+      0.14057614561466727,
+      0.015576280924508483,
+      0.046793733932853326,
+      0.14057614561466727,
+      0.046793733932853326
+    ],
+    "reference_probabilities": [
+      0.3429999999999999,
+      0.14699999999999996,
+      0.042,
+      0.168,
+      0.012,
+      0.048,
+      0.16799999999999998,
+      0.072
+    ],
+    "rows": [
+      {
+        "variant": "reverse_exact",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 3.183187047284264e-11,
+        "gradient": [
+          [
+            0.11804318118180013,
+            -0.11804318118180013
+          ],
+          [
+            0.026843986280207566,
+            -0.02684398628020762
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.11804318114996826,
+            -0.11804318114996826
+          ],
+          [
+            0.026843986280361554,
+            -0.026843986280361554
+          ]
+        ]
+      },
+      {
+        "variant": "reverse_score_surrogate",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 3.1832092517447563e-11,
+        "gradient": [
+          [
+            0.11804318118180035,
+            -0.11804318118180035
+          ],
+          [
+            0.02684398628020757,
+            -0.026843986280207566
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.11804318114996826,
+            -0.11804318114996826
+          ],
+          [
+            0.026843986280361554,
+            -0.026843986280361554
+          ]
+        ]
+      },
+      {
+        "variant": "forward_exact",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 4.8966608545697454e-11,
+        "gradient": [
+          [
+            0.12213205659613591,
+            -0.12213205659613569
+          ],
+          [
+            0.028351739810782955,
+            -0.028351739810782928
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.1221320566451023,
+            -0.1221320566451023
+          ],
+          [
+            0.02835173980655914,
+            -0.02835173980655914
+          ]
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_forward",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 4.896655303454622e-11,
+        "gradient": [
+          [
+            0.12213205659613574,
+            -0.12213205659613575
+          ],
+          [
+            0.02835173981078295,
+            -0.02835173981078294
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.1221320566451023,
+            -0.1221320566451023
+          ],
+          [
+            0.02835173980655914,
+            -0.02835173980655914
+          ]
+        ]
+      },
+      {
+        "variant": "k1_detached_sampling_as_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.1180431811499687,
+        "gradient": [
+          [
+            -4.440892098500626e-16,
+            0.0
+          ],
+          [
+            0.0,
+            -5.551115123125783e-17
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.11804318114996826,
+            -0.11804318114996826
+          ],
+          [
+            0.026843986280361554,
+            -0.026843986280361554
+          ]
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_misdeclared_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.0040888754461674975,
+        "gradient": [
+          [
+            0.12213205659613574,
+            -0.12213205659613575
+          ],
+          [
+            0.02835173981078295,
+            -0.02835173981078294
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.11804318114996826,
+            -0.11804318114996826
+          ],
+          [
+            0.026843986280361554,
+            -0.026843986280361554
+          ]
+        ]
+      },
+      {
+        "variant": "fully_detached_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.11804318114996826,
+        "gradient": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.11804318114996826,
+            -0.11804318114996826
+          ],
+          [
+            0.026843986280361554,
+            -0.026843986280361554
+          ]
+        ]
+      },
+      {
+        "variant": "misnormalized_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.07869545408936818,
+        "gradient": [
+          [
+            0.03934772706060008,
+            -0.03934772706060008
+          ],
+          [
+            0.008947995426735848,
+            -0.008947995426735869
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.11804318114996826,
+            -0.11804318114996826
+          ],
+          [
+            0.026843986280361554,
+            -0.026843986280361554
+          ]
+        ]
+      }
+    ],
+    "analytic_crosscheck": null
+  },
+  {
+    "case": {
+      "id": "mdp-2",
+      "kind": "mdp",
+      "horizon": 3,
+      "logits": [
+        [
+          -0.5,
+          0.8
+        ],
+        [
+          0.7,
+          -0.3
+        ]
+      ],
+      "reference": [
+        [
+          0.8,
+          0.2
+        ],
+        [
+          0.35,
+          0.65
+        ]
+      ]
+    },
+    "current_probability_sum": 1.0,
+    "reference_probability_sum": 1.0000000000000002,
+    "current_probabilities": [
+      0.009823032836285255,
+      0.036043621652095896,
+      0.12303596165238855,
+      0.0452624008166717,
+      0.41998687051604233,
+      0.15450453522478455,
+      0.0452624008166717,
+      0.16608117648506002
+    ],
+    "reference_probabilities": [
+      0.5120000000000001,
+      0.12800000000000003,
+      0.05600000000000001,
+      0.10400000000000002,
+      0.024499999999999997,
+      0.0455,
+      0.10400000000000001,
+      0.026000000000000002
+    ],
+    "rows": [
+      {
+        "variant": "reverse_exact",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 2.557434264360836e-10,
+        "gradient": [
+          [
+            -0.5692094155394342,
+            0.5692094155394343
+          ],
+          [
+            0.41058156016143466,
+            -0.41058156016143466
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -0.5692094154907679,
+            0.5692094154907679
+          ],
+          [
+            0.4105815604171781,
+            -0.4105815600841112
+          ]
+        ]
+      },
+      {
+        "variant": "reverse_score_surrogate",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 2.557434264360836e-10,
+        "gradient": [
+          [
+            -0.5692094155394342,
+            0.569209415539434
+          ],
+          [
+            0.41058156016143466,
+            -0.41058156016143443
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -0.5692094154907679,
+            0.5692094154907679
+          ],
+          [
+            0.4105815604171781,
+            -0.4105815600841112
+          ]
+        ]
+      },
+      {
+        "variant": "forward_exact",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 6.028533228175093e-11,
+        "gradient": [
+          [
+            -1.5055959064193756,
+            1.5055959064193758
+          ],
+          [
+            0.1638551888109021,
+            -0.1638551888109021
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -1.5055959063925428,
+            1.5055959063925428
+          ],
+          [
+            0.16385518875061678,
+            -0.16385518875061678
+          ]
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_forward",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 6.028533228175093e-11,
+        "gradient": [
+          [
+            -1.5055959064193758,
+            1.5055959064193758
+          ],
+          [
+            0.1638551888109021,
+            -0.16385518881090202
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -1.5055959063925428,
+            1.5055959063925428
+          ],
+          [
+            0.16385518875061678,
+            -0.16385518875061678
+          ]
+        ]
+      },
+      {
+        "variant": "k1_detached_sampling_as_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.5692094154907679,
+        "gradient": [
+          [
+            5.551115123125783e-17,
+            0.0
+          ],
+          [
+            0.0,
+            5.551115123125783e-17
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -0.5692094154907679,
+            0.5692094154907679
+          ],
+          [
+            0.4105815604171781,
+            -0.4105815600841112
+          ]
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_misdeclared_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.9363864909286079,
+        "gradient": [
+          [
+            -1.5055959064193758,
+            1.5055959064193758
+          ],
+          [
+            0.1638551888109021,
+            -0.16385518881090202
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -0.5692094154907679,
+            0.5692094154907679
+          ],
+          [
+            0.4105815604171781,
+            -0.4105815600841112
+          ]
+        ]
+      },
+      {
+        "variant": "fully_detached_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.5692094154907679,
+        "gradient": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -0.5692094154907679,
+            0.5692094154907679
+          ],
+          [
+            0.4105815604171781,
+            -0.4105815600841112
+          ]
+        ]
+      },
+      {
+        "variant": "misnormalized_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.37947294364428996,
+        "gradient": [
+          [
+            -0.18973647184647802,
+            0.1897364718464779
+          ],
+          [
+            0.13686052005381155,
+            -0.1368605200538115
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            -0.5692094154907679,
+            0.5692094154907679
+          ],
+          [
+            0.4105815604171781,
+            -0.4105815600841112
+          ]
+        ]
+      }
+    ],
+    "analytic_crosscheck": null
+  },
+  {
+    "case": {
+      "id": "mdp-3",
+      "kind": "mdp",
+      "horizon": 3,
+      "logits": [
+        [
+          1.0,
+          0.2
+        ],
+        [
+          -0.6,
+          0.4
+        ]
+      ],
+      "reference": [
+        [
+          0.4,
+          0.6
+        ],
+        [
+          0.75,
+          0.25
+        ]
+      ]
+    },
+    "current_probability_sum": 1.0000000000000002,
+    "reference_probability_sum": 1.0,
+    "current_probabilities": [
+      0.32847255274256293,
+      0.1475922318647552,
+      0.05752917782699228,
+      0.15638051869330216,
+      0.02242398708681652,
+      0.060954716619693636,
+      0.15638051869330216,
+      0.07026629647257526
+    ],
+    "reference_probabilities": [
+      0.06400000000000002,
+      0.09600000000000002,
+      0.18,
+      0.06,
+      0.33749999999999997,
+      0.11249999999999999,
+      0.06,
+      0.09
+    ],
+    "rows": [
+      {
+        "variant": "reverse_exact",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 2.707869484197545e-10,
+        "gradient": [
+          [
+            0.49805738377306863,
+            -0.49805738377306863
+          ],
+          [
+            -0.2300334211556366,
+            0.23003342115563657
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49805738377983744,
+            -0.4980573835022817
+          ],
+          [
+            -0.23003342114469305,
+            0.23003342114469305
+          ]
+        ]
+      },
+      {
+        "variant": "reverse_score_surrogate",
+        "declared_objective": "reverse",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 2.7078705944205694e-10,
+        "gradient": [
+          [
+            0.49805738377306885,
+            -0.49805738377306874
+          ],
+          [
+            -0.2300334211556366,
+            0.2300334211556366
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49805738377983744,
+            -0.4980573835022817
+          ],
+          [
+            -0.23003342114469305,
+            0.23003342114469305
+          ]
+        ]
+      },
+      {
+        "variant": "forward_exact",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 1.3054246572608008e-10,
+        "gradient": [
+          [
+            0.4958563627282174,
+            -0.4958563627282173
+          ],
+          [
+            -0.6205655664327063,
+            0.6205655664327066
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49585636280324863,
+            -0.4958563628587598
+          ],
+          [
+            -0.6205655664892618,
+            0.6205655664337506
+          ]
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_forward",
+        "declared_objective": "forward",
+        "expected_accept": true,
+        "accepted": true,
+        "contract_check_correct": true,
+        "max_absolute_error": 1.3054246572608008e-10,
+        "gradient": [
+          [
+            0.4958563627282173,
+            -0.4958563627282173
+          ],
+          [
+            -0.6205655664327062,
+            0.6205655664327063
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49585636280324863,
+            -0.4958563628587598
+          ],
+          [
+            -0.6205655664892618,
+            0.6205655664337506
+          ]
+        ]
+      },
+      {
+        "variant": "k1_detached_sampling_as_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.49805738377983766,
+        "gradient": [
+          [
+            -2.220446049250313e-16,
+            0.0
+          ],
+          [
+            2.7755575615628914e-17,
+            5.551115123125783e-17
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49805738377983744,
+            -0.4980573835022817
+          ],
+          [
+            -0.23003342114469305,
+            0.23003342114469305
+          ]
+        ]
+      },
+      {
+        "variant": "k3_detached_sampling_misdeclared_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.3905321452880133,
+        "gradient": [
+          [
+            0.4958563627282173,
+            -0.4958563627282173
+          ],
+          [
+            -0.6205655664327062,
+            0.6205655664327063
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49805738377983744,
+            -0.4980573835022817
+          ],
+          [
+            -0.23003342114469305,
+            0.23003342114469305
+          ]
+        ]
+      },
+      {
+        "variant": "fully_detached_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.49805738377983744,
+        "gradient": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49805738377983744,
+            -0.4980573835022817
+          ],
+          [
+            -0.23003342114469305,
+            0.23003342114469305
+          ]
+        ]
+      },
+      {
+        "variant": "misnormalized_reverse",
+        "declared_objective": "reverse",
+        "expected_accept": false,
+        "accepted": false,
+        "contract_check_correct": true,
+        "max_absolute_error": 0.3320382558554813,
+        "gradient": [
+          [
+            0.16601912792435614,
+            -0.16601912792435625
+          ],
+          [
+            -0.07667780705187886,
+            0.07667780705187885
+          ]
+        ],
+        "finite_difference_gradient": [
+          [
+            0.49805738377983744,
+            -0.4980573835022817
+          ],
+          [
+            -0.23003342114469305,
+            0.23003342114469305
+          ]
+        ]
+      }
+    ],
+    "analytic_crosscheck": null
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "protocol_sha256": "3ab4d56597b4b34f4ea3ed7567a8c8145a913a9db5ce5d6800bc27c0a6663670",
+  "files": {
+    "experiments/preference_repair_v1.py": "9603ba7d7462de2d1ef7748631af1b05a87d0aac986ab19189b672de90c2de3e",
+    "experiments/evaluation_calibration_v1/preference.py": "d1c94c7da0d1da428fddb1f3e77118fa5373cd781f72052e58637e3bfc2ccda0",
+    "experiments/preference_measurement/measure.py": "f926a87706261f0a4cd42d9787225819f661b095b13f5340880cb2c5c90a357b"
+  }
+}

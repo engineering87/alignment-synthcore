@@ -1,0 +1,46 @@
+{
+  "id": "online-start-replay-v1",
+  "date": "2026-10-31",
+  "question": "Does observed start-matched scoring improve actual online curriculum learning at matched process CPU?",
+  "arms": [
+    "maxlatest",
+    "startmatched",
+    "random",
+    "dr"
+  ],
+  "families": [
+    "corner",
+    "lamp"
+  ],
+  "calibration_seed_groups": [
+    301
+  ],
+  "confirmation_seed_groups": [
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408
+  ],
+  "calibration_cpu_seconds": 15,
+  "confirmation_cpu_seconds": 120,
+  "hparams": {
+    "lr": 0.001,
+    "ent": 0.01,
+    "p_replay": 0.7,
+    "edits": 3,
+    "beta": 0.3,
+    "rho": 0.3,
+    "capacity": 1000
+  },
+  "tuning": "No new tuning; same fixed original lr=.001 configuration in every arm, selected using prior studies. Prior outcomes known.",
+  "primary": "Seed-group mean over both families: startmatched minus random intended-goal lower95% t bound >=.05; startmatched IID lower95% bound >=.80; startmatched minus DR IID lower95% bound >=-.05. All required. Other contrasts descriptive.",
+  "unit": "8 independent seed groups, averaging two family fits; within-group geometries shared across arms. No fixed-output episode pseudo-replication.",
+  "scope": "Local adapter exposes same opaque start-identity access to all arms; only startmatched uses it. References contain observed returns only; first observation of an unseen start yields zero deficit, no complete optimal warm-up. Does not implement paper-exact ACCEL.",
+  "budget": "120 process CPU seconds, including scoring/ranking/environment steps, checked at complete PPO rollout boundaries. Actual overshoot retained; no claiming exact equal FLOPs. Evaluation and immutable snapshot serialization excluded. All total interactions, learning/scoring steps and compute recorded.",
+  "calibration": "15-CPU-second runs assess engineering/runtime only, disjoint streams. No confirmation outcome used for design or tuning. Small n limits precision; no guaranteed power.",
+  "frozen_result_rule": "No exclusions, optional N extension, tuning or budget expansion after confirmation. Larger-budget conclusions remain untested."
+}
