@@ -1,10 +1,12 @@
 """Claim tags (trusted model) for every fresh description; same prompt as the semantic channel idea."""
+from pathlib import Path
+ROOT = str(Path(__file__).resolve().parents[1])
 import json, sys, importlib.util
-sys.path.insert(0, '/root/sc/testbeds/swarm_collusion')
+sys.path.insert(0, f'{ROOT}/testbeds/swarm_collusion')
 import llm
-spec = importlib.util.spec_from_file_location("s", '/root/sc/ideas/swarm-semantic-channel/method.py')
+spec = importlib.util.spec_from_file_location("s", f'{ROOT}/ideas/swarm-semantic-channel/method.py')
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
-D = '/root/sc/testbeds/swarm_collusion/data/'
+D = f'{ROOT}/testbeds/swarm_collusion/data/'
 for name in ("fresh_honest.json", "fresh_attack_phrase.json", "fresh_attack_paraphrase.json"):
     rows = json.load(open(D + name))
     tags = llm.pmap(lambda r: sorted(m.tags(llm.ask(m.TAGS.format(desc=r["description"]), "gemma-4-31b-it", max_tokens=400,

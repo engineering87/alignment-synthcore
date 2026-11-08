@@ -1,5 +1,7 @@
+from pathlib import Path
+ROOT = str(Path(__file__).resolve().parents[1])
 import sys, json, time, ast
-sys.path.insert(0, '/root/sc/testbeds/swarm_collusion'); sys.path.insert(0, '/root/sc/formal')
+sys.path.insert(0, f'{ROOT}/testbeds/swarm_collusion'); sys.path.insert(0, f'{ROOT}/formal')
 import llm
 from formal_lib import *
 from feas import FORMALIZE, P, O  # noqa

@@ -1,12 +1,14 @@
 """Exploratory (not a verdict): how much covert traffic does the channel-dependence test need?
 Keep every honest test episode, add m randomly chosen attack episodes, run the test, and record
 whether it flags any n-gram of the signal and which agents it fingers. 10 draws per m."""
+from pathlib import Path
+ROOT = str(Path(__file__).resolve().parents[0])
 import sys, json, random, importlib.util, os
-sys.path.insert(0, '/root/sc'); sys.path.insert(0, '/root/sc/testbeds/swarm_collusion')
+sys.path.insert(0, ROOT); sys.path.insert(0, f'{ROOT}/testbeds/swarm_collusion')
 from testbeds.swarm_collusion.testbed import SwarmCollusion, SwarmCollusionParaphrase, COLLUDERS
 import numpy as np
 from sklearn.metrics import roc_auc_score
-spec = importlib.util.spec_from_file_location("ch", '/root/sc/ideas/swarm-channel-dependence/method.py')
+spec = importlib.util.spec_from_file_location("ch", f'{ROOT}/ideas/swarm-channel-dependence/method.py')
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 tb = SwarmCollusionParaphrase() if (len(sys.argv) > 1 and sys.argv[1] == "para") else SwarmCollusion()
 inst = tb.instance("test", "full", 0)
@@ -28,4 +30,4 @@ for mm in [5, 10, 20, 40, 80, len(A)]:
     out[mm] = {k: float(np.mean([r[k] for r in rows])) for k in rows[0]}
     out[mm]["attack_rate"] = mm / (mm + len(H))
     print(mm, {k: round(v, 3) for k, v in out[mm].items()}, flush=True)
-json.dump(out, open(f"/root/sc/results_channel_power_{tb.name}.json", "w"), indent=1)
+json.dump(out, open(f"{ROOT}/results/swarm_analysis/results_channel_power_{tb.name}.json", "w"), indent=1)

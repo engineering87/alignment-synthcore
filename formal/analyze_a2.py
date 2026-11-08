@@ -1,10 +1,12 @@
 """A2 protocol analysis: who writes the spec? (test split, unique code)."""
+from pathlib import Path
+ROOT = str(Path(__file__).resolve().parents[1])
 import json, sys, numpy as np
-sys.path.insert(0, '/root/sc/formal'); sys.path.insert(0, '/root/sc/testbeds/swarm_collusion')
+sys.path.insert(0, f'{ROOT}/formal'); sys.path.insert(0, f'{ROOT}/testbeds/swarm_collusion')
 import specs as S
 from sklearn.metrics import roc_auc_score
 from concurrent.futures import ThreadPoolExecutor
-C = json.load(open('/root/sc/formal/checks.json'))
+C = json.load(open(f'{ROOT}/formal/checks.json'))
 res = {(r['task_id'], r['source'], r['kind']): r['verdict'] == 'counterexample' for r in C['results']}
 sp = {tuple(k.split('|')): v for k, v in C['specs'].items()}
 test = [t for t in S.P if S.O[t]['split'] == 'test']
@@ -32,4 +34,4 @@ thr = float(np.quantile(a_h, 0.95))
 out["audit_flag_collude_at_honest_95pct"] = float(np.mean([a > thr for a in a_c]))
 for k, v in out.items():
     print(k, (f"{v[0]}/{v[1]} = {v[0]/max(v[1],1):.2f}" if isinstance(v, tuple) else (round(v, 3) if isinstance(v, float) else v)))
-json.dump({k: (list(v) if isinstance(v, tuple) else v) for k, v in out.items()}, open('/root/sc/formal/a2_results.json', 'w'), indent=1)
+json.dump({k: (list(v) if isinstance(v, tuple) else v) for k, v in out.items()}, open(f'{ROOT}/formal/a2_results.json', 'w'), indent=1)

@@ -1,8 +1,10 @@
 """Pre-registered e-process channel streams on fresh descriptions (B1-B4)."""
+from pathlib import Path
+ROOT = str(Path(__file__).resolve().parents[1])
 import json, sys, numpy as np
-sys.path.insert(0, '/root/sc/eprocess')
+sys.path.insert(0, f'{ROOT}/eprocess')
 from channel_eprocess import run_stream, encode, trigrams
-D = '/root/sc/testbeds/swarm_collusion/data/'
+D = f'{ROOT}/testbeds/swarm_collusion/data/'
 H = json.load(open(D + 'fresh_honest.json'))
 A = {"phrase": json.load(open(D + 'fresh_attack_phrase.json')), "paraphrase": json.load(open(D + 'fresh_attack_paraphrase.json'))}
 for rows in [H] + list(A.values()):
@@ -28,4 +30,4 @@ for name, mode, feat in CONFIGS:
                "post_alarm_honest_escalated": eh[0] / eh[1] if eh[1] else None}
         out[f"{name} | r={rate}"] = row
         print(name, "r=", rate, {k: (round(v, 3) if isinstance(v, float) else v) for k, v in row.items()}, flush=True)
-json.dump(out, open('/root/sc/eprocess/fresh_results.json', 'w'), indent=1)
+json.dump(out, open(f'{ROOT}/eprocess/fresh_results.json', 'w'), indent=1)

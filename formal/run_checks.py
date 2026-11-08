@@ -1,7 +1,9 @@
 """Generate specs and run every formal check for the A1/A2 experiments; results cached."""
+from pathlib import Path
+ROOT = str(Path(__file__).resolve().parents[1])
 import json, sys, time
 from concurrent.futures import ThreadPoolExecutor
-sys.path.insert(0, '/root/sc/formal'); sys.path.insert(0, '/root/sc/testbeds/swarm_collusion')
+sys.path.insert(0, f'{ROOT}/formal'); sys.path.insert(0, f'{ROOT}/testbeds/swarm_collusion')
 import specs as S
 from formal_lib import full_check
 tids = sorted(S.P, key=lambda t: int(t.split('/')[1]))
@@ -43,5 +45,5 @@ def run(c):
 with ThreadPoolExecutor(12) as ex:
     res = list(ex.map(run, checks))
 out = [{"task_id": t, "split": S.O[t]['split'], "source": src, "kind": k, **r} for (t, src, k), r in zip(checks, res)]
-json.dump({"results": out, "specs": {f"{t}|{s}": v for (t, s), v in sp.items()}}, open('/root/sc/formal/checks.json', 'w'), indent=1)
+json.dump({"results": out, "specs": {f"{t}|{s}": v for (t, s), v in sp.items()}}, open(f'{ROOT}/formal/checks.json', 'w'), indent=1)
 print("wrote", len(out))
