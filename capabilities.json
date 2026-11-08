@@ -29,6 +29,8 @@
     "control": ["trusted_model_queries"],
     "interactive_gridworld": ["online_interaction", "approval_queries"],
     "ued_gridworld": ["online_interaction", "level_generation"],
-    "confounded_imitation": ["offline_demonstrations", "online_interaction", "expert_queries"]
+    "confounded_imitation": ["offline_demonstrations", "online_interaction", "expert_queries"],
+    "swarm_collusion": ["trusted_model_queries"],
+    "swarm_collusion_para": ["trusted_model_queries"]
   }
 }

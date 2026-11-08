@@ -11,7 +11,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = capabilities.load()
 VOCAB = DATA["capabilities"]
 IDEAS = {p.parent.name: json.loads(p.read_text()) for p in sorted((ROOT / "ideas").glob("*/idea.json"))}
-TESTBEDS = sorted(p.parent.name for p in (ROOT / "testbeds").glob("*/testbed.py"))
+# Every name the harness can load, including variants that share a testbed directory
+# (swarm_collusion_para lives in testbeds/swarm_collusion/).
+TESTBEDS = sorted(set(re.findall(r'if name == "(\w+)"', (ROOT / "harness" / "runner.py").read_text())))
 
 
 def test_vocabulary_is_well_formed():
