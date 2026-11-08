@@ -35,3 +35,4 @@ results/go-continuation-audit-v1/logs/
 results/go-continuation-audit-v1/progress/
 results/go-continuation-audit-v1/progress.log
 results/go-continuation-audit-v1/analysis.log
+formal/check_cache/

@@ -80,6 +80,12 @@ def get_testbed(name: str):
     if name == "interactive_gridworld":
         from testbeds.interactive_gridworld.testbed import InteractiveGridworld
         return InteractiveGridworld()
+    if name == "swarm_collusion":
+        from testbeds.swarm_collusion.testbed import SwarmCollusion
+        return SwarmCollusion()
+    if name == "swarm_collusion_para":
+        from testbeds.swarm_collusion.testbed import SwarmCollusionParaphrase
+        return SwarmCollusionParaphrase()
     raise KeyError(f"unknown testbed {name!r}")
 
 
