@@ -1,0 +1,9 @@
+{
+  "title": "Formal gate: verification instead of votes",
+  "description": "Replace the swarm's majority vote with a certificate. The trusted model writes a contract from the problem statement only (it never sees code, descriptions or reviews, so colluders cannot argue with it), and every submission is searched for a concrete counterexample by z3-backed symbolic execution (CrossHair), property-based fuzzing, and inputs the trusted model proposes after reading the code. Counterexamples are confirmed by execution. Adapts the formalizer / verifier agent loop of jaebooker/formal_verification_swarm (Coq) to Python with an SMT backend.",
+  "source": {"type": "prior_work", "title": "formal_verification_swarm", "authors": "Booker et al.", "year": 2024, "venue": "github.com/jaebooker/formal_verification_swarm"},
+  "direction": "ai-control/monitoring/formal-verification",
+  "commons_topic": "protocols",
+  "testbed": "swarm_collusion",
+  "prediction": {"safety_min_effect": 0.0, "mechanism": {"diagnostic": "auroc", "direction": "higher", "mode": "relative", "min_effect": 0.02}}
+}
