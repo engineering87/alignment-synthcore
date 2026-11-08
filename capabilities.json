@@ -17,6 +17,7 @@
     "trusted_model_queries": {"name": "Trusted language model calls", "description": "Prompt one weaker, trusted language model and read its answers."},
     "language_model_agents": {"name": "Capable language model agents", "description": "Several capable language models the method can prompt to generate, argue or plan."},
     "gpu": {"name": "GPU compute", "description": "Runs on a GPU; not available on a laptop CPU."},
+    "iterative_self_training": {"name": "Iterative self-training loop", "description": "Run a system that retrains on its own outputs across cycles, and choose which versions to keep."},
     "other": {"name": "Something not listed", "description": "A need no capability describes yet. The untestable reason must say what it is, so a reviewer can add a capability."}
   },
   "provides": {
